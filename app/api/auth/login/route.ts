@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { sql } from "@/lib/db";
+import { prisma } from "@/lib/db";
 import { verifyPassword, createSession, sessionCookieOptions, SESSION_COOKIE } from "@/lib/auth";
 
 export async function POST(req: Request) {
@@ -7,12 +7,12 @@ export async function POST(req: Request) {
   const email = typeof body?.email === "string" ? body.email.trim().toLowerCase() : "";
   const password = typeof body?.password === "string" ? body.password : "";
 
-  const { rows } = await sql<{ id: number; password_hash: string }>`
-    SELECT id, password_hash FROM users WHERE email = ${email}
-  `;
-  const user = rows[0];
+  const user = await prisma.user.findUnique({
+    where: { email },
+    select: { id: true, passwordHash: true },
+  });
 
-  if (!user || !verifyPassword(password, user.password_hash)) {
+  if (!user || !verifyPassword(password, user.passwordHash)) {
     return NextResponse.json({ error: "Incorrect email or password." }, { status: 401 });
   }
 

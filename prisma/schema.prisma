@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           Int       @id @default(autoincrement())
+  name         String
+  email        String    @unique
+  passwordHash String    @map("password_hash")
+  createdAt    DateTime  @default(now()) @map("created_at")
+  sessions     Session[]
+  attempts     Attempt[]
+
+  @@map("users")
+}
+
+model Session {
+  token     String   @id
+  userId    Int      @map("user_id")
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime @map("expires_at")
+
+  @@map("sessions")
+}
+
+model Attempt {
+  id               Int      @id @default(autoincrement())
+  userId           Int      @map("user_id")
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subjectId        String   @map("subject_id")
+  chapterId        String?  @map("chapter_id")
+  kind             String
+  score            Int
+  total            Int
+  timeTakenSeconds Int      @map("time_taken_seconds")
+  detail           String
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  @@index([userId, createdAt])
+  @@map("attempts")
+}

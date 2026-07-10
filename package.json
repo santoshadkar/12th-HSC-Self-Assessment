@@ -6,12 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "migrate": "node --env-file=.env.local scripts/migrate.mjs"
+    "postinstall": "prisma generate",
+    "migrate": "prisma db push"
   },
   "dependencies": {
-    "@vercel/postgres": "^0.10.0",
+    "@prisma/client": "^6.19.3",
+    "@prisma/extension-accelerate": "^3.0.1",
     "bcryptjs": "^3.0.2",
     "next": "^15.4.5",
+    "prisma": "^6.19.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

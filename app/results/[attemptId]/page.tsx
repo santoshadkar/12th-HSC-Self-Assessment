@@ -1,22 +1,9 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { sql } from "@/lib/db";
+import { prisma } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth";
 import { findQuestion, getSubject, type GradedAnswer } from "@/lib/questions";
 import Header from "@/components/Header";
-
-type AttemptRow = {
-  id: number;
-  user_id: number;
-  subject_id: string;
-  chapter_id: string | null;
-  kind: string;
-  score: number;
-  total: number;
-  time_taken_seconds: number;
-  detail: string;
-  created_at: string;
-};
 
 const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
@@ -38,21 +25,20 @@ export default async function ResultsPage({
   const attemptIdNum = Number(attemptId);
   if (!Number.isInteger(attemptIdNum)) notFound();
 
-  const { rows } = await sql<AttemptRow>`SELECT * FROM attempts WHERE id = ${attemptIdNum}`;
-  const attempt = rows[0];
-  if (!attempt || attempt.user_id !== user.id) notFound();
+  const attempt = await prisma.attempt.findUnique({ where: { id: attemptIdNum } });
+  if (!attempt || attempt.userId !== user.id) notFound();
 
-  const subject = getSubject(attempt.subject_id);
-  const chapterName = attempt.chapter_id
-    ? subject?.chapters.find((c) => c.id === attempt.chapter_id)?.name
+  const subject = getSubject(attempt.subjectId);
+  const chapterName = attempt.chapterId
+    ? subject?.chapters.find((c) => c.id === attempt.chapterId)?.name
     : null;
   const detail = JSON.parse(attempt.detail) as GradedAnswer[];
   const pct = attempt.total > 0 ? Math.round((attempt.score / attempt.total) * 100) : 0;
   const verdict = pct >= 75 ? "Excellent work!" : pct >= 50 ? "Good effort — review the explanations below." : "Keep practising — the explanations below will help.";
 
-  const retryHref = attempt.chapter_id
-    ? `/quiz/${attempt.subject_id}/${attempt.chapter_id}`
-    : `/quiz/${attempt.subject_id}/mock`;
+  const retryHref = attempt.chapterId
+    ? `/quiz/${attempt.subjectId}/${attempt.chapterId}`
+    : `/quiz/${attempt.subjectId}/mock`;
 
   return (
     <>
@@ -60,14 +46,14 @@ export default async function ResultsPage({
       <main className="page">
         <div className="card score-hero">
           <p className="card-meta">
-            {subject?.name ?? attempt.subject_id} ·{" "}
+            {subject?.name ?? attempt.subjectId} ·{" "}
             {attempt.kind === "mock" ? "Full Mock Test" : chapterName ?? "Chapter quiz"}
           </p>
           <p className="big">
             {attempt.score} / {attempt.total}
           </p>
           <p className="pct">
-            {pct}% · time taken {formatDuration(attempt.time_taken_seconds)} · {verdict}
+            {pct}% · time taken {formatDuration(attempt.timeTakenSeconds)} · {verdict}
           </p>
           <div className="actions">
             <Link className="btn" href="/dashboard">
@@ -76,7 +62,7 @@ export default async function ResultsPage({
             <Link className="btn secondary" href={retryHref}>
               Retry
             </Link>
-            <Link className="btn secondary" href={`/subjects/${attempt.subject_id}`}>
+            <Link className="btn secondary" href={`/subjects/${attempt.subjectId}`}>
               More {subject?.shortName ?? ""} quizzes
             </Link>
           </div>
@@ -84,7 +70,7 @@ export default async function ResultsPage({
 
         <h2 className="section-title">Answers &amp; explanations</h2>
         {detail.map((entry, i) => {
-          const question = findQuestion(attempt.subject_id, entry.questionId);
+          const question = findQuestion(attempt.subjectId, entry.questionId);
           if (!question) return null;
           return (
             <div className="card review-item" key={entry.questionId}>

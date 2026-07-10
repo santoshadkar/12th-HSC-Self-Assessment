@@ -17,39 +17,42 @@ a per-user progress dashboard.
 ## Stack
 
 - **Next.js (App Router, TypeScript)** — pages + API routes in a single app
-- **Postgres** via `@vercel/postgres` — users, sessions, and attempt history, hosted on Vercel's
-  integrated Postgres (Neon) so it works on Vercel's serverless/read-only filesystem
+- **Prisma ORM** + **Prisma Postgres** — users, sessions, and attempt history, hosted on Vercel's
+  Marketplace-provisioned Prisma Postgres database
 - **Cookie-session auth** with `bcryptjs` password hashing — no third-party auth service
 - Plain CSS (`app/globals.css`), responsive for mobile and desktop
 
 > This app previously used local SQLite (`better-sqlite3`), which worked for local development but
 > **cannot work on Vercel** — serverless functions there have a read-only filesystem, so any
-> attempt to create/write a SQLite file throws and the whole app 500s. Postgres is a real network
-> database, so it works the same locally and in production.
+> attempt to create/write a SQLite file throws and the whole app 500s. It briefly tried
+> `@vercel/postgres` with a raw `postgres://` connection string, but **Prisma Postgres isn't
+> reachable that way** — it's a database product that's only accessible through Prisma's own
+> client/query engine (not a plain TCP connection string), so the data layer now uses Prisma ORM.
 
 ## Setup: database (required before running, locally or on Vercel)
 
 1. In the [Vercel dashboard](https://vercel.com/dashboard), open this project → **Storage** tab →
-   **Create Database** → choose **Postgres** (Neon-backed) → connect it to the project. This
-   injects `POSTGRES_URL` (and related) env vars into the project automatically.
-2. Link this local folder to the Vercel project and pull those env vars down:
+   **Create Database** (or **Connect Store** from the Marketplace) → choose **Prisma Postgres** →
+   connect it to the project. This injects a `DATABASE_URL` env var into the project automatically.
+2. Link this local folder to the Vercel project and pull that env var down into a plain `.env`
+   file (Prisma's CLI and Next.js both auto-load `.env` from the project root, so no extra flags
+   are needed):
    ```bash
    npx vercel login
    npx vercel link
-   npx vercel env pull .env.local
+   npx vercel env pull .env
    ```
-3. Create the tables (one-time; safe to re-run, uses `CREATE TABLE IF NOT EXISTS`):
+3. Generate the Prisma client and create the tables (one-time; safe to re-run):
    ```bash
+   npm install
    npm run migrate
    ```
+   (`npm install` also runs `prisma generate` automatically via a `postinstall` hook — required
+   any time `prisma/schema.prisma` changes.)
 4. Redeploy (push to the connected GitHub repo, or `npx vercel --prod`) so the live site picks up
-   the same env vars and schema.
-
-If your Vercel dashboard shows a **native Neon integration** instead of the older "Vercel Postgres"
-product, the connection string env var may be named `DATABASE_URL` instead of `POSTGRES_URL` — in
-that case add `POSTGRES_URL=<value of DATABASE_URL>` to the project's environment variables (or
-switch `lib/db.ts` to `@neondatabase/serverless` with `neon(process.env.DATABASE_URL)`), since
-`@vercel/postgres` specifically looks for `POSTGRES_URL`.
+   the same env var and schema. Vercel's build runs `npm install` (which generates the Prisma
+   client via `postinstall`) automatically; the tables themselves only need to be created once via
+   step 3, not on every deploy.
 
 ## Running locally
 
@@ -107,7 +110,7 @@ Physics 16/16, Chemistry 16/16, Computer Science Paper I 4/4, Paper II 4/4. All 
 practice questions written for this app (see disclaimer above); expanding any chapter beyond 10
 questions is just a matter of appending more objects to its array.
 
-## Data model (Postgres, see `scripts/migrate.mjs` for the DDL)
+## Data model (Postgres via Prisma, see `prisma/schema.prisma`)
 
 - `users` — id, name, email (unique), bcrypt password hash
 - `sessions` — token, user id, expiry (30 days)

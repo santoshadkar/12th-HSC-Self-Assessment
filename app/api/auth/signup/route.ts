@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { sql } from "@/lib/db";
+import { Prisma } from "@prisma/client";
+import { prisma } from "@/lib/db";
 import { hashPassword, createSession, sessionCookieOptions, SESSION_COOKIE } from "@/lib/auth";
 
 export async function POST(req: Request) {
@@ -21,20 +22,22 @@ export async function POST(req: Request) {
     );
   }
 
-  const { rows: existing } = await sql`SELECT id FROM users WHERE email = ${email}`;
-  if (existing.length > 0) {
-    return NextResponse.json(
-      { error: "An account with this email already exists. Try logging in." },
-      { status: 409 }
-    );
+  let userId: number;
+  try {
+    const user = await prisma.user.create({
+      data: { name, email, passwordHash: hashPassword(password) },
+      select: { id: true },
+    });
+    userId = user.id;
+  } catch (err) {
+    if (err instanceof Prisma.PrismaClientKnownRequestError && err.code === "P2002") {
+      return NextResponse.json(
+        { error: "An account with this email already exists. Try logging in." },
+        { status: 409 }
+      );
+    }
+    throw err;
   }
-
-  const { rows } = await sql<{ id: number }>`
-    INSERT INTO users (name, email, password_hash)
-    VALUES (${name}, ${email}, ${hashPassword(password)})
-    RETURNING id
-  `;
-  const userId = rows[0].id;
 
   const { token, expiresAt } = await createSession(userId);
   const res = NextResponse.json({ ok: true });

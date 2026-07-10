@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { sql } from "@/lib/db";
+import { prisma } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth";
 import { getSubject, gradeAnswers, type AnswerSubmission } from "@/lib/questions";
 
@@ -47,23 +47,22 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Unknown question in submission." }, { status: 400 });
   }
 
-  const { rows } = await sql<{ id: number }>`
-    INSERT INTO attempts (user_id, subject_id, chapter_id, kind, score, total, time_taken_seconds, detail)
-    VALUES (
-      ${user.id},
-      ${subjectId},
-      ${kind === "chapter" ? chapterId : null},
-      ${kind},
-      ${graded.score},
-      ${graded.total},
-      ${timeTakenSeconds},
-      ${JSON.stringify(graded.detail)}
-    )
-    RETURNING id
-  `;
+  const attempt = await prisma.attempt.create({
+    data: {
+      userId: user.id,
+      subjectId,
+      chapterId: kind === "chapter" ? chapterId : null,
+      kind,
+      score: graded.score,
+      total: graded.total,
+      timeTakenSeconds,
+      detail: JSON.stringify(graded.detail),
+    },
+    select: { id: true },
+  });
 
   return NextResponse.json({
-    attemptId: rows[0].id,
+    attemptId: attempt.id,
     score: graded.score,
     total: graded.total,
   });

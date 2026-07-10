@@ -1,19 +1,9 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { sql } from "@/lib/db";
+import { prisma } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth";
 import { getSubjects } from "@/lib/questions";
 import Header from "@/components/Header";
-
-type AttemptRow = {
-  id: number;
-  subject_id: string;
-  chapter_id: string | null;
-  kind: string;
-  score: number;
-  total: number;
-  created_at: string | Date;
-};
 
 function pctClass(pct: number) {
   return pct >= 75 ? "pct-pill pct-good" : pct >= 50 ? "pct-pill pct-mid" : "pct-pill pct-low";
@@ -23,10 +13,19 @@ export default async function DashboardPage() {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
 
-  const { rows: attempts } = await sql<AttemptRow>`
-    SELECT id, subject_id, chapter_id, kind, score, total, created_at
-    FROM attempts WHERE user_id = ${user.id} ORDER BY id ASC
-  `;
+  const attempts = await prisma.attempt.findMany({
+    where: { userId: user.id },
+    select: {
+      id: true,
+      subjectId: true,
+      chapterId: true,
+      kind: true,
+      score: true,
+      total: true,
+      createdAt: true,
+    },
+    orderBy: { id: "asc" },
+  });
 
   const subjects = getSubjects();
   const subjectById = new Map(subjects.map((s) => [s.id, s]));
@@ -48,7 +47,7 @@ export default async function DashboardPage() {
   // per-subject stats
   const bySubject = subjects
     .map((subject) => {
-      const list = attempts.filter((a) => a.subject_id === subject.id);
+      const list = attempts.filter((a) => a.subjectId === subject.id);
       if (list.length === 0) return null;
       const pct = Math.round(
         (list.reduce((s, a) => s + a.score, 0) / list.reduce((s, a) => s + a.total, 0)) * 100
@@ -60,8 +59,8 @@ export default async function DashboardPage() {
   // weak chapters: avg < 60% across chapter attempts
   const chapterAgg = new Map<string, { score: number; total: number; count: number }>();
   for (const a of attempts) {
-    if (!a.chapter_id) continue;
-    const key = `${a.subject_id}|${a.chapter_id}`;
+    if (!a.chapterId) continue;
+    const key = `${a.subjectId}|${a.chapterId}`;
     const agg = chapterAgg.get(key) ?? { score: 0, total: 0, count: 0 };
     agg.score += a.score;
     agg.total += a.total;
@@ -213,16 +212,16 @@ export default async function DashboardPage() {
                 </thead>
                 <tbody>
                   {recent.map((a) => {
-                    const subject = subjectById.get(a.subject_id);
-                    const chapterName = a.chapter_id
-                      ? subject?.chapters.find((c) => c.id === a.chapter_id)?.name
+                    const subject = subjectById.get(a.subjectId);
+                    const chapterName = a.chapterId
+                      ? subject?.chapters.find((c) => c.id === a.chapterId)?.name
                       : "Mock test";
                     const pct = Math.round((a.score / a.total) * 100);
                     return (
                       <tr key={a.id}>
-                        <td>{new Date(a.created_at).toISOString().slice(0, 16).replace("T", " ")}</td>
+                        <td>{a.createdAt.toISOString().slice(0, 16).replace("T", " ")}</td>
                         <td>
-                          {subject?.shortName ?? a.subject_id} — {chapterName}
+                          {subject?.shortName ?? a.subjectId} — {chapterName}
                         </td>
                         <td>
                           <span className={pctClass(pct)}>
