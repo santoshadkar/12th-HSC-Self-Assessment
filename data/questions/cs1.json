@@ -1,0 +1,249 @@
+{
+  "subjectId": "cs1",
+  "chapters": {
+    "operating-system": [
+      {
+        "id": "cs1-os-01",
+        "question": "An operating system primarily acts as:",
+        "options": [
+          "a compiler for user programs",
+          "an interface between the user and the computer hardware",
+          "a database for storing files permanently",
+          "an antivirus utility"
+        ],
+        "answerIndex": 1,
+        "explanation": "The OS manages hardware resources and provides the environment through which users and applications interact with the machine."
+      },
+      {
+        "id": "cs1-os-02",
+        "question": "Which of the following is NOT a function of an operating system?",
+        "options": [
+          "Memory management",
+          "File management",
+          "CPU scheduling",
+          "Translating C++ source code into machine code"
+        ],
+        "answerIndex": 3,
+        "explanation": "Translation of source code is the job of a compiler, which is an application, not an OS service."
+      },
+      {
+        "id": "cs1-os-03",
+        "question": "Loading the operating system into main memory when the computer is switched on is called:",
+        "options": [
+          "spooling",
+          "booting",
+          "paging",
+          "formatting"
+        ],
+        "answerIndex": 1,
+        "explanation": "Booting is the startup process in which firmware loads the OS from disk into memory and hands over control to it."
+      },
+      {
+        "id": "cs1-os-04",
+        "question": "In a multiprogramming system:",
+        "options": [
+          "only one program resides in memory at a time",
+          "several programs reside in memory and share the CPU",
+          "programs can run without any memory",
+          "the CPU remains idle most of the time by design"
+        ],
+        "answerIndex": 1,
+        "explanation": "Multiprogramming keeps several jobs in memory so that when one waits for I/O, the CPU can switch to another, improving utilisation."
+      },
+      {
+        "id": "cs1-os-05",
+        "question": "A time-sharing operating system:",
+        "options": [
+          "gives each active user/process a small time slice of the CPU in turn",
+          "runs one job to completion before starting the next",
+          "is used only for printing",
+          "does not allow multiple users"
+        ],
+        "answerIndex": 0,
+        "explanation": "Time sharing rapidly switches the CPU among processes in fixed time slices, so each interactive user gets quick responses."
+      },
+      {
+        "id": "cs1-os-06",
+        "question": "Which of the following is an open-source operating system?",
+        "options": [
+          "MS-DOS",
+          "Windows 11",
+          "Linux",
+          "macOS"
+        ],
+        "answerIndex": 2,
+        "explanation": "The Linux kernel is distributed under an open-source licence; its source code can be freely studied and modified."
+      },
+      {
+        "id": "cs1-os-07",
+        "question": "Spooling is most commonly associated with:",
+        "options": [
+          "managing print jobs by buffering them on disk",
+          "allocating CPU registers",
+          "detecting viruses",
+          "compressing files"
+        ],
+        "answerIndex": 0,
+        "explanation": "Simultaneous Peripheral Operations On-Line queues output (typically print jobs) on disk so the slow device can process them while the CPU continues other work."
+      },
+      {
+        "id": "cs1-os-08",
+        "question": "The GUI elements Windows, Icons, Menus and Pointer are collectively abbreviated as:",
+        "options": [
+          "WYSIWYG",
+          "WIMP",
+          "POST",
+          "BIOS"
+        ],
+        "answerIndex": 1,
+        "explanation": "WIMP (Windows, Icons, Menus, Pointer) describes the standard components of a graphical user interface."
+      },
+      {
+        "id": "cs1-os-09",
+        "question": "A hierarchical file system organises directories in the form of a:",
+        "options": [
+          "queue",
+          "ring",
+          "tree",
+          "stack"
+        ],
+        "answerIndex": 2,
+        "explanation": "Directories contain subdirectories and files, branching out from a root directory — a tree structure."
+      },
+      {
+        "id": "cs1-os-10",
+        "question": "Virtual memory allows a system to:",
+        "options": [
+          "run programs larger than the available physical RAM",
+          "run without any RAM at all",
+          "permanently increase the size of the hard disk",
+          "execute programs without an OS"
+        ],
+        "answerIndex": 0,
+        "explanation": "Virtual memory uses disk space as an extension of RAM, swapping pages in and out so processes can be bigger than physical memory."
+      }
+    ],
+    "data-structures": [
+      {
+        "id": "cs1-ds-01",
+        "question": "A stack is a data structure that follows the principle:",
+        "options": [
+          "FIFO (First In First Out)",
+          "LIFO (Last In First Out)",
+          "Random access",
+          "Priority ordering"
+        ],
+        "answerIndex": 1,
+        "explanation": "Insertions (push) and deletions (pop) both happen at the same end — the top — so the last element added is the first removed."
+      },
+      {
+        "id": "cs1-ds-02",
+        "question": "A queue is a data structure that follows the principle:",
+        "options": [
+          "LIFO",
+          "FIFO",
+          "LILO and FILO simultaneously",
+          "Random removal"
+        ],
+        "answerIndex": 1,
+        "explanation": "Elements are inserted at the rear and removed from the front, so the earliest arrival is served first — First In, First Out."
+      },
+      {
+        "id": "cs1-ds-03",
+        "question": "Attempting to pop an element from an empty stack causes the condition known as:",
+        "options": [
+          "overflow",
+          "underflow",
+          "collision",
+          "deadlock"
+        ],
+        "answerIndex": 1,
+        "explanation": "Underflow occurs on deletion from an empty structure; overflow occurs on insertion into a full one."
+      },
+      {
+        "id": "cs1-ds-04",
+        "question": "Binary search can be applied to an array only if the array is:",
+        "options": [
+          "very large",
+          "sorted",
+          "made of characters only",
+          "stored on disk"
+        ],
+        "answerIndex": 1,
+        "explanation": "Binary search repeatedly halves the search interval by comparing with the middle element, which only works when elements are in sorted order."
+      },
+      {
+        "id": "cs1-ds-05",
+        "question": "Each node of a singly linked list contains:",
+        "options": [
+          "only data",
+          "data and the address of the next node",
+          "data and the addresses of both neighbouring nodes",
+          "only the address of the next node"
+        ],
+        "answerIndex": 1,
+        "explanation": "A singly linked list node stores its data field plus one link (pointer) to the next node; a doubly linked list has links in both directions."
+      },
+      {
+        "id": "cs1-ds-06",
+        "question": "In a binary tree, each node can have at most:",
+        "options": [
+          "one child",
+          "two children",
+          "three children",
+          "any number of children"
+        ],
+        "answerIndex": 1,
+        "explanation": "\"Binary\" means each node has at most two children, conventionally called the left and right child."
+      },
+      {
+        "id": "cs1-ds-07",
+        "question": "Which of the following applications typically uses a stack?",
+        "options": [
+          "Handling function calls and recursion",
+          "CPU scheduling of processes in arrival order",
+          "Printing documents in submission order",
+          "Storing a sorted telephone directory"
+        ],
+        "answerIndex": 0,
+        "explanation": "Function calls are managed on a call stack: the most recently called function returns first, matching LIFO behaviour."
+      },
+      {
+        "id": "cs1-ds-08",
+        "question": "Accessing an element of an array by its index takes:",
+        "options": [
+          "time proportional to the array size",
+          "constant time",
+          "time proportional to the index value",
+          "longer than searching a linked list"
+        ],
+        "answerIndex": 1,
+        "explanation": "Array elements are stored contiguously, so the address of any element can be computed directly from the index — a constant-time operation."
+      },
+      {
+        "id": "cs1-ds-09",
+        "question": "Bubble sort works by:",
+        "options": [
+          "repeatedly comparing and swapping adjacent elements",
+          "dividing the array into two halves recursively",
+          "building a binary search tree",
+          "hashing each element into a table"
+        ],
+        "answerIndex": 0,
+        "explanation": "In each pass, adjacent pairs are compared and swapped if out of order, so the largest remaining element \"bubbles\" to its correct position."
+      },
+      {
+        "id": "cs1-ds-10",
+        "question": "Which data structure is most suitable for evaluating or converting arithmetic expressions (e.g. infix to postfix)?",
+        "options": [
+          "Queue",
+          "Stack",
+          "Array only",
+          "Graph"
+        ],
+        "answerIndex": 1,
+        "explanation": "Operators and operands are pushed and popped according to precedence rules, which maps naturally onto stack operations."
+      }
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "subjectId": "physics",
+  "chapters": {
+    "rotational-dynamics": [
+      {
+        "id": "phy-rd-01",
+        "question": "In uniform circular motion, the centripetal acceleration is always directed:",
+        "options": [
+          "along the tangent to the circle",
+          "away from the centre",
+          "towards the centre of the circle",
+          "along the axis of rotation"
+        ],
+        "answerIndex": 2,
+        "explanation": "The speed is constant but the direction of velocity keeps changing; the acceleration responsible points radially inward, towards the centre."
+      },
+      {
+        "id": "phy-rd-02",
+        "question": "The maximum safe speed of a vehicle on a level (unbanked) circular road of radius r with coefficient of friction μ is:",
+        "options": [
+          "√(μrg)",
+          "μrg",
+          "√(rg/μ)",
+          "μ√(rg)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Friction provides the centripetal force: μmg = mv²/r, giving v(max) = √(μrg)."
+      },
+      {
+        "id": "phy-rd-03",
+        "question": "For a curved road banked at angle θ (ignoring friction), the optimum speed v satisfies:",
+        "options": [
+          "tan θ = rg/v²",
+          "tan θ = v²/rg",
+          "sin θ = v²/rg",
+          "cos θ = v²/rg"
+        ],
+        "answerIndex": 1,
+        "explanation": "At the optimum speed the horizontal component of the normal reaction alone provides the centripetal force, which leads to tan θ = v²/(rg)."
+      },
+      {
+        "id": "phy-rd-04",
+        "question": "The moment of inertia of a thin uniform ring of mass M and radius R about its own axis (through the centre, perpendicular to its plane) is:",
+        "options": [
+          "MR²/2",
+          "MR²",
+          "2MR²/5",
+          "2MR²/3"
+        ],
+        "answerIndex": 1,
+        "explanation": "Every particle of the ring lies at the same distance R from the axis, so I = MR²."
+      },
+      {
+        "id": "phy-rd-05",
+        "question": "The moment of inertia of a uniform solid sphere about its diameter is:",
+        "options": [
+          "(2/3)MR²",
+          "(1/2)MR²",
+          "(2/5)MR²",
+          "(7/5)MR²"
+        ],
+        "answerIndex": 2,
+        "explanation": "For a solid sphere rotating about a diameter, I = (2/5)MR²; the hollow sphere's value is (2/3)MR²."
+      },
+      {
+        "id": "phy-rd-06",
+        "question": "A ballet dancer spinning with arms outstretched pulls her arms in. Her angular speed:",
+        "options": [
+          "decreases",
+          "remains the same",
+          "increases",
+          "becomes zero"
+        ],
+        "answerIndex": 2,
+        "explanation": "With no external torque, angular momentum L = Iω is conserved. Pulling the arms in reduces I, so ω must increase."
+      },
+      {
+        "id": "phy-rd-07",
+        "question": "The rotational analogue of Newton's second law is:",
+        "options": [
+          "τ = Iα",
+          "F = ma",
+          "τ = Iω",
+          "L = Iα"
+        ],
+        "answerIndex": 0,
+        "explanation": "Torque plays the role of force and moment of inertia the role of mass: τ = Iα, where α is the angular acceleration."
+      },
+      {
+        "id": "phy-rd-08",
+        "question": "For a ring rolling on a horizontal surface without slipping, the fraction of its total kinetic energy that is rotational is:",
+        "options": [
+          "1/4",
+          "1/3",
+          "1/2",
+          "2/3"
+        ],
+        "answerIndex": 2,
+        "explanation": "Total KE = (1/2)mv²(1 + k²/R²). For a ring k² = R², so translational and rotational parts are equal — each is half of the total."
+      },
+      {
+        "id": "phy-rd-09",
+        "question": "In vertical circular motion of a body tied to a string of length r, the minimum speed at the highest point for the string to stay taut is:",
+        "options": [
+          "√(5gr)",
+          "√(2gr)",
+          "√(gr)",
+          "√(3gr)"
+        ],
+        "answerIndex": 2,
+        "explanation": "At the top, gravity alone must supply the centripetal force in the limiting case: mg = mv²/r, so v(min) = √(gr). (√(5gr) is the minimum at the lowest point.)"
+      },
+      {
+        "id": "phy-rd-10",
+        "question": "The radius of gyration of a uniform disc about its central axis perpendicular to its plane is:",
+        "options": [
+          "R",
+          "R/2",
+          "R/√2",
+          "√2 R"
+        ],
+        "answerIndex": 2,
+        "explanation": "I = (1/2)MR² = Mk² gives k = R/√2 ≈ 0.707R."
+      }
+    ],
+    "electrostatics": [
+      {
+        "id": "phy-es-01",
+        "question": "According to Gauss's law, the total electric flux through a closed surface enclosing charge q is:",
+        "options": [
+          "q ε₀",
+          "q / ε₀",
+          "ε₀ / q",
+          "zero for any enclosed charge"
+        ],
+        "answerIndex": 1,
+        "explanation": "Gauss's law states Φ = q(enclosed)/ε₀, independent of the shape of the closed surface."
+      },
+      {
+        "id": "phy-es-02",
+        "question": "The electric field inside a charged conductor in electrostatic equilibrium is:",
+        "options": [
+          "uniform and non-zero",
+          "zero",
+          "maximum at the centre",
+          "directed radially outward"
+        ],
+        "answerIndex": 1,
+        "explanation": "Free charges redistribute on the surface until the field inside the conductor is exactly zero; otherwise charges would keep moving."
+      },
+      {
+        "id": "phy-es-03",
+        "question": "When a dielectric slab of constant K completely fills a parallel-plate capacitor, its capacitance:",
+        "options": [
+          "decreases K times",
+          "increases K times",
+          "remains unchanged",
+          "becomes zero"
+        ],
+        "answerIndex": 1,
+        "explanation": "C = Kε₀A/d — the dielectric reduces the effective field, allowing more charge for the same potential difference, so C increases by the factor K."
+      },
+      {
+        "id": "phy-es-04",
+        "question": "The energy stored in a capacitor of capacitance C charged to potential difference V is:",
+        "options": [
+          "CV",
+          "CV²",
+          "(1/2)CV²",
+          "(1/2)C²V"
+        ],
+        "answerIndex": 2,
+        "explanation": "Work done in charging equals U = (1/2)CV² = Q²/2C = (1/2)QV, stored in the electric field between the plates."
+      },
+      {
+        "id": "phy-es-05",
+        "question": "Two capacitors of 2 μF and 4 μF are connected in series. The equivalent capacitance is:",
+        "options": [
+          "6 μF",
+          "8/3 μF",
+          "4/3 μF",
+          "2/3 μF"
+        ],
+        "answerIndex": 2,
+        "explanation": "In series, 1/C = 1/2 + 1/4 = 3/4, so C = 4/3 μF. Series combination is always smaller than the smallest capacitor."
+      },
+      {
+        "id": "phy-es-06",
+        "question": "The work done in moving a charge between two points on the same equipotential surface is:",
+        "options": [
+          "positive",
+          "negative",
+          "zero",
+          "dependent on the path length"
+        ],
+        "answerIndex": 2,
+        "explanation": "W = qΔV, and on an equipotential surface ΔV = 0, so no net work is done regardless of the path."
+      },
+      {
+        "id": "phy-es-07",
+        "question": "The torque on an electric dipole of moment p in a uniform field E is maximum when the angle between p and E is:",
+        "options": [
+          "0°",
+          "45°",
+          "90°",
+          "180°"
+        ],
+        "answerIndex": 2,
+        "explanation": "τ = pE sin θ, which is maximum when sin θ = 1, i.e. when the dipole is perpendicular to the field."
+      },
+      {
+        "id": "phy-es-08",
+        "question": "The potential energy of a dipole in a uniform electric field is minimum when the dipole moment is:",
+        "options": [
+          "parallel to the field",
+          "antiparallel to the field",
+          "perpendicular to the field",
+          "at 45° to the field"
+        ],
+        "answerIndex": 0,
+        "explanation": "U = -pE cos θ is lowest (-pE) at θ = 0°, so the parallel orientation is the stable equilibrium position."
+      },
+      {
+        "id": "phy-es-09",
+        "question": "The SI unit of electric flux is:",
+        "options": [
+          "N·m²/C",
+          "C/m²",
+          "V/m",
+          "N/C"
+        ],
+        "answerIndex": 0,
+        "explanation": "Flux = field × area, so its unit is (N/C)·m² = N·m²/C, which is equivalent to volt·metre."
+      },
+      {
+        "id": "phy-es-10",
+        "question": "The mechanical force per unit area on the charged surface of a conductor (electrostatic pressure) is proportional to:",
+        "options": [
+          "σ",
+          "σ²",
+          "1/σ",
+          "√σ"
+        ],
+        "answerIndex": 1,
+        "explanation": "The outward force per unit area on a charged conductor surface is σ²/2ε₀, so it varies as the square of the surface charge density."
+      }
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "subjectId": "cs2",
+  "chapters": {
+    "microprocessor-8085": [
+      {
+        "id": "cs2-mp-01",
+        "question": "The Intel 8085 is a:",
+        "options": [
+          "4-bit microprocessor",
+          "8-bit microprocessor",
+          "16-bit microprocessor",
+          "32-bit microprocessor"
+        ],
+        "answerIndex": 1,
+        "explanation": "The 8085 processes data 8 bits at a time — its data bus and accumulator are 8 bits wide."
+      },
+      {
+        "id": "cs2-mp-02",
+        "question": "The address bus of the 8085 is 16 bits wide, so it can address a maximum memory of:",
+        "options": [
+          "16 KB",
+          "32 KB",
+          "64 KB",
+          "1 MB"
+        ],
+        "answerIndex": 2,
+        "explanation": "2¹⁶ = 65,536 distinct addresses = 64 KB of memory locations."
+      },
+      {
+        "id": "cs2-mp-03",
+        "question": "In the 8085, the accumulator is register:",
+        "options": [
+          "B",
+          "A",
+          "H",
+          "PC"
+        ],
+        "answerIndex": 1,
+        "explanation": "Register A is the accumulator — the primary register for arithmetic and logical operations, holding one operand and the result."
+      },
+      {
+        "id": "cs2-mp-04",
+        "question": "Which of the following is NOT a flag in the 8085 flag register?",
+        "options": [
+          "Zero (Z)",
+          "Carry (CY)",
+          "Sign (S)",
+          "Overflow (O)"
+        ],
+        "answerIndex": 3,
+        "explanation": "The 8085 has five flags: Sign, Zero, Auxiliary Carry, Parity and Carry. A separate overflow flag appears in later processors like the 8086."
+      },
+      {
+        "id": "cs2-mp-05",
+        "question": "The Program Counter (PC) of the 8085 holds:",
+        "options": [
+          "the data being processed",
+          "the address of the next instruction to be fetched",
+          "the result of the last ALU operation",
+          "the top of the stack data"
+        ],
+        "answerIndex": 1,
+        "explanation": "The 16-bit PC always points to the memory address of the next instruction, incrementing automatically as instructions are fetched."
+      },
+      {
+        "id": "cs2-mp-06",
+        "question": "The Stack Pointer (SP) in the 8085 is:",
+        "options": [
+          "an 8-bit register holding data",
+          "a 16-bit register holding the address of the top of the stack",
+          "a flag indicating stack overflow",
+          "a memory location outside the address space"
+        ],
+        "answerIndex": 1,
+        "explanation": "SP is a 16-bit special-purpose register that stores the address of the most recently pushed item in the stack area of memory."
+      },
+      {
+        "id": "cs2-mp-07",
+        "question": "The ALU of the 8085 performs:",
+        "options": [
+          "only data storage",
+          "arithmetic and logical operations",
+          "instruction fetching only",
+          "input/output device control only"
+        ],
+        "answerIndex": 1,
+        "explanation": "The Arithmetic and Logic Unit carries out operations such as addition, subtraction, AND, OR, XOR and comparisons."
+      },
+      {
+        "id": "cs2-mp-08",
+        "question": "In the 8085, the lower-order address bus (A₀–A₇) is multiplexed with:",
+        "options": [
+          "the control bus",
+          "the data bus",
+          "the higher-order address bus",
+          "the clock signal"
+        ],
+        "answerIndex": 1,
+        "explanation": "Lines AD₀–AD₇ carry the low byte of the address first, then serve as the data bus — demultiplexed using the ALE signal."
+      },
+      {
+        "id": "cs2-mp-09",
+        "question": "Which register pair in the 8085 is most often used as a memory pointer (M register)?",
+        "options": [
+          "B-C",
+          "D-E",
+          "H-L",
+          "A and flags (PSW)"
+        ],
+        "answerIndex": 2,
+        "explanation": "The H-L pair holds a 16-bit memory address; the memory location it points to can be accessed as the pseudo-register M."
+      },
+      {
+        "id": "cs2-mp-10",
+        "question": "The HLT instruction of the 8085:",
+        "options": [
+          "restarts the processor",
+          "stops instruction execution until a reset or interrupt",
+          "clears the accumulator",
+          "transfers control to the monitor program"
+        ],
+        "answerIndex": 1,
+        "explanation": "HLT halts the CPU — the buses go into a high-impedance state and execution stops until an interrupt or reset occurs."
+      }
+    ],
+    "networking-technology": [
+      {
+        "id": "cs2-nt-01",
+        "question": "A network that connects computers within a small area such as one building is called a:",
+        "options": [
+          "WAN",
+          "MAN",
+          "LAN",
+          "PAN spanning cities"
+        ],
+        "answerIndex": 2,
+        "explanation": "A Local Area Network covers a limited area like an office, lab or campus building, typically with high speed and low cost per node."
+      },
+      {
+        "id": "cs2-nt-02",
+        "question": "In which topology are all nodes connected to a single central device (hub/switch)?",
+        "options": [
+          "Bus",
+          "Ring",
+          "Star",
+          "Mesh"
+        ],
+        "answerIndex": 2,
+        "explanation": "In a star topology every node has its own link to the central hub or switch; failure of one link affects only that node."
+      },
+      {
+        "id": "cs2-nt-03",
+        "question": "The OSI reference model has how many layers?",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "answerIndex": 3,
+        "explanation": "The OSI model defines 7 layers: Physical, Data Link, Network, Transport, Session, Presentation and Application."
+      },
+      {
+        "id": "cs2-nt-04",
+        "question": "The protocol suite on which the Internet is based is:",
+        "options": [
+          "TCP/IP",
+          "X.25 only",
+          "AppleTalk",
+          "NetBEUI"
+        ],
+        "answerIndex": 0,
+        "explanation": "Transmission Control Protocol / Internet Protocol is the foundational set of communication protocols of the Internet."
+      },
+      {
+        "id": "cs2-nt-05",
+        "question": "The device used to connect two different networks and route packets between them is a:",
+        "options": [
+          "repeater",
+          "hub",
+          "router",
+          "modulator"
+        ],
+        "answerIndex": 2,
+        "explanation": "A router works at the network layer, choosing paths and forwarding packets between distinct networks; hubs and repeaters merely extend a single network."
+      },
+      {
+        "id": "cs2-nt-06",
+        "question": "Which of the following is an unguided (wireless) transmission medium?",
+        "options": [
+          "Twisted pair cable",
+          "Coaxial cable",
+          "Optical fibre",
+          "Radio waves"
+        ],
+        "answerIndex": 3,
+        "explanation": "Guided media carry signals along a physical cable; radio waves travel through free space and are therefore unguided."
+      },
+      {
+        "id": "cs2-nt-07",
+        "question": "An IPv4 address is:",
+        "options": [
+          "16 bits long",
+          "32 bits long",
+          "64 bits long",
+          "128 bits long"
+        ],
+        "answerIndex": 1,
+        "explanation": "IPv4 addresses are 32-bit numbers, usually written as four decimal octets like 192.168.0.1. (IPv6 addresses are 128 bits.)"
+      },
+      {
+        "id": "cs2-nt-08",
+        "question": "In full-duplex communication:",
+        "options": [
+          "data flows in one direction only",
+          "data flows in both directions but only one at a time",
+          "data flows in both directions simultaneously",
+          "no data flows at all"
+        ],
+        "answerIndex": 2,
+        "explanation": "Full duplex allows simultaneous two-way transmission, like a telephone call. Half duplex alternates directions; simplex is one-way only."
+      },
+      {
+        "id": "cs2-nt-09",
+        "question": "HTTP is a protocol used mainly for:",
+        "options": [
+          "transferring web pages between servers and browsers",
+          "sending SMS messages",
+          "assigning IP addresses automatically",
+          "encrypting hard disks"
+        ],
+        "answerIndex": 0,
+        "explanation": "HyperText Transfer Protocol defines how browsers request and servers deliver web resources such as HTML pages."
+      },
+      {
+        "id": "cs2-nt-10",
+        "question": "Data transfer rate (bandwidth) of a network is commonly measured in:",
+        "options": [
+          "hertz per metre",
+          "bits per second",
+          "bytes per volt",
+          "packets per kilogram"
+        ],
+        "answerIndex": 1,
+        "explanation": "Network speeds are expressed in bits per second (bps) and its multiples — kbps, Mbps, Gbps."
+      }
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "subjectId": "chemistry",
+  "chapters": {
+    "solid-state": [
+      {
+        "id": "chem-ss-01",
+        "question": "Which of the following is a characteristic of amorphous solids?",
+        "options": [
+          "Sharp melting point",
+          "Long-range order of particles",
+          "Isotropic properties",
+          "Definite geometrical shape"
+        ],
+        "answerIndex": 2,
+        "explanation": "Amorphous solids lack long-range order, melt over a range of temperature, and their properties are the same in all directions (isotropic). Glass is a common example."
+      },
+      {
+        "id": "chem-ss-02",
+        "question": "The number of particles per unit cell in a body-centred cubic (bcc) structure is:",
+        "options": [
+          "1",
+          "2",
+          "4",
+          "8"
+        ],
+        "answerIndex": 1,
+        "explanation": "bcc has 8 corner particles × 1/8 each plus 1 full particle at the body centre: 1 + 1 = 2."
+      },
+      {
+        "id": "chem-ss-03",
+        "question": "The number of particles per unit cell in a face-centred cubic (fcc) structure is:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "6"
+        ],
+        "answerIndex": 2,
+        "explanation": "fcc has 8 corners × 1/8 plus 6 face centres × 1/2: 1 + 3 = 4 particles per unit cell."
+      },
+      {
+        "id": "chem-ss-04",
+        "question": "The packing efficiency of an fcc (ccp) structure is:",
+        "options": [
+          "52.4%",
+          "68%",
+          "74%",
+          "90%"
+        ],
+        "answerIndex": 2,
+        "explanation": "Cubic close packing fills about 74% of the available space — the highest among simple cubic (52.4%) and bcc (68%)."
+      },
+      {
+        "id": "chem-ss-05",
+        "question": "A Schottky defect in an ionic crystal:",
+        "options": [
+          "increases the density of the crystal",
+          "decreases the density of the crystal",
+          "does not change the density",
+          "converts the solid into a semiconductor"
+        ],
+        "answerIndex": 1,
+        "explanation": "In a Schottky defect, equal numbers of cations and anions are missing from their lattice sites, so mass decreases while volume stays the same — density falls."
+      },
+      {
+        "id": "chem-ss-06",
+        "question": "In a Frenkel defect:",
+        "options": [
+          "an anion leaves the crystal entirely",
+          "a cation occupies an interstitial site",
+          "pairs of ions are missing from the lattice",
+          "an impurity atom replaces a host atom"
+        ],
+        "answerIndex": 1,
+        "explanation": "A smaller ion (usually the cation) is displaced from its normal site into an interstitial position; the density of the crystal is unchanged."
+      },
+      {
+        "id": "chem-ss-07",
+        "question": "Doping silicon with phosphorus (a group 15 element) produces:",
+        "options": [
+          "a p-type semiconductor",
+          "an n-type semiconductor",
+          "an insulator",
+          "a superconductor"
+        ],
+        "answerIndex": 1,
+        "explanation": "Phosphorus has five valence electrons; the extra electron becomes a mobile negative charge carrier, giving an n-type semiconductor."
+      },
+      {
+        "id": "chem-ss-08",
+        "question": "Which of the following substances is ferromagnetic?",
+        "options": [
+          "Iron",
+          "Water",
+          "Sodium chloride",
+          "Copper"
+        ],
+        "answerIndex": 0,
+        "explanation": "Iron (like cobalt and nickel) has domains of aligned electron spins and is strongly attracted by a magnetic field — it is ferromagnetic."
+      },
+      {
+        "id": "chem-ss-09",
+        "question": "Dry ice (solid CO₂) is an example of a:",
+        "options": [
+          "ionic solid",
+          "metallic solid",
+          "covalent network solid",
+          "molecular solid"
+        ],
+        "answerIndex": 3,
+        "explanation": "Solid CO₂ consists of discrete molecules held together by weak van der Waals forces, so it is a (non-polar) molecular solid with a low sublimation temperature."
+      },
+      {
+        "id": "chem-ss-10",
+        "question": "The coordination number of each particle in a body-centred cubic structure is:",
+        "options": [
+          "4",
+          "6",
+          "8",
+          "12"
+        ],
+        "answerIndex": 2,
+        "explanation": "The particle at the body centre touches the 8 corner particles, so the coordination number in bcc is 8 (it is 12 in fcc/hcp)."
+      }
+    ],
+    "solutions": [
+      {
+        "id": "chem-sol-01",
+        "question": "According to Henry's law, the solubility of a gas in a liquid at constant temperature is directly proportional to:",
+        "options": [
+          "the volume of the liquid",
+          "the partial pressure of the gas above the liquid",
+          "the molar mass of the gas",
+          "the surface area of the liquid"
+        ],
+        "answerIndex": 1,
+        "explanation": "Henry's law: S = K·P. Higher partial pressure of the gas forces more of it into solution — the principle behind carbonated drinks."
+      },
+      {
+        "id": "chem-sol-02",
+        "question": "Which concentration unit is independent of temperature?",
+        "options": [
+          "Molarity",
+          "Molality",
+          "Normality",
+          "Mass per unit volume"
+        ],
+        "answerIndex": 1,
+        "explanation": "Molality is moles of solute per kilogram of solvent. It involves only masses, which do not change with temperature, unlike volume-based units."
+      },
+      {
+        "id": "chem-sol-03",
+        "question": "Colligative properties of a dilute solution depend on:",
+        "options": [
+          "the chemical nature of the solute",
+          "the number of solute particles in solution",
+          "the colour of the solution",
+          "the molar mass of the solvent only"
+        ],
+        "answerIndex": 1,
+        "explanation": "Relative lowering of vapour pressure, boiling point elevation, freezing point depression and osmotic pressure all depend only on how many particles are dissolved, not on what they are."
+      },
+      {
+        "id": "chem-sol-04",
+        "question": "According to Raoult's law, the relative lowering of vapour pressure of a solution containing a non-volatile solute equals:",
+        "options": [
+          "the mole fraction of the solvent",
+          "the mole fraction of the solute",
+          "the molality of the solution",
+          "the molarity of the solution"
+        ],
+        "answerIndex": 1,
+        "explanation": "(P° - P)/P° = x(solute). The fractional drop in vapour pressure equals the solute's mole fraction."
+      },
+      {
+        "id": "chem-sol-05",
+        "question": "The elevation of boiling point of a dilute solution is given by:",
+        "options": [
+          "ΔTb = Kb · m",
+          "ΔTb = Kb / m",
+          "ΔTb = m / Kb",
+          "ΔTb = Kb · M (molarity)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Boiling point elevation is proportional to molality: ΔTb = Kb·m, where Kb is the ebullioscopic constant of the solvent."
+      },
+      {
+        "id": "chem-sol-06",
+        "question": "The van't Hoff equation for osmotic pressure π of a dilute solution is:",
+        "options": [
+          "π = CRT",
+          "π = RT/C",
+          "π = C/RT",
+          "π = CR/T"
+        ],
+        "answerIndex": 0,
+        "explanation": "π = CRT, where C is the molar concentration — formally similar to the ideal gas equation."
+      },
+      {
+        "id": "chem-sol-07",
+        "question": "The van't Hoff factor (i) for NaCl assuming complete dissociation in water is approximately:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "0.5"
+        ],
+        "answerIndex": 1,
+        "explanation": "NaCl dissociates into two ions (Na⁺ and Cl⁻), so each formula unit contributes about 2 particles: i ≈ 2."
+      },
+      {
+        "id": "chem-sol-08",
+        "question": "Reverse osmosis occurs when:",
+        "options": [
+          "the solution is diluted with more solvent",
+          "pressure greater than the osmotic pressure is applied to the solution",
+          "the semipermeable membrane is removed",
+          "temperature of the solution is lowered"
+        ],
+        "answerIndex": 1,
+        "explanation": "Applying an external pressure larger than π pushes solvent from the solution through the membrane towards the pure solvent side — used in desalination of sea water."
+      },
+      {
+        "id": "chem-sol-09",
+        "question": "Two solutions having the same osmotic pressure at the same temperature are called:",
+        "options": [
+          "saturated solutions",
+          "hypertonic solutions",
+          "isotonic solutions",
+          "ideal solutions"
+        ],
+        "answerIndex": 2,
+        "explanation": "Isotonic solutions exert equal osmotic pressure, so there is no net flow of solvent between them across a semipermeable membrane."
+      },
+      {
+        "id": "chem-sol-10",
+        "question": "A mixture of acetone and chloroform shows negative deviation from Raoult's law because:",
+        "options": [
+          "the two components do not mix",
+          "A–B interactions are stronger than A–A and B–B interactions",
+          "A–B interactions are weaker than A–A and B–B interactions",
+          "both components are non-volatile"
+        ],
+        "answerIndex": 1,
+        "explanation": "Hydrogen bonding between acetone and chloroform holds molecules in solution more tightly, lowering the vapour pressure below the ideal value."
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "_note": "Chapter lists follow the commonly published MSBSHSE HSC (12th) Science syllabus. Verify against the current official MSBSHSE curriculum documents before relying on them — the syllabus can change year to year.",
+  "subjects": [
+    {
+      "id": "mathematics",
+      "name": "Mathematics",
+      "shortName": "Maths",
+      "color": "#2563eb",
+      "icon": "M",
+      "mock": { "questionCount": 20 },
+      "chapters": [
+        { "id": "mathematical-logic", "name": "Mathematical Logic" },
+        { "id": "matrices", "name": "Matrices" },
+        { "id": "trigonometric-functions", "name": "Trigonometric Functions" },
+        { "id": "pair-of-straight-lines", "name": "Pair of Straight Lines" },
+        { "id": "vectors", "name": "Vectors" },
+        { "id": "line-and-plane", "name": "Line and Plane" },
+        { "id": "linear-programming", "name": "Linear Programming" },
+        { "id": "differentiation", "name": "Differentiation" },
+        { "id": "applications-of-derivatives", "name": "Applications of Derivatives" },
+        { "id": "indefinite-integration", "name": "Indefinite Integration" },
+        { "id": "definite-integration", "name": "Definite Integration" },
+        { "id": "application-of-definite-integration", "name": "Application of Definite Integration" },
+        { "id": "differential-equations", "name": "Differential Equations" },
+        { "id": "probability-distributions", "name": "Probability Distributions" },
+        { "id": "binomial-distribution", "name": "Binomial Distribution" }
+      ]
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "shortName": "Physics",
+      "color": "#7c3aed",
+      "icon": "P",
+      "mock": { "questionCount": 20 },
+      "chapters": [
+        { "id": "rotational-dynamics", "name": "Rotational Dynamics" },
+        { "id": "mechanical-properties-of-fluids", "name": "Mechanical Properties of Fluids" },
+        { "id": "kinetic-theory-and-radiation", "name": "Kinetic Theory of Gases and Radiation" },
+        { "id": "thermodynamics", "name": "Thermodynamics" },
+        { "id": "oscillations", "name": "Oscillations" },
+        { "id": "superposition-of-waves", "name": "Superposition of Waves" },
+        { "id": "wave-optics", "name": "Wave Optics" },
+        { "id": "electrostatics", "name": "Electrostatics" },
+        { "id": "current-electricity", "name": "Current Electricity" },
+        { "id": "magnetic-fields-due-to-electric-current", "name": "Magnetic Fields due to Electric Current" },
+        { "id": "magnetic-materials", "name": "Magnetic Materials" },
+        { "id": "electromagnetic-induction", "name": "Electromagnetic Induction" },
+        { "id": "ac-circuits", "name": "AC Circuits" },
+        { "id": "dual-nature-of-radiation-and-matter", "name": "Dual Nature of Radiation and Matter" },
+        { "id": "structure-of-atoms-and-nuclei", "name": "Structure of Atoms and Nuclei" },
+        { "id": "semiconductor-devices", "name": "Semiconductor Devices" }
+      ]
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "shortName": "Chem",
+      "color": "#059669",
+      "icon": "C",
+      "mock": { "questionCount": 20 },
+      "chapters": [
+        { "id": "solid-state", "name": "Solid State" },
+        { "id": "solutions", "name": "Solutions" },
+        { "id": "ionic-equilibria", "name": "Ionic Equilibria" },
+        { "id": "chemical-thermodynamics", "name": "Chemical Thermodynamics" },
+        { "id": "electrochemistry", "name": "Electrochemistry" },
+        { "id": "chemical-kinetics", "name": "Chemical Kinetics" },
+        { "id": "elements-of-groups-16-17-18", "name": "Elements of Groups 16, 17 and 18" },
+        { "id": "transition-and-inner-transition-elements", "name": "Transition and Inner Transition Elements" },
+        { "id": "coordination-compounds", "name": "Coordination Compounds" },
+        { "id": "halogen-derivatives", "name": "Halogen Derivatives" },
+        { "id": "alcohols-phenols-ethers", "name": "Alcohols, Phenols and Ethers" },
+        { "id": "aldehydes-ketones-carboxylic-acids", "name": "Aldehydes, Ketones and Carboxylic Acids" },
+        { "id": "amines", "name": "Amines" },
+        { "id": "biomolecules", "name": "Biomolecules" },
+        { "id": "introduction-to-polymer-chemistry", "name": "Introduction to Polymer Chemistry" },
+        { "id": "green-chemistry-and-nanochemistry", "name": "Green Chemistry and Nanochemistry" }
+      ]
+    },
+    {
+      "id": "cs1",
+      "name": "Computer Science – Paper I",
+      "shortName": "CS-I",
+      "color": "#d97706",
+      "icon": "I",
+      "note": "Bifocal Computer Science chapter lists vary by revision — double-check against the current official syllabus.",
+      "mock": { "questionCount": 20 },
+      "chapters": [
+        { "id": "operating-system", "name": "Operating System" },
+        { "id": "data-structures", "name": "Data Structures" },
+        { "id": "cpp-programming", "name": "C++ Programming" },
+        { "id": "html-web-technology", "name": "HTML and Web Technology" }
+      ]
+    },
+    {
+      "id": "cs2",
+      "name": "Computer Science – Paper II",
+      "shortName": "CS-II",
+      "color": "#dc2626",
+      "icon": "II",
+      "note": "Bifocal Computer Science chapter lists vary by revision — double-check against the current official syllabus.",
+      "mock": { "questionCount": 20 },
+      "chapters": [
+        { "id": "microprocessor-8085", "name": "Introduction to Microprocessors and Organisation of 8085" },
+        { "id": "instruction-set-8085", "name": "Instruction Set and Programming of 8085" },
+        { "id": "intel-x86-family", "name": "Introduction to Intel X-86 Family" },
+        { "id": "networking-technology", "name": "Networking Technology" }
+      ]
+    }
+  ]
+}

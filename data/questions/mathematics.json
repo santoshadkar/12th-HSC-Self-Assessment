@@ -1,0 +1,249 @@
+{
+  "subjectId": "mathematics",
+  "chapters": {
+    "mathematical-logic": [
+      {
+        "id": "math-ml-01",
+        "question": "Which of the following sentences is a statement in logic?",
+        "options": [
+          "Please close the window.",
+          "How far is Pune from Mumbai?",
+          "The number 7 is a prime number.",
+          "x + 3 = 10"
+        ],
+        "answerIndex": 2,
+        "explanation": "A statement must be a declarative sentence that is definitely true or false. Commands, questions, and open sentences with variables (like x + 3 = 10) have no fixed truth value."
+      },
+      {
+        "id": "math-ml-02",
+        "question": "The conjunction p ∧ q is true when:",
+        "options": [
+          "at least one of p, q is true",
+          "both p and q are true",
+          "p is true and q is false",
+          "both p and q are false"
+        ],
+        "answerIndex": 1,
+        "explanation": "By the truth table of conjunction, p ∧ q is true only in the single case where both components are true."
+      },
+      {
+        "id": "math-ml-03",
+        "question": "The negation of the statement \"All students are sincere\" is:",
+        "options": [
+          "No student is sincere.",
+          "All students are not sincere.",
+          "Some students are not sincere.",
+          "Some students are sincere."
+        ],
+        "answerIndex": 2,
+        "explanation": "Negating a universal statement (\"for all\") gives an existential one (\"there exists\"): it is enough that at least one student is not sincere."
+      },
+      {
+        "id": "math-ml-04",
+        "question": "The conditional statement p → q is false only when:",
+        "options": [
+          "p is true and q is true",
+          "p is false and q is true",
+          "p is true and q is false",
+          "p is false and q is false"
+        ],
+        "answerIndex": 2,
+        "explanation": "An implication fails only when the hypothesis holds but the conclusion does not — i.e. p true, q false. In every other case it is true."
+      },
+      {
+        "id": "math-ml-05",
+        "question": "The contrapositive of p → q is:",
+        "options": [
+          "q → p",
+          "~p → ~q",
+          "~q → ~p",
+          "p → ~q"
+        ],
+        "answerIndex": 2,
+        "explanation": "The contrapositive negates both parts and reverses the arrow: ~q → ~p. It is logically equivalent to the original implication."
+      },
+      {
+        "id": "math-ml-06",
+        "question": "The biconditional p ↔ q is true when:",
+        "options": [
+          "p and q have the same truth value",
+          "p and q have opposite truth values",
+          "p is true, regardless of q",
+          "q is true, regardless of p"
+        ],
+        "answerIndex": 0,
+        "explanation": "p ↔ q means \"p if and only if q\", which holds exactly when both are true or both are false."
+      },
+      {
+        "id": "math-ml-07",
+        "question": "The statement pattern p ∨ ~p is:",
+        "options": [
+          "a contradiction",
+          "a tautology",
+          "a contingency",
+          "an open sentence"
+        ],
+        "answerIndex": 1,
+        "explanation": "Whatever the truth value of p, either p or ~p is true, so p ∨ ~p is true in every row of its truth table — a tautology."
+      },
+      {
+        "id": "math-ml-08",
+        "question": "The negation of p → q is logically equivalent to:",
+        "options": [
+          "~p → ~q",
+          "p ∧ ~q",
+          "~p ∨ q",
+          "~p ∧ q"
+        ],
+        "answerIndex": 1,
+        "explanation": "Since p → q ≡ ~p ∨ q, its negation is ~(~p ∨ q) ≡ p ∧ ~q by De Morgan's law."
+      },
+      {
+        "id": "math-ml-09",
+        "question": "The symbol ∃ used in quantified statements is read as:",
+        "options": [
+          "for all",
+          "there exists",
+          "implies",
+          "if and only if"
+        ],
+        "answerIndex": 1,
+        "explanation": "∃ is the existential quantifier (\"there exists at least one\"); ∀ is the universal quantifier (\"for all\")."
+      },
+      {
+        "id": "math-ml-10",
+        "question": "The dual of the statement pattern (p ∧ q) ∨ t (where t is a tautology and c a contradiction) is:",
+        "options": [
+          "(p ∨ q) ∧ c",
+          "(p ∨ q) ∨ c",
+          "(p ∧ q) ∧ t",
+          "(p ∨ q) ∧ t"
+        ],
+        "answerIndex": 0,
+        "explanation": "To form the dual, interchange ∧ with ∨ and t with c, leaving the components unchanged: (p ∧ q) ∨ t becomes (p ∨ q) ∧ c."
+      }
+    ],
+    "matrices": [
+      {
+        "id": "math-mat-01",
+        "question": "If A is a matrix of order 2 × 3 and B is of order 3 × 2, then the order of AB is:",
+        "options": [
+          "3 × 3",
+          "2 × 2",
+          "2 × 3",
+          "3 × 2"
+        ],
+        "answerIndex": 1,
+        "explanation": "The product of an m × n matrix with an n × p matrix has order m × p, so AB is 2 × 2."
+      },
+      {
+        "id": "math-mat-02",
+        "question": "A square matrix A is called singular if:",
+        "options": [
+          "|A| = 1",
+          "|A| ≠ 0",
+          "|A| = 0",
+          "A = Aᵀ"
+        ],
+        "answerIndex": 2,
+        "explanation": "A matrix is singular when its determinant is zero; such a matrix has no inverse."
+      },
+      {
+        "id": "math-mat-03",
+        "question": "If A is a square matrix and I the identity matrix of the same order, then AI equals:",
+        "options": [
+          "I",
+          "A",
+          "Aᵀ",
+          "the zero matrix"
+        ],
+        "answerIndex": 1,
+        "explanation": "The identity matrix acts like the number 1 in multiplication: AI = IA = A."
+      },
+      {
+        "id": "math-mat-04",
+        "question": "If A = [[2, 0], [0, 5]], then A⁻¹ is:",
+        "options": [
+          "[[5, 0], [0, 2]]",
+          "[[1/2, 0], [0, 1/5]]",
+          "[[-2, 0], [0, -5]]",
+          "[[1/5, 0], [0, 1/2]]"
+        ],
+        "answerIndex": 1,
+        "explanation": "The inverse of a diagonal matrix (with non-zero diagonal entries) is the diagonal matrix of reciprocals: diag(1/2, 1/5)."
+      },
+      {
+        "id": "math-mat-05",
+        "question": "For invertible matrices A and B of the same order, (AB)⁻¹ equals:",
+        "options": [
+          "A⁻¹B⁻¹",
+          "B⁻¹A⁻¹",
+          "(BA)⁻¹",
+          "AB"
+        ],
+        "answerIndex": 1,
+        "explanation": "The inverse of a product reverses the order of the factors: (AB)(B⁻¹A⁻¹) = A(BB⁻¹)A⁻¹ = I."
+      },
+      {
+        "id": "math-mat-06",
+        "question": "A square matrix A is symmetric if:",
+        "options": [
+          "Aᵀ = -A",
+          "Aᵀ = A",
+          "|A| = 0",
+          "A² = I"
+        ],
+        "answerIndex": 1,
+        "explanation": "Symmetric means the matrix equals its own transpose, so the entry in row i, column j equals the entry in row j, column i."
+      },
+      {
+        "id": "math-mat-07",
+        "question": "For matrices A and B of the same order, (A + B)ᵀ equals:",
+        "options": [
+          "Aᵀ + Bᵀ",
+          "Aᵀ - Bᵀ",
+          "BᵀAᵀ",
+          "(BA)ᵀ"
+        ],
+        "answerIndex": 0,
+        "explanation": "Transposition distributes over addition: (A + B)ᵀ = Aᵀ + Bᵀ. (It is products that reverse order, not sums.)"
+      },
+      {
+        "id": "math-mat-08",
+        "question": "For a square matrix A of order n, A · adj(A) equals:",
+        "options": [
+          "adj(A) itself",
+          "|A| I",
+          "A⁻¹",
+          "the zero matrix always"
+        ],
+        "answerIndex": 1,
+        "explanation": "The defining property of the adjoint is A·adj(A) = adj(A)·A = |A| I, which is why A⁻¹ = adj(A)/|A| when |A| ≠ 0."
+      },
+      {
+        "id": "math-mat-09",
+        "question": "Applying the row operation R₂ → R₂ - 2R₁ to [[1, 2], [2, 7]] gives:",
+        "options": [
+          "[[1, 2], [0, 3]]",
+          "[[1, 2], [4, 11]]",
+          "[[1, 2], [0, 7]]",
+          "[[-1, -2], [2, 7]]"
+        ],
+        "answerIndex": 0,
+        "explanation": "New second row = (2, 7) - 2 × (1, 2) = (0, 3); the first row is unchanged."
+      },
+      {
+        "id": "math-mat-10",
+        "question": "The system AX = B (A square) has a unique solution X = A⁻¹B provided:",
+        "options": [
+          "A is singular",
+          "|A| ≠ 0",
+          "B is the zero matrix",
+          "A is symmetric"
+        ],
+        "answerIndex": 1,
+        "explanation": "The matrix-inversion method needs A⁻¹ to exist, which requires A to be non-singular, i.e. |A| ≠ 0."
+      }
+    ]
+  }
+}

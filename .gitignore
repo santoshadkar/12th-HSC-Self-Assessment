@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+build/
+
+# local database — user data stays on the machine
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+
+.env
+.env.local
+*.log
+.DS_Store
+next-env.d.ts
