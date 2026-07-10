@@ -72,8 +72,10 @@ Rules:
 - Timers are derived from question count (90 seconds/question, `SECONDS_PER_QUESTION` in
   `lib/questions.ts`).
 
-Seed content: **2 chapters per subject, 10 questions each (100 total)** to validate the flow
-end-to-end. Remaining chapters are listed but awaiting questions.
+Current content: **every chapter in every subject has 10 questions (550 total)** — Maths 15/15,
+Physics 16/16, Chemistry 16/16, Computer Science Paper I 4/4, Paper II 4/4. All are illustrative
+practice questions written for this app (see disclaimer above); expanding any chapter beyond 10
+questions is just a matter of appending more objects to its array.
 
 ## Data model (SQLite)
 
@@ -84,6 +86,9 @@ end-to-end. Remaining chapters are listed but awaiting questions.
 
 ## What's left / roadmap
 
-- Fill in question banks for all remaining chapters (target 15+ per chapter)
-- Board-style mark weightage per chapter in mock tests
+- Expand each chapter beyond the current 10 questions (target 15+) for more variety on repeat
+  attempts
+- Board-style mark weightage per chapter in mock tests (currently a uniform random draw)
+- Deployment to a host with persistent disk (SQLite needs a writable filesystem) and `secure: true`
+  session cookies once served over HTTPS
 - Optional: per-question timing analytics, spaced-repetition of weak questions
