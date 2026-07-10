@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { db } from "@/lib/db";
+import { sql } from "@/lib/db";
 import { hashPassword, createSession, sessionCookieOptions, SESSION_COOKIE } from "@/lib/auth";
 
 export async function POST(req: Request) {
@@ -21,19 +21,22 @@ export async function POST(req: Request) {
     );
   }
 
-  const existing = db.prepare("SELECT id FROM users WHERE email = ?").get(email);
-  if (existing) {
+  const { rows: existing } = await sql`SELECT id FROM users WHERE email = ${email}`;
+  if (existing.length > 0) {
     return NextResponse.json(
       { error: "An account with this email already exists. Try logging in." },
       { status: 409 }
     );
   }
 
-  const info = db
-    .prepare("INSERT INTO users (name, email, password_hash) VALUES (?, ?, ?)")
-    .run(name, email, hashPassword(password));
+  const { rows } = await sql<{ id: number }>`
+    INSERT INTO users (name, email, password_hash)
+    VALUES (${name}, ${email}, ${hashPassword(password)})
+    RETURNING id
+  `;
+  const userId = rows[0].id;
 
-  const { token, expiresAt } = createSession(Number(info.lastInsertRowid));
+  const { token, expiresAt } = await createSession(userId);
   const res = NextResponse.json({ ok: true });
   res.cookies.set(SESSION_COOKIE, token, sessionCookieOptions(expiresAt));
   return res;

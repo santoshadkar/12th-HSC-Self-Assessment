@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { db } from "@/lib/db";
+import { sql } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth";
 import { findQuestion, getSubject, type GradedAnswer } from "@/lib/questions";
 import Header from "@/components/Header";
@@ -35,9 +35,11 @@ export default async function ResultsPage({
   if (!user) redirect("/login");
 
   const { attemptId } = await params;
-  const attempt = db
-    .prepare("SELECT * FROM attempts WHERE id = ?")
-    .get(Number(attemptId)) as AttemptRow | undefined;
+  const attemptIdNum = Number(attemptId);
+  if (!Number.isInteger(attemptIdNum)) notFound();
+
+  const { rows } = await sql<AttemptRow>`SELECT * FROM attempts WHERE id = ${attemptIdNum}`;
+  const attempt = rows[0];
   if (!attempt || attempt.user_id !== user.id) notFound();
 
   const subject = getSubject(attempt.subject_id);

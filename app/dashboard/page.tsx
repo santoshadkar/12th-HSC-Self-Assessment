@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { db } from "@/lib/db";
+import { sql } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth";
 import { getSubjects } from "@/lib/questions";
 import Header from "@/components/Header";
@@ -12,7 +12,7 @@ type AttemptRow = {
   kind: string;
   score: number;
   total: number;
-  created_at: string;
+  created_at: string | Date;
 };
 
 function pctClass(pct: number) {
@@ -23,12 +23,10 @@ export default async function DashboardPage() {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
 
-  const attempts = db
-    .prepare(
-      `SELECT id, subject_id, chapter_id, kind, score, total, created_at
-       FROM attempts WHERE user_id = ? ORDER BY id ASC`
-    )
-    .all(user.id) as AttemptRow[];
+  const { rows: attempts } = await sql<AttemptRow>`
+    SELECT id, subject_id, chapter_id, kind, score, total, created_at
+    FROM attempts WHERE user_id = ${user.id} ORDER BY id ASC
+  `;
 
   const subjects = getSubjects();
   const subjectById = new Map(subjects.map((s) => [s.id, s]));
@@ -222,7 +220,7 @@ export default async function DashboardPage() {
                     const pct = Math.round((a.score / a.total) * 100);
                     return (
                       <tr key={a.id}>
-                        <td>{a.created_at.slice(0, 16).replace("T", " ")}</td>
+                        <td>{new Date(a.created_at).toISOString().slice(0, 16).replace("T", " ")}</td>
                         <td>
                           {subject?.shortName ?? a.subject_id} — {chapterName}
                         </td>

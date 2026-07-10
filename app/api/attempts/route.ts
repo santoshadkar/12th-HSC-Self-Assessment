@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { db } from "@/lib/db";
+import { sql } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth";
 import { getSubject, gradeAnswers, type AnswerSubmission } from "@/lib/questions";
 
@@ -47,24 +47,23 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Unknown question in submission." }, { status: 400 });
   }
 
-  const info = db
-    .prepare(
-      `INSERT INTO attempts (user_id, subject_id, chapter_id, kind, score, total, time_taken_seconds, detail)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+  const { rows } = await sql<{ id: number }>`
+    INSERT INTO attempts (user_id, subject_id, chapter_id, kind, score, total, time_taken_seconds, detail)
+    VALUES (
+      ${user.id},
+      ${subjectId},
+      ${kind === "chapter" ? chapterId : null},
+      ${kind},
+      ${graded.score},
+      ${graded.total},
+      ${timeTakenSeconds},
+      ${JSON.stringify(graded.detail)}
     )
-    .run(
-      user.id,
-      subjectId,
-      kind === "chapter" ? chapterId : null,
-      kind,
-      graded.score,
-      graded.total,
-      timeTakenSeconds,
-      JSON.stringify(graded.detail)
-    );
+    RETURNING id
+  `;
 
   return NextResponse.json({
-    attemptId: Number(info.lastInsertRowid),
+    attemptId: rows[0].id,
     score: graded.score,
     total: graded.total,
   });

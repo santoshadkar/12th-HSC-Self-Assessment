@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { db } from "@/lib/db";
+import { sql } from "@/lib/db";
 import { verifyPassword, createSession, sessionCookieOptions, SESSION_COOKIE } from "@/lib/auth";
 
 export async function POST(req: Request) {
@@ -7,15 +7,16 @@ export async function POST(req: Request) {
   const email = typeof body?.email === "string" ? body.email.trim().toLowerCase() : "";
   const password = typeof body?.password === "string" ? body.password : "";
 
-  const user = db
-    .prepare("SELECT id, password_hash FROM users WHERE email = ?")
-    .get(email) as { id: number; password_hash: string } | undefined;
+  const { rows } = await sql<{ id: number; password_hash: string }>`
+    SELECT id, password_hash FROM users WHERE email = ${email}
+  `;
+  const user = rows[0];
 
   if (!user || !verifyPassword(password, user.password_hash)) {
     return NextResponse.json({ error: "Incorrect email or password." }, { status: 401 });
   }
 
-  const { token, expiresAt } = createSession(user.id);
+  const { token, expiresAt } = await createSession(user.id);
   const res = NextResponse.json({ ok: true });
   res.cookies.set(SESSION_COOKIE, token, sessionCookieOptions(expiresAt));
   return res;

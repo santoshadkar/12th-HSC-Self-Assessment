@@ -17,20 +17,50 @@ a per-user progress dashboard.
 ## Stack
 
 - **Next.js (App Router, TypeScript)** — pages + API routes in a single app
-- **SQLite** via `better-sqlite3` — users, sessions, and attempt history (`data/app.db`, created
-  automatically on first run, gitignored)
+- **Postgres** via `@vercel/postgres` — users, sessions, and attempt history, hosted on Vercel's
+  integrated Postgres (Neon) so it works on Vercel's serverless/read-only filesystem
 - **Cookie-session auth** with `bcryptjs` password hashing — no third-party auth service
 - Plain CSS (`app/globals.css`), responsive for mobile and desktop
+
+> This app previously used local SQLite (`better-sqlite3`), which worked for local development but
+> **cannot work on Vercel** — serverless functions there have a read-only filesystem, so any
+> attempt to create/write a SQLite file throws and the whole app 500s. Postgres is a real network
+> database, so it works the same locally and in production.
+
+## Setup: database (required before running, locally or on Vercel)
+
+1. In the [Vercel dashboard](https://vercel.com/dashboard), open this project → **Storage** tab →
+   **Create Database** → choose **Postgres** (Neon-backed) → connect it to the project. This
+   injects `POSTGRES_URL` (and related) env vars into the project automatically.
+2. Link this local folder to the Vercel project and pull those env vars down:
+   ```bash
+   npx vercel login
+   npx vercel link
+   npx vercel env pull .env.local
+   ```
+3. Create the tables (one-time; safe to re-run, uses `CREATE TABLE IF NOT EXISTS`):
+   ```bash
+   npm run migrate
+   ```
+4. Redeploy (push to the connected GitHub repo, or `npx vercel --prod`) so the live site picks up
+   the same env vars and schema.
+
+If your Vercel dashboard shows a **native Neon integration** instead of the older "Vercel Postgres"
+product, the connection string env var may be named `DATABASE_URL` instead of `POSTGRES_URL` — in
+that case add `POSTGRES_URL=<value of DATABASE_URL>` to the project's environment variables (or
+switch `lib/db.ts` to `@neondatabase/serverless` with `neon(process.env.DATABASE_URL)`), since
+`@vercel/postgres` specifically looks for `POSTGRES_URL`.
 
 ## Running locally
 
 ```bash
 npm install
+npm run migrate   # first time only, after completing the database setup above
 npm run dev
 # open http://localhost:3000
 ```
 
-Sign up with any email/password (stored locally in SQLite; passwords are bcrypt-hashed).
+Sign up with any email/password (stored in Postgres; passwords are bcrypt-hashed).
 
 ## How the app flows
 
@@ -77,7 +107,7 @@ Physics 16/16, Chemistry 16/16, Computer Science Paper I 4/4, Paper II 4/4. All 
 practice questions written for this app (see disclaimer above); expanding any chapter beyond 10
 questions is just a matter of appending more objects to its array.
 
-## Data model (SQLite)
+## Data model (Postgres, see `scripts/migrate.mjs` for the DDL)
 
 - `users` — id, name, email (unique), bcrypt password hash
 - `sessions` — token, user id, expiry (30 days)
@@ -89,6 +119,4 @@ questions is just a matter of appending more objects to its array.
 - Expand each chapter beyond the current 10 questions (target 15+) for more variety on repeat
   attempts
 - Board-style mark weightage per chapter in mock tests (currently a uniform random draw)
-- Deployment to a host with persistent disk (SQLite needs a writable filesystem) and `secure: true`
-  session cookies once served over HTTPS
 - Optional: per-question timing analytics, spaced-repetition of weak questions

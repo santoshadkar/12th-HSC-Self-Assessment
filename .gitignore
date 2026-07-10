@@ -3,7 +3,7 @@ node_modules/
 out/
 build/
 
-# local database — user data stays on the machine
+# leftover local SQLite files from before the Postgres migration
 data/*.db
 data/*.db-journal
 data/*.db-wal
