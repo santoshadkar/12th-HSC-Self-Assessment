@@ -244,6 +244,1014 @@
         "answerIndex": 1,
         "explanation": "The outward force per unit area on a charged conductor surface is σ²/2ε₀, so it varies as the square of the surface charge density."
       }
+    ],
+    "mechanical-properties-of-fluids": [
+      {
+        "id": "phy-mpf-01",
+        "question": "The pressure at a depth h below the surface of a liquid of density ρ (atmospheric pressure P₀) is:",
+        "options": ["P₀ + hρg", "hρg - P₀", "P₀ - hρg", "hρg/P₀"],
+        "answerIndex": 0,
+        "explanation": "Absolute pressure grows linearly with depth: P = P₀ + hρg, the weight of the liquid column added to atmospheric pressure."
+      },
+      {
+        "id": "phy-mpf-02",
+        "question": "A hydraulic lift works on the principle of:",
+        "options": ["Bernoulli's theorem", "Pascal's law", "Archimedes' principle", "Stokes' law"],
+        "answerIndex": 1,
+        "explanation": "Pascal's law: pressure applied to an enclosed fluid is transmitted undiminished, so a small force on a small piston lifts a large load on a large piston."
+      },
+      {
+        "id": "phy-mpf-03",
+        "question": "The SI unit of surface tension is:",
+        "options": ["N·m", "N/m", "N/m²", "J/m³"],
+        "answerIndex": 1,
+        "explanation": "Surface tension is force per unit length of the surface (equivalently energy per unit area, J/m²)."
+      },
+      {
+        "id": "phy-mpf-04",
+        "question": "The excess pressure inside a soap bubble of radius R and surface tension T is:",
+        "options": ["T/R", "2T/R", "4T/R", "T/2R"],
+        "answerIndex": 2,
+        "explanation": "A soap bubble has two liquid surfaces (inner and outer), so its excess pressure is 4T/R — double that of a liquid drop (2T/R)."
+      },
+      {
+        "id": "phy-mpf-05",
+        "question": "Water rises in a capillary tube because its angle of contact with glass is:",
+        "options": ["exactly 90°", "greater than 90°", "less than 90°", "always zero for every liquid"],
+        "answerIndex": 2,
+        "explanation": "In h = 2T cos θ/(rρg), a contact angle below 90° makes cos θ positive, producing capillary rise; mercury (θ > 90°) is depressed instead."
+      },
+      {
+        "id": "phy-mpf-06",
+        "question": "Bernoulli's equation P + ρgh + ½ρv² = constant expresses the conservation of:",
+        "options": ["mass", "energy", "momentum", "charge"],
+        "answerIndex": 1,
+        "explanation": "Each term is an energy per unit volume (pressure, potential, kinetic); their constancy along a streamline is energy conservation for ideal fluid flow."
+      },
+      {
+        "id": "phy-mpf-07",
+        "question": "The SI unit of coefficient of viscosity is:",
+        "options": ["Pa·s", "N/m", "kg·m/s", "Pa/s"],
+        "answerIndex": 0,
+        "explanation": "From F = ηA(dv/dx), η has units N·s/m² = Pa·s (also called poiseuille; the CGS unit is poise)."
+      },
+      {
+        "id": "phy-mpf-08",
+        "question": "By Stokes' law, the viscous force on a small sphere of radius r moving with velocity v through a fluid of viscosity η is:",
+        "options": ["6πηrv", "4πηrv", "6πηr²v", "πηrv/6"],
+        "answerIndex": 0,
+        "explanation": "F = 6πηrv for slow (streamline) motion of a sphere through a viscous medium."
+      },
+      {
+        "id": "phy-mpf-09",
+        "question": "The terminal velocity of a small sphere falling through a viscous liquid is proportional to:",
+        "options": ["r", "r²", "1/r", "√r"],
+        "answerIndex": 1,
+        "explanation": "Balancing weight minus buoyancy against 6πηrv gives v = 2r²(ρ - σ)g/9η, so v ∝ r²."
+      },
+      {
+        "id": "phy-mpf-10",
+        "question": "The equation of continuity A₁v₁ = A₂v₂ implies that where a pipe narrows, the flow speed:",
+        "options": ["decreases", "increases", "stays the same", "becomes zero"],
+        "answerIndex": 1,
+        "explanation": "Mass conservation for incompressible flow means smaller cross-section requires higher speed to carry the same volume per second."
+      }
+    ],
+    "kinetic-theory-and-radiation": [
+      {
+        "id": "phy-ktr-01",
+        "question": "The average kinetic energy per molecule of an ideal gas is:",
+        "options": ["(1/2)kT", "(3/2)kT", "(5/2)kT", "3kT"],
+        "answerIndex": 1,
+        "explanation": "Each of the three translational degrees of freedom carries (1/2)kT, totalling (3/2)kT per molecule."
+      },
+      {
+        "id": "phy-ktr-02",
+        "question": "The rms speed of gas molecules is proportional to:",
+        "options": ["T", "√T", "T²", "1/T"],
+        "answerIndex": 1,
+        "explanation": "v_rms = √(3RT/M), so doubling the absolute temperature increases rms speed by √2."
+      },
+      {
+        "id": "phy-ktr-03",
+        "question": "According to kinetic theory, the pressure of a gas of density ρ with mean square speed v̄² is:",
+        "options": ["ρv̄²", "(1/3)ρv̄²", "(2/3)ρv̄²", "3ρv̄²"],
+        "answerIndex": 1,
+        "explanation": "P = (1/3)ρv̄² follows from averaging molecular momentum transfer to the walls over three dimensions."
+      },
+      {
+        "id": "phy-ktr-04",
+        "question": "The number of degrees of freedom of a diatomic gas molecule at moderate temperature is:",
+        "options": ["3", "5", "6", "7"],
+        "answerIndex": 1,
+        "explanation": "Three translational plus two rotational degrees (vibration is frozen out at moderate temperatures) gives 5."
+      },
+      {
+        "id": "phy-ktr-05",
+        "question": "A perfect blackbody has coefficient of absorption equal to:",
+        "options": ["0", "0.5", "1", "infinity"],
+        "answerIndex": 2,
+        "explanation": "An ideal blackbody absorbs all radiation incident on it (a = 1) and is also the best possible emitter."
+      },
+      {
+        "id": "phy-ktr-06",
+        "question": "By the Stefan–Boltzmann law, the energy radiated per unit area per unit time by a blackbody is proportional to:",
+        "options": ["T", "T²", "T³", "T⁴"],
+        "answerIndex": 3,
+        "explanation": "R = σT⁴ — doubling the absolute temperature increases the radiated power sixteen-fold."
+      },
+      {
+        "id": "phy-ktr-07",
+        "question": "Wien's displacement law states that λ_max·T equals:",
+        "options": ["a universal constant", "the Stefan constant", "zero", "the gas constant R"],
+        "answerIndex": 0,
+        "explanation": "λ_max T = b (Wien's constant ≈ 2.9 × 10⁻³ m·K): hotter bodies radiate their peak at shorter wavelengths."
+      },
+      {
+        "id": "phy-ktr-08",
+        "question": "For a monatomic ideal gas, the ratio of specific heats γ = Cp/Cv is:",
+        "options": ["7/5", "5/3", "4/3", "3/2"],
+        "answerIndex": 1,
+        "explanation": "With 3 degrees of freedom, Cv = (3/2)R and Cp = (5/2)R, so γ = 5/3."
+      },
+      {
+        "id": "phy-ktr-09",
+        "question": "If the pressure of a gas is increased at constant temperature, the mean free path of its molecules:",
+        "options": ["increases", "decreases", "stays constant", "becomes infinite"],
+        "answerIndex": 1,
+        "explanation": "Higher pressure packs more molecules per unit volume, so a molecule travels a shorter distance between collisions."
+      },
+      {
+        "id": "phy-ktr-10",
+        "question": "If a, r and t are the coefficients of absorption, reflection and transmission of a surface, then:",
+        "options": ["a + r + t = 1", "a + r - t = 1", "a·r·t = 1", "a = r + t"],
+        "answerIndex": 0,
+        "explanation": "All incident radiant energy is either absorbed, reflected or transmitted, so the three fractions sum to 1."
+      }
+    ],
+    "thermodynamics": [
+      {
+        "id": "phy-td-01",
+        "question": "The first law of thermodynamics, Q = ΔU + W, is a statement of:",
+        "options": ["conservation of momentum", "conservation of energy", "conservation of mass", "increase of entropy"],
+        "answerIndex": 1,
+        "explanation": "Heat supplied to a system either raises its internal energy or is used to do work — energy is conserved."
+      },
+      {
+        "id": "phy-td-02",
+        "question": "In an isothermal process on an ideal gas, the change in internal energy is:",
+        "options": ["positive", "negative", "zero", "equal to the work done"],
+        "answerIndex": 2,
+        "explanation": "Internal energy of an ideal gas depends only on temperature; constant T means ΔU = 0, so all heat absorbed goes into work."
+      },
+      {
+        "id": "phy-td-03",
+        "question": "An adiabatic process is characterised by:",
+        "options": ["constant pressure", "constant volume", "no heat exchange with surroundings", "constant temperature"],
+        "answerIndex": 2,
+        "explanation": "Q = 0 in an adiabatic process; for an ideal gas it obeys PV^γ = constant."
+      },
+      {
+        "id": "phy-td-04",
+        "question": "The efficiency of a Carnot engine operating between hot and cold reservoirs at T_H and T_C is:",
+        "options": ["1 - T_C/T_H", "1 - T_H/T_C", "T_C/T_H", "T_H - T_C"],
+        "answerIndex": 0,
+        "explanation": "η = 1 - T_C/T_H (temperatures in kelvin) — the maximum efficiency possible between those two temperatures."
+      },
+      {
+        "id": "phy-td-05",
+        "question": "On a P-V diagram, the work done by a gas during a process equals:",
+        "options": ["the slope of the curve", "the area under the curve", "the length of the curve", "the y-intercept"],
+        "answerIndex": 1,
+        "explanation": "W = ∫P dV, which is geometrically the area between the process curve and the volume axis."
+      },
+      {
+        "id": "phy-td-06",
+        "question": "In an isochoric process, the work done by the gas is:",
+        "options": ["maximum", "PΔV", "zero", "negative always"],
+        "answerIndex": 2,
+        "explanation": "Volume is constant, so ΔV = 0 and no P dV work is done; all heat goes into internal energy."
+      },
+      {
+        "id": "phy-td-07",
+        "question": "The second law of thermodynamics implies that heat cannot:",
+        "options": ["flow from a hot body to a cold body", "spontaneously flow from a cold body to a hot body", "be converted into work at all", "be measured"],
+        "answerIndex": 1,
+        "explanation": "Clausius statement: heat flows from cold to hot only when external work is supplied (as in a refrigerator)."
+      },
+      {
+        "id": "phy-td-08",
+        "question": "For an ideal gas, Cp - Cv equals:",
+        "options": ["R", "R/2", "2R", "zero"],
+        "answerIndex": 0,
+        "explanation": "Mayer's relation: the molar specific heat at constant pressure exceeds that at constant volume by the gas constant R."
+      },
+      {
+        "id": "phy-td-09",
+        "question": "No heat engine can have 100% efficiency because:",
+        "options": ["friction cannot be removed", "some heat must always be rejected to the cold reservoir", "fuel is always impure", "engines must run slowly"],
+        "answerIndex": 1,
+        "explanation": "By the second law (Kelvin–Planck statement), a cyclic engine cannot convert all absorbed heat into work — some is necessarily rejected."
+      },
+      {
+        "id": "phy-td-10",
+        "question": "The work done by a gas in an isobaric expansion from volume V₁ to V₂ at pressure P is:",
+        "options": ["P(V₂ - V₁)", "P(V₂ + V₁)", "zero", "nRT log(V₂/V₁)"],
+        "answerIndex": 0,
+        "explanation": "With constant pressure, W = ∫P dV = P(V₂ - V₁). The logarithmic formula applies to isothermal processes."
+      }
+    ],
+    "oscillations": [
+      {
+        "id": "phy-osc-01",
+        "question": "The defining relation of simple harmonic motion is:",
+        "options": ["a = ω²x", "a = -ω²x", "a = constant", "a = -ωx²"],
+        "answerIndex": 1,
+        "explanation": "In SHM the acceleration is proportional to displacement and directed opposite to it (towards the mean position)."
+      },
+      {
+        "id": "phy-osc-02",
+        "question": "The period of a mass m attached to a spring of force constant k is:",
+        "options": ["2π√(k/m)", "2π√(m/k)", "2π·m/k", "√(m/k)"],
+        "answerIndex": 1,
+        "explanation": "T = 2π√(m/k): stiffer springs oscillate faster, heavier masses slower."
+      },
+      {
+        "id": "phy-osc-03",
+        "question": "The period of a simple pendulum of length L is:",
+        "options": ["2π√(g/L)", "2π√(L/g)", "2πL/g", "2π√(Lg)"],
+        "answerIndex": 1,
+        "explanation": "T = 2π√(L/g) for small oscillations — independent of the bob's mass and (for small angles) the amplitude."
+      },
+      {
+        "id": "phy-osc-04",
+        "question": "In SHM with amplitude A and angular frequency ω, the maximum speed occurs:",
+        "options": ["at the extreme positions, equal to Aω²", "at the mean position, equal to Aω", "at the extreme positions, equal to Aω", "midway, equal to Aω/2"],
+        "answerIndex": 1,
+        "explanation": "v = ω√(A² - x²) is largest when x = 0 (the mean position), where v_max = Aω."
+      },
+      {
+        "id": "phy-osc-05",
+        "question": "The total energy of a particle in SHM is proportional to:",
+        "options": ["the amplitude A", "A²", "1/A", "√A"],
+        "answerIndex": 1,
+        "explanation": "E = ½mω²A² — quadrupling of energy accompanies a doubling of amplitude."
+      },
+      {
+        "id": "phy-osc-06",
+        "question": "At the extreme position of SHM, the particle has:",
+        "options": ["maximum velocity, zero acceleration", "zero velocity, maximum acceleration", "both maximum", "both zero"],
+        "answerIndex": 1,
+        "explanation": "The particle momentarily stops at the extremes while the restoring force (hence acceleration) is greatest there."
+      },
+      {
+        "id": "phy-osc-07",
+        "question": "The phase difference between displacement and acceleration in SHM is:",
+        "options": ["0", "π/2", "π", "2π"],
+        "answerIndex": 2,
+        "explanation": "a = -ω²x means acceleration is always exactly opposite in sign to displacement — a phase difference of π radians."
+      },
+      {
+        "id": "phy-osc-08",
+        "question": "In SHM, kinetic energy equals potential energy at displacement x =",
+        "options": ["A", "A/2", "A/√2", "0"],
+        "answerIndex": 2,
+        "explanation": "Setting ½k(A² - x²) = ½kx² gives x = A/√2 ≈ 0.707A."
+      },
+      {
+        "id": "phy-osc-09",
+        "question": "In damped oscillations, the amplitude:",
+        "options": ["stays constant", "decreases exponentially with time", "increases linearly", "oscillates about a mean value"],
+        "answerIndex": 1,
+        "explanation": "Resistive forces drain energy continuously, making the amplitude decay as e^(-bt/2m)."
+      },
+      {
+        "id": "phy-osc-10",
+        "question": "If the period of an oscillator is 0.5 s, its frequency is:",
+        "options": ["0.5 Hz", "1 Hz", "2 Hz", "4 Hz"],
+        "answerIndex": 2,
+        "explanation": "Frequency is the reciprocal of period: n = 1/T = 1/0.5 = 2 Hz."
+      }
+    ],
+    "superposition-of-waves": [
+      {
+        "id": "phy-sw-01",
+        "question": "Two tuning forks of frequencies 256 Hz and 260 Hz sounded together produce beats of frequency:",
+        "options": ["516 Hz", "4 Hz", "2 Hz", "258 Hz"],
+        "answerIndex": 1,
+        "explanation": "Beat frequency equals the difference of the two frequencies: 260 - 256 = 4 beats per second."
+      },
+      {
+        "id": "phy-sw-02",
+        "question": "In a stationary wave, the distance between two successive nodes is:",
+        "options": ["λ", "λ/2", "λ/4", "2λ"],
+        "answerIndex": 1,
+        "explanation": "Nodes (points of zero displacement) repeat every half wavelength; node-to-adjacent-antinode distance is λ/4."
+      },
+      {
+        "id": "phy-sw-03",
+        "question": "The fundamental frequency of a string of length L fixed at both ends (wave speed v) is:",
+        "options": ["v/L", "v/2L", "v/4L", "2v/L"],
+        "answerIndex": 1,
+        "explanation": "The fundamental mode fits half a wavelength on the string (λ = 2L), giving f = v/2L."
+      },
+      {
+        "id": "phy-sw-04",
+        "question": "A pipe closed at one end supports:",
+        "options": ["all harmonics", "only even harmonics", "only odd harmonics", "no harmonics"],
+        "answerIndex": 2,
+        "explanation": "A closed end must be a node and the open end an antinode, which permits only odd multiples of the fundamental."
+      },
+      {
+        "id": "phy-sw-05",
+        "question": "For pipes of the same length L, the fundamental frequency of a closed pipe compared with an open pipe is:",
+        "options": ["double", "half", "the same", "four times"],
+        "answerIndex": 1,
+        "explanation": "Open pipe: f = v/2L; closed pipe: f = v/4L — the closed pipe sounds an octave lower."
+      },
+      {
+        "id": "phy-sw-06",
+        "question": "Constructive interference of two waves occurs when their path difference is:",
+        "options": ["an odd multiple of λ/2", "an integral multiple of λ", "λ/4", "any irrational multiple of λ"],
+        "answerIndex": 1,
+        "explanation": "Path difference nλ keeps the waves in phase so their amplitudes add; odd multiples of λ/2 give destructive interference."
+      },
+      {
+        "id": "phy-sw-07",
+        "question": "The speed of a transverse wave on a stretched string of tension T and linear density μ (mass per unit length) is:",
+        "options": ["√(μ/T)", "√(T/μ)", "T/μ", "√(Tμ)"],
+        "answerIndex": 1,
+        "explanation": "v = √(T/μ): tighter strings carry faster waves; heavier strings, slower ones."
+      },
+      {
+        "id": "phy-sw-08",
+        "question": "Resonance occurs when a body is driven at:",
+        "options": ["any frequency", "its natural frequency", "twice its natural frequency only", "zero frequency"],
+        "answerIndex": 1,
+        "explanation": "When driving frequency matches the natural frequency, energy transfer is most efficient and the amplitude becomes maximum."
+      },
+      {
+        "id": "phy-sw-09",
+        "question": "The frequencies of the harmonics of a string fixed at both ends are related to the fundamental f₁ by:",
+        "options": ["fₙ = f₁/n", "fₙ = n·f₁", "fₙ = f₁ + n", "fₙ = n²f₁"],
+        "answerIndex": 1,
+        "explanation": "A string supports all integral multiples of the fundamental: f, 2f, 3f, …"
+      },
+      {
+        "id": "phy-sw-10",
+        "question": "Two waves of equal amplitude and frequency travelling in the same direction but opposite in phase (difference π) superpose to give:",
+        "options": ["a wave of double amplitude", "complete cancellation", "beats", "a stationary wave"],
+        "answerIndex": 1,
+        "explanation": "Crest meets trough everywhere, so the resultant displacement is zero — fully destructive interference."
+      }
+    ],
+    "wave-optics": [
+      {
+        "id": "phy-wo-01",
+        "question": "According to Huygens' principle, every point on a wavefront acts as:",
+        "options": ["an absorber of light", "a source of secondary wavelets", "a point of zero disturbance", "a focus"],
+        "answerIndex": 1,
+        "explanation": "The new wavefront is the envelope of secondary wavelets spreading from every point of the old wavefront."
+      },
+      {
+        "id": "phy-wo-02",
+        "question": "In Young's double-slit experiment, the fringe width β equals:",
+        "options": ["λd/D", "λD/d", "d/λD", "Dd/λ"],
+        "answerIndex": 1,
+        "explanation": "β = λD/d, where D is the slit-to-screen distance and d the slit separation."
+      },
+      {
+        "id": "phy-wo-03",
+        "question": "A bright fringe forms in YDSE where the path difference between the two waves is:",
+        "options": ["nλ", "(2n-1)λ/2", "λ/4", "nλ/3"],
+        "answerIndex": 0,
+        "explanation": "Whole-wavelength path differences keep the waves in phase, producing constructive interference (bright bands)."
+      },
+      {
+        "id": "phy-wo-04",
+        "question": "Diffraction of light becomes prominent when the size of the obstacle or slit is:",
+        "options": ["much larger than λ", "comparable to the wavelength λ", "exactly 1 cm", "irrelevant to λ"],
+        "answerIndex": 1,
+        "explanation": "Appreciable bending occurs only when aperture size is of the order of the wavelength of light."
+      },
+      {
+        "id": "phy-wo-05",
+        "question": "The phenomenon of polarisation establishes that light waves are:",
+        "options": ["longitudinal", "transverse", "stationary", "mechanical"],
+        "answerIndex": 1,
+        "explanation": "Only transverse waves can be polarised, since polarisation restricts vibrations to one plane perpendicular to propagation."
+      },
+      {
+        "id": "phy-wo-06",
+        "question": "Brewster's law relates the polarising angle θ_B to the refractive index n by:",
+        "options": ["sin θ_B = n", "tan θ_B = n", "cos θ_B = n", "n·tan θ_B = 1"],
+        "answerIndex": 1,
+        "explanation": "At the polarising angle the reflected ray is completely plane-polarised and tan θ_B = n."
+      },
+      {
+        "id": "phy-wo-07",
+        "question": "In YDSE, if the slit separation d is increased (all else constant), the fringe width:",
+        "options": ["increases", "decreases", "is unchanged", "becomes infinite"],
+        "answerIndex": 1,
+        "explanation": "β = λD/d is inversely proportional to d — wider slit separation packs the fringes closer together."
+      },
+      {
+        "id": "phy-wo-08",
+        "question": "When light passes from air into glass, the quantity that does NOT change is its:",
+        "options": ["speed", "wavelength", "frequency", "direction"],
+        "answerIndex": 2,
+        "explanation": "Frequency is fixed by the source; the speed and wavelength both decrease by the factor n inside the denser medium."
+      },
+      {
+        "id": "phy-wo-09",
+        "question": "In single-slit diffraction (slit width a), the angular width of the central maximum is:",
+        "options": ["λ/a", "2λ/a", "a/λ", "λ/2a"],
+        "answerIndex": 1,
+        "explanation": "The first minima lie at sin θ = ±λ/a, so the central bright band spans an angular width of 2λ/a."
+      },
+      {
+        "id": "phy-wo-10",
+        "question": "By Malus' law, the intensity transmitted through an analyser at angle θ to the polariser is:",
+        "options": ["I₀ cos θ", "I₀ cos²θ", "I₀ sin²θ", "I₀ tan²θ"],
+        "answerIndex": 1,
+        "explanation": "I = I₀cos²θ — transmitted intensity falls to zero when polariser and analyser are crossed (θ = 90°)."
+      }
+    ],
+    "current-electricity": [
+      {
+        "id": "phy-ce-01",
+        "question": "Kirchhoff's current (junction) law is a consequence of the conservation of:",
+        "options": ["energy", "electric charge", "momentum", "mass"],
+        "answerIndex": 1,
+        "explanation": "Charge cannot accumulate at a junction, so the total current entering equals the total leaving."
+      },
+      {
+        "id": "phy-ce-02",
+        "question": "A Wheatstone bridge with arms P, Q, R, S is balanced when:",
+        "options": ["P/Q = R/S", "P·Q = R·S", "P + Q = R + S", "P/S = Q/R"],
+        "answerIndex": 0,
+        "explanation": "At balance no current flows through the galvanometer and the ratio condition P/Q = R/S holds."
+      },
+      {
+        "id": "phy-ce-03",
+        "question": "A potentiometer is preferred over a voltmeter for measuring emf because it:",
+        "options": ["is cheaper", "draws no current from the cell at balance", "works with AC", "has a digital display"],
+        "answerIndex": 1,
+        "explanation": "At the balance point the potentiometer draws zero current, so it reads the true emf rather than the terminal voltage."
+      },
+      {
+        "id": "phy-ce-04",
+        "question": "The metre bridge is a practical form of the:",
+        "options": ["potentiometer", "Wheatstone bridge", "galvanometer", "transformer"],
+        "answerIndex": 1,
+        "explanation": "It balances an unknown resistance against a known one along a uniform 1 m wire using the Wheatstone condition."
+      },
+      {
+        "id": "phy-ce-05",
+        "question": "To convert a galvanometer into an ammeter, one connects:",
+        "options": ["a high resistance in series", "a low resistance (shunt) in parallel", "a capacitor in series", "an inductor in parallel"],
+        "answerIndex": 1,
+        "explanation": "The shunt bypasses most of the current, letting the meter measure large currents while keeping the combination's resistance small."
+      },
+      {
+        "id": "phy-ce-06",
+        "question": "To convert a galvanometer into a voltmeter, one connects:",
+        "options": ["a high resistance in series", "a low resistance in parallel", "a shunt across it", "nothing extra"],
+        "answerIndex": 0,
+        "explanation": "A large series resistance limits the current drawn and drops most of the measured voltage across itself."
+      },
+      {
+        "id": "phy-ce-07",
+        "question": "For a cell of emf E and internal resistance r delivering current I, the terminal potential difference is:",
+        "options": ["E + Ir", "E - Ir", "E·Ir", "Ir - E"],
+        "answerIndex": 1,
+        "explanation": "Part of the emf is dropped across the internal resistance, leaving V = E - Ir at the terminals."
+      },
+      {
+        "id": "phy-ce-08",
+        "question": "Kirchhoff's voltage (loop) law is a consequence of the conservation of:",
+        "options": ["charge", "energy", "current", "resistance"],
+        "answerIndex": 1,
+        "explanation": "The algebraic sum of potential changes around a closed loop is zero because electrostatic potential energy is single-valued."
+      },
+      {
+        "id": "phy-ce-09",
+        "question": "The sensitivity of a potentiometer is increased by:",
+        "options": ["decreasing the wire length", "decreasing the potential gradient along the wire", "using a thicker wire only", "increasing the driving current"],
+        "answerIndex": 1,
+        "explanation": "A smaller potential drop per unit length (longer wire or smaller current) lets smaller emf differences be resolved."
+      },
+      {
+        "id": "phy-ce-10",
+        "question": "An ideal ammeter and an ideal voltmeter have resistances respectively:",
+        "options": ["zero and infinite", "infinite and zero", "both zero", "both infinite"],
+        "answerIndex": 0,
+        "explanation": "An ammeter in series should not add resistance (zero), while a voltmeter in parallel should draw no current (infinite)."
+      }
+    ],
+    "magnetic-fields-due-to-electric-current": [
+      {
+        "id": "phy-mf-01",
+        "question": "The magnetic field at distance r from a long straight wire carrying current I is:",
+        "options": ["μ₀I/2πr", "μ₀I/4πr", "μ₀I/2r", "μ₀I·r/2π"],
+        "answerIndex": 0,
+        "explanation": "B = μ₀I/2πr — the field circles the wire and weakens inversely with distance."
+      },
+      {
+        "id": "phy-mf-02",
+        "question": "The force on a straight conductor of length l carrying current I in a field B (angle θ between them) is:",
+        "options": ["BIl tan θ", "BIl sin θ", "BIl cos θ", "BIl/sin θ"],
+        "answerIndex": 1,
+        "explanation": "F = BIl sin θ — maximum when the conductor is perpendicular to the field, zero when parallel."
+      },
+      {
+        "id": "phy-mf-03",
+        "question": "The magnetic field at the centre of a circular loop of radius R carrying current I is:",
+        "options": ["μ₀I/2πR", "μ₀I/2R", "μ₀I/4R", "μ₀I·R/2"],
+        "answerIndex": 1,
+        "explanation": "B = μ₀I/2R at the centre of a single circular turn; for N turns it is N times larger."
+      },
+      {
+        "id": "phy-mf-04",
+        "question": "The magnetic field inside a long solenoid with n turns per unit length carrying current I is:",
+        "options": ["μ₀nI", "μ₀I/n", "μ₀nI/2", "zero"],
+        "answerIndex": 0,
+        "explanation": "B = μ₀nI, uniform and parallel to the axis; outside an ideal solenoid the field is nearly zero."
+      },
+      {
+        "id": "phy-mf-05",
+        "question": "Two long parallel wires carrying currents in the same direction:",
+        "options": ["repel each other", "attract each other", "exert no force", "rotate about each other"],
+        "answerIndex": 1,
+        "explanation": "Each wire sits in the other's magnetic field such that the force is attractive for like-directed currents (repulsive for opposite)."
+      },
+      {
+        "id": "phy-mf-06",
+        "question": "Ampère's circuital law states that ∮B̄·dl̄ around a closed path equals:",
+        "options": ["μ₀ × (current enclosed)", "zero always", "the total flux", "μ₀/(current enclosed)"],
+        "answerIndex": 0,
+        "explanation": "The line integral of B around any closed loop equals μ₀ times the net current threading the loop."
+      },
+      {
+        "id": "phy-mf-07",
+        "question": "The work done by a magnetic force on a moving charged particle is:",
+        "options": ["always positive", "always zero", "always negative", "equal to qvB"],
+        "answerIndex": 1,
+        "explanation": "The magnetic force q(v̄ × B̄) is always perpendicular to velocity, so it changes direction but never speed or kinetic energy."
+      },
+      {
+        "id": "phy-mf-08",
+        "question": "A charged particle entering a uniform magnetic field perpendicular to it moves in a circle of radius:",
+        "options": ["mv/qB", "qB/mv", "mB/qv", "qvB/m"],
+        "answerIndex": 0,
+        "explanation": "The magnetic force provides the centripetal force: qvB = mv²/r, so r = mv/qB."
+      },
+      {
+        "id": "phy-mf-09",
+        "question": "The torque on a rectangular coil of N turns, area A, carrying current I in field B (θ between B and the normal) is:",
+        "options": ["NIAB cos θ", "NIAB sin θ", "NIAB tan θ", "NIAB"],
+        "answerIndex": 1,
+        "explanation": "τ = NIAB sin θ — this torque is the working principle of electric motors and moving-coil galvanometers."
+      },
+      {
+        "id": "phy-mf-10",
+        "question": "The direction of the magnetic field around a current-carrying straight wire is given by:",
+        "options": ["Fleming's left-hand rule", "the right-hand grip (thumb) rule", "Lenz's law", "Coulomb's law"],
+        "answerIndex": 1,
+        "explanation": "Grip the wire with the right hand, thumb along the current; the curled fingers show the circular field direction."
+      }
+    ],
+    "magnetic-materials": [
+      {
+        "id": "phy-mm-01",
+        "question": "A diamagnetic substance placed in a magnetic field is:",
+        "options": ["strongly attracted", "weakly attracted", "weakly repelled", "unaffected"],
+        "answerIndex": 2,
+        "explanation": "Diamagnetic materials (e.g. bismuth, water, copper) develop magnetisation opposite to the applied field and are feebly repelled."
+      },
+      {
+        "id": "phy-mm-02",
+        "question": "The magnetic susceptibility of a paramagnetic material is:",
+        "options": ["small and negative", "small and positive", "large and negative", "zero"],
+        "answerIndex": 1,
+        "explanation": "Paramagnetics (e.g. aluminium, oxygen) are weakly magnetised along the field, giving a small positive χ."
+      },
+      {
+        "id": "phy-mm-03",
+        "question": "Ferromagnetism arises because of the alignment of atomic magnetic moments within regions called:",
+        "options": ["shells", "domains", "bands", "lattices"],
+        "answerIndex": 1,
+        "explanation": "In ferromagnetic materials, exchange interaction aligns moments over microscopic regions (domains) that can be aligned by an external field."
+      },
+      {
+        "id": "phy-mm-04",
+        "question": "Above its Curie temperature, a ferromagnetic material becomes:",
+        "options": ["diamagnetic", "paramagnetic", "superconducting", "non-magnetic entirely"],
+        "answerIndex": 1,
+        "explanation": "Thermal agitation destroys domain alignment at the Curie point, leaving only weak paramagnetic behaviour."
+      },
+      {
+        "id": "phy-mm-05",
+        "question": "The magnetic susceptibility of a diamagnetic material is:",
+        "options": ["positive and large", "positive and small", "negative", "infinite"],
+        "answerIndex": 2,
+        "explanation": "Induced magnetisation opposes the applied field, so χ is small and negative (e.g. about -10⁻⁵)."
+      },
+      {
+        "id": "phy-mm-06",
+        "question": "Curie's law states that the susceptibility of a paramagnetic material varies as:",
+        "options": ["χ ∝ T", "χ ∝ 1/T", "χ ∝ T²", "χ is independent of T"],
+        "answerIndex": 1,
+        "explanation": "χ = C/T: heating a paramagnet randomises its moments, reducing its magnetisation for a given field."
+      },
+      {
+        "id": "phy-mm-07",
+        "question": "In a hysteresis loop, the magnetisation remaining when the applied field is reduced to zero is called:",
+        "options": ["coercivity", "retentivity (remanence)", "saturation", "permeability"],
+        "answerIndex": 1,
+        "explanation": "Retentivity is the residual magnetism at H = 0; coercivity is the reverse field needed to destroy it."
+      },
+      {
+        "id": "phy-mm-08",
+        "question": "Soft iron is preferred for electromagnet cores because it has:",
+        "options": ["a wide hysteresis loop", "a narrow hysteresis loop and low retentivity", "very high coercivity", "zero permeability"],
+        "answerIndex": 1,
+        "explanation": "A narrow loop means little energy loss per cycle, and low retentivity lets the magnetism switch off with the current."
+      },
+      {
+        "id": "phy-mm-09",
+        "question": "The natural unit for atomic magnetic moments, eh/4πmₑ, is called the:",
+        "options": ["weber", "Bohr magneton", "tesla", "gauss"],
+        "answerIndex": 1,
+        "explanation": "The Bohr magneton (≈ 9.27 × 10⁻²⁴ A·m²) is the magnetic moment associated with an electron's orbital motion in the first Bohr orbit."
+      },
+      {
+        "id": "phy-mm-10",
+        "question": "The relative permeability μᵣ of a ferromagnetic material is:",
+        "options": ["slightly less than 1", "slightly greater than 1", "much greater than 1", "exactly 1"],
+        "answerIndex": 2,
+        "explanation": "Ferromagnetics concentrate magnetic flux strongly, with μᵣ in the hundreds to thousands; paramagnetics are slightly above 1, diamagnetics slightly below."
+      }
+    ],
+    "electromagnetic-induction": [
+      {
+        "id": "phy-emi-01",
+        "question": "According to Faraday's law, the induced emf in a circuit equals:",
+        "options": ["the magnetic flux through it", "the negative rate of change of magnetic flux", "the magnetic field strength", "the current times resistance always"],
+        "answerIndex": 1,
+        "explanation": "e = -dΦ/dt: only a changing flux induces an emf, and faster change means larger emf."
+      },
+      {
+        "id": "phy-emi-02",
+        "question": "Lenz's law, which fixes the direction of induced current, is a consequence of the conservation of:",
+        "options": ["charge", "energy", "momentum", "flux"],
+        "answerIndex": 1,
+        "explanation": "The induced current opposes the change producing it; otherwise flux changes would amplify themselves and create energy from nothing."
+      },
+      {
+        "id": "phy-emi-03",
+        "question": "The motional emf induced in a rod of length l moving with velocity v perpendicular to a field B is:",
+        "options": ["Blv", "Bl/v", "B²lv", "Blv²"],
+        "answerIndex": 0,
+        "explanation": "e = Blv when B, l and v are mutually perpendicular — the basis of electric generators."
+      },
+      {
+        "id": "phy-emi-04",
+        "question": "The SI unit of self-inductance is the:",
+        "options": ["weber", "tesla", "henry", "farad"],
+        "answerIndex": 2,
+        "explanation": "One henry induces one volt when the current changes at one ampere per second (e = -L dI/dt)."
+      },
+      {
+        "id": "phy-emi-05",
+        "question": "The energy stored in an inductor L carrying current I is:",
+        "options": ["LI²", "½LI²", "½LI", "L²I/2"],
+        "answerIndex": 1,
+        "explanation": "U = ½LI², stored in the magnetic field — analogous to ½CV² for a capacitor."
+      },
+      {
+        "id": "phy-emi-06",
+        "question": "The working principle of a transformer is:",
+        "options": ["self-induction", "mutual induction", "electrostatic induction", "thermionic emission"],
+        "answerIndex": 1,
+        "explanation": "A changing current in the primary induces an emf in the magnetically linked secondary via mutual inductance."
+      },
+      {
+        "id": "phy-emi-07",
+        "question": "Eddy-current losses in a transformer core are reduced by:",
+        "options": ["using a solid iron block", "laminating the core with insulated sheets", "increasing the supply frequency", "removing the core"],
+        "answerIndex": 1,
+        "explanation": "Thin insulated laminations break up the paths of circulating eddy currents, cutting the associated heat loss."
+      },
+      {
+        "id": "phy-emi-08",
+        "question": "An emf is induced in a stationary coil only when the magnetic flux through it is:",
+        "options": ["large", "constant", "changing with time", "zero"],
+        "answerIndex": 2,
+        "explanation": "A large but steady flux induces nothing; induction requires dΦ/dt ≠ 0."
+      },
+      {
+        "id": "phy-emi-09",
+        "question": "The self-inductance of a long solenoid (n turns per unit length, cross-section A, length l) is:",
+        "options": ["μ₀n²Al", "μ₀nAl", "μ₀n²A/l", "μ₀nA/l"],
+        "answerIndex": 0,
+        "explanation": "L = μ₀n²Al — doubling the turn density quadruples the inductance."
+      },
+      {
+        "id": "phy-emi-10",
+        "question": "A transformer cannot work on DC because a steady current:",
+        "options": ["is too strong", "produces no changing flux, hence no induced emf", "melts the windings instantly", "reverses direction"],
+        "answerIndex": 1,
+        "explanation": "With constant flux there is no mutual induction; connecting DC merely drives a large heating current through the primary."
+      }
+    ],
+    "ac-circuits": [
+      {
+        "id": "phy-ac-01",
+        "question": "The rms value of an alternating voltage with peak value V₀ is:",
+        "options": ["V₀/2", "V₀/√2", "√2·V₀", "V₀²/2"],
+        "answerIndex": 1,
+        "explanation": "V_rms = V₀/√2 ≈ 0.707V₀ — the DC-equivalent value for power dissipation."
+      },
+      {
+        "id": "phy-ac-02",
+        "question": "The inductive reactance X_L of an inductor L at angular frequency ω is:",
+        "options": ["ωL", "1/ωL", "ω/L", "L/ω"],
+        "answerIndex": 0,
+        "explanation": "X_L = ωL = 2πfL — inductors oppose high-frequency currents more strongly."
+      },
+      {
+        "id": "phy-ac-03",
+        "question": "The capacitive reactance X_C of a capacitor C at angular frequency ω is:",
+        "options": ["ωC", "1/ωC", "C/ω", "ω²C"],
+        "answerIndex": 1,
+        "explanation": "X_C = 1/ωC = 1/2πfC — capacitors pass high frequencies easily and block DC (X_C → ∞ as f → 0)."
+      },
+      {
+        "id": "phy-ac-04",
+        "question": "The resonant frequency of a series LCR circuit is:",
+        "options": ["1/(2π√(LC))", "2π√(LC)", "1/(2πLC)", "√(L/C)"],
+        "answerIndex": 0,
+        "explanation": "At resonance X_L = X_C, giving f = 1/(2π√(LC))."
+      },
+      {
+        "id": "phy-ac-05",
+        "question": "The average power consumed by a pure inductor in an AC circuit over a full cycle is:",
+        "options": ["maximum", "half the peak power", "zero", "negative"],
+        "answerIndex": 2,
+        "explanation": "Current lags voltage by 90°, so cos φ = 0; energy is alternately stored and returned, with no net dissipation."
+      },
+      {
+        "id": "phy-ac-06",
+        "question": "In a purely capacitive AC circuit, the current:",
+        "options": ["lags the voltage by π/2", "leads the voltage by π/2", "is in phase with the voltage", "is zero"],
+        "answerIndex": 1,
+        "explanation": "The capacitor charges before the voltage peaks, so current leads emf by a quarter cycle."
+      },
+      {
+        "id": "phy-ac-07",
+        "question": "The impedance of a series LCR circuit is:",
+        "options": ["R + X_L + X_C", "√(R² + (X_L - X_C)²)", "√(R² + X_L² + X_C²)", "R(X_L - X_C)"],
+        "answerIndex": 1,
+        "explanation": "Resistance and net reactance add like perpendicular components: Z = √(R² + (X_L - X_C)²)."
+      },
+      {
+        "id": "phy-ac-08",
+        "question": "At resonance in a series LCR circuit, the impedance is:",
+        "options": ["maximum", "minimum and equal to R", "zero always", "infinite"],
+        "answerIndex": 1,
+        "explanation": "X_L cancels X_C at resonance, leaving Z = R; the current through the circuit is then maximum."
+      },
+      {
+        "id": "phy-ac-09",
+        "question": "The average power in an AC circuit is given by:",
+        "options": ["V_rms·I_rms", "V_rms·I_rms·cos φ", "V₀·I₀", "V_rms·I_rms·sin φ"],
+        "answerIndex": 1,
+        "explanation": "P = V_rms I_rms cos φ, where the power factor cos φ accounts for the phase difference between voltage and current."
+      },
+      {
+        "id": "phy-ac-10",
+        "question": "The sharpness of resonance of a series LCR circuit is measured by its:",
+        "options": ["power factor", "Q factor", "impedance", "wattless current"],
+        "answerIndex": 1,
+        "explanation": "A higher quality factor Q = ω₀L/R means a narrower, taller resonance peak — better frequency selectivity."
+      }
+    ],
+    "dual-nature-of-radiation-and-matter": [
+      {
+        "id": "phy-dn-01",
+        "question": "Einstein's photoelectric equation states that the maximum kinetic energy of emitted electrons is:",
+        "options": ["hν + φ", "hν - φ", "φ - hν", "hν·φ"],
+        "answerIndex": 1,
+        "explanation": "KE_max = hν - φ₀: photon energy minus the work function of the metal surface."
+      },
+      {
+        "id": "phy-dn-02",
+        "question": "Photoelectric emission occurs only when the incident light's frequency is:",
+        "options": ["below the threshold frequency", "above the threshold frequency", "any value, if intensity is high", "in the visible range only"],
+        "answerIndex": 1,
+        "explanation": "Below the threshold ν₀ = φ₀/h no electrons are ejected, however intense the light — a key failure of the wave picture."
+      },
+      {
+        "id": "phy-dn-03",
+        "question": "Increasing the intensity of incident light (frequency fixed, above threshold) increases:",
+        "options": ["the maximum kinetic energy of photoelectrons", "the number of photoelectrons emitted per second", "the work function", "the stopping potential"],
+        "answerIndex": 1,
+        "explanation": "More photons per second eject more electrons (larger photocurrent), but each electron's maximum energy is unchanged."
+      },
+      {
+        "id": "phy-dn-04",
+        "question": "The stopping potential in a photoelectric experiment depends on:",
+        "options": ["the intensity of light", "the frequency of light", "the exposure time", "the size of the apparatus"],
+        "answerIndex": 1,
+        "explanation": "eV₀ = hν - φ₀, so V₀ rises linearly with frequency and is completely independent of intensity."
+      },
+      {
+        "id": "phy-dn-05",
+        "question": "The de Broglie wavelength of a particle of momentum p is:",
+        "options": ["h·p", "h/p", "p/h", "h/p²"],
+        "answerIndex": 1,
+        "explanation": "λ = h/p = h/mv — every moving particle has an associated matter wave."
+      },
+      {
+        "id": "phy-dn-06",
+        "question": "The fact that photoelectrons are emitted almost instantaneously (no time lag) supports:",
+        "options": ["the wave nature of light", "the particle (photon) nature of light", "the electron's wave nature", "classical electromagnetism"],
+        "answerIndex": 1,
+        "explanation": "A single photon delivers its energy to one electron in one shot; a spread-out wave would need time to accumulate enough energy."
+      },
+      {
+        "id": "phy-dn-07",
+        "question": "The Davisson–Germer experiment confirmed:",
+        "options": ["the photoelectric effect", "the wave nature of electrons", "nuclear fission", "the existence of the neutron"],
+        "answerIndex": 1,
+        "explanation": "Electrons scattered from a nickel crystal produced a diffraction pattern, verifying de Broglie's matter-wave hypothesis."
+      },
+      {
+        "id": "phy-dn-08",
+        "question": "The energy of a photon of frequency ν is:",
+        "options": ["hν", "h/ν", "ν/h", "hν²"],
+        "answerIndex": 0,
+        "explanation": "E = hν (equivalently hc/λ) — light energy comes in discrete packets called photons."
+      },
+      {
+        "id": "phy-dn-09",
+        "question": "If the wavelength of incident radiation is decreased (still above threshold), the maximum kinetic energy of photoelectrons:",
+        "options": ["decreases", "increases", "is unchanged", "becomes zero"],
+        "answerIndex": 1,
+        "explanation": "Shorter wavelength means higher frequency and photon energy, so KE_max = hν - φ₀ increases."
+      },
+      {
+        "id": "phy-dn-10",
+        "question": "The electron microscope achieves much higher resolution than an optical microscope because:",
+        "options": ["electrons are charged", "the de Broglie wavelength of fast electrons is far smaller than that of visible light", "electrons travel faster than light", "glass lenses are avoided"],
+        "answerIndex": 1,
+        "explanation": "Resolution improves with shorter wavelength; energetic electrons have wavelengths thousands of times smaller than visible light."
+      }
+    ],
+    "structure-of-atoms-and-nuclei": [
+      {
+        "id": "phy-an-01",
+        "question": "In Bohr's model, the angular momentum of an electron in the nth orbit equals:",
+        "options": ["nh", "nh/2π", "n²h/2π", "h/2πn"],
+        "answerIndex": 1,
+        "explanation": "Bohr's quantisation condition: mvr = nh/2π, n = 1, 2, 3…"
+      },
+      {
+        "id": "phy-an-02",
+        "question": "The energy of the electron in the nth level of the hydrogen atom is:",
+        "options": ["-13.6 n² eV", "-13.6/n² eV", "+13.6/n eV", "-13.6/n eV"],
+        "answerIndex": 1,
+        "explanation": "Eₙ = -13.6/n² eV; the negative sign shows the electron is bound, with n = 1 the ground state."
+      },
+      {
+        "id": "phy-an-03",
+        "question": "The radius of a nucleus of mass number A varies as:",
+        "options": ["A", "A²", "A^(1/3)", "A^(2/3)"],
+        "answerIndex": 2,
+        "explanation": "R = R₀A^(1/3) (R₀ ≈ 1.2 fm), which makes nuclear density nearly the same for all nuclei."
+      },
+      {
+        "id": "phy-an-04",
+        "question": "An alpha particle is identical to:",
+        "options": ["a hydrogen nucleus", "a helium nucleus", "an electron", "a neutron pair"],
+        "answerIndex": 1,
+        "explanation": "α = two protons + two neutrons, i.e. a ⁴He nucleus, carrying charge +2e."
+      },
+      {
+        "id": "phy-an-05",
+        "question": "In β⁻ decay, the atomic number of the nucleus:",
+        "options": ["decreases by 2", "increases by 1", "decreases by 1", "does not change"],
+        "answerIndex": 1,
+        "explanation": "A neutron converts into a proton, emitting an electron and an antineutrino, so Z increases by 1 while A is unchanged."
+      },
+      {
+        "id": "phy-an-06",
+        "question": "After two half-lives, the fraction of a radioactive sample remaining undecayed is:",
+        "options": ["1/2", "1/4", "1/8", "3/4"],
+        "answerIndex": 1,
+        "explanation": "Each half-life halves the remaining nuclei: (1/2)² = 1/4."
+      },
+      {
+        "id": "phy-an-07",
+        "question": "The binding energy of a nucleus is related to its mass defect Δm by:",
+        "options": ["BE = Δm·c", "BE = Δm·c²", "BE = Δm/c²", "BE = Δm²c"],
+        "answerIndex": 1,
+        "explanation": "The missing mass appears as binding energy via Einstein's relation E = mc²."
+      },
+      {
+        "id": "phy-an-08",
+        "question": "Nuclei with the same atomic number but different mass numbers are called:",
+        "options": ["isobars", "isotones", "isotopes", "isomers"],
+        "answerIndex": 2,
+        "explanation": "Isotopes share Z (same element) but differ in neutron count, e.g. ¹H, ²H, ³H."
+      },
+      {
+        "id": "phy-an-09",
+        "question": "The Balmer series of the hydrogen spectrum lies in the:",
+        "options": ["ultraviolet region", "visible region", "infrared region", "X-ray region"],
+        "answerIndex": 1,
+        "explanation": "Transitions ending on n = 2 emit visible light; Lyman (n = 1) is UV and Paschen (n = 3) is infrared."
+      },
+      {
+        "id": "phy-an-10",
+        "question": "The energy radiated by the Sun is produced by:",
+        "options": ["nuclear fission", "nuclear fusion of hydrogen into helium", "chemical combustion", "gravitational collapse only"],
+        "answerIndex": 1,
+        "explanation": "In the solar core, hydrogen nuclei fuse into helium, releasing energy from the mass difference."
+      }
+    ],
+    "semiconductor-devices": [
+      {
+        "id": "phy-sd-01",
+        "question": "A p-n junction diode conducts appreciably when:",
+        "options": ["reverse biased", "forward biased", "unbiased", "heated only"],
+        "answerIndex": 1,
+        "explanation": "Forward bias (p-side to positive terminal) lowers the potential barrier, letting majority carriers cross the junction."
+      },
+      {
+        "id": "phy-sd-02",
+        "question": "The depletion region of a p-n junction contains:",
+        "options": ["free electrons only", "free holes only", "immobile positive and negative ions, with no free carriers", "an excess of both carriers"],
+        "answerIndex": 2,
+        "explanation": "Diffusion across the junction leaves behind fixed ionised donors and acceptors, creating a carrier-free zone with a built-in field."
+      },
+      {
+        "id": "phy-sd-03",
+        "question": "A rectifier is a circuit that converts:",
+        "options": ["DC to AC", "AC to DC", "low voltage to high voltage", "current to voltage"],
+        "answerIndex": 1,
+        "explanation": "Diodes conduct in only one direction, so they convert alternating current into unidirectional (direct) current."
+      },
+      {
+        "id": "phy-sd-04",
+        "question": "In a full-wave rectifier using a centre-tapped transformer, the number of diodes required is:",
+        "options": ["1", "2", "3", "6"],
+        "answerIndex": 1,
+        "explanation": "Two diodes conduct on alternate half cycles, so both halves of the AC input appear in the output. (A bridge rectifier uses four.)"
+      },
+      {
+        "id": "phy-sd-05",
+        "question": "A Zener diode is commonly used as a:",
+        "options": ["rectifier", "voltage regulator", "amplifier", "oscillator"],
+        "answerIndex": 1,
+        "explanation": "Operated in reverse breakdown, a Zener holds a nearly constant voltage across itself despite variations in current."
+      },
+      {
+        "id": "phy-sd-06",
+        "question": "An LED emits light when it is:",
+        "options": ["reverse biased", "forward biased", "unbiased", "cooled below 0°C"],
+        "answerIndex": 1,
+        "explanation": "In forward bias, electrons and holes recombine across the junction, releasing energy as photons."
+      },
+      {
+        "id": "phy-sd-07",
+        "question": "In a bipolar junction transistor, the emitter region is:",
+        "options": ["lightly doped", "heavily doped", "undoped", "the widest region"],
+        "answerIndex": 1,
+        "explanation": "Heavy doping lets the emitter inject a large number of carriers into the thin, lightly doped base."
+      },
+      {
+        "id": "phy-sd-08",
+        "question": "For amplification, a transistor is most commonly used in which configuration?",
+        "options": ["common base", "common emitter", "common collector", "open collector"],
+        "answerIndex": 1,
+        "explanation": "The common-emitter configuration provides high current gain and high voltage gain, making it the standard amplifier arrangement."
+      },
+      {
+        "id": "phy-sd-09",
+        "question": "The output of an AND gate is 1 only when:",
+        "options": ["any one input is 1", "both inputs are 1", "both inputs are 0", "the inputs differ"],
+        "answerIndex": 1,
+        "explanation": "AND performs logical multiplication: Y = A·B, which is 1 only for A = B = 1."
+      },
+      {
+        "id": "phy-sd-10",
+        "question": "The logic gate whose output is always the complement of its single input is the:",
+        "options": ["OR gate", "AND gate", "NOT gate", "XOR gate"],
+        "answerIndex": 2,
+        "explanation": "The NOT gate (inverter) outputs 1 for input 0 and vice versa: Y = Ā."
+      }
     ]
   }
 }

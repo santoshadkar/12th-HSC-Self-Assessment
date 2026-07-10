@@ -244,6 +244,150 @@
         "answerIndex": 1,
         "explanation": "Network speeds are expressed in bits per second (bps) and its multiples — kbps, Mbps, Gbps."
       }
+    ],
+    "instruction-set-8085": [
+      {
+        "id": "cs2-is-01",
+        "question": "The instruction MOV A, B in 8085 assembly does what?",
+        "options": ["moves the content of A into B", "moves the content of B into A", "adds A and B", "swaps A and B"],
+        "answerIndex": 1,
+        "explanation": "In 8085 mnemonics, the destination is written first: MOV A, B copies the value from register B into register A, leaving B unchanged."
+      },
+      {
+        "id": "cs2-is-02",
+        "question": "The instruction MVI is used to:",
+        "options": ["move data between two registers", "load an 8-bit immediate value directly into a register", "move data between memory locations", "perform multiplication"],
+        "answerIndex": 1,
+        "explanation": "MVI (Move Immediate), e.g. MVI A, 05H, loads the literal 8-bit constant that follows directly into the specified register."
+      },
+      {
+        "id": "cs2-is-03",
+        "question": "The instruction ADD B performs:",
+        "options": ["B = B + A", "A = A + B", "A = A + B + Carry", "B = A"],
+        "answerIndex": 1,
+        "explanation": "ADD B adds the content of register B to the accumulator A, storing the result back in A; flags are updated accordingly."
+      },
+      {
+        "id": "cs2-is-04",
+        "question": "The instruction ADC differs from ADD in that ADC also:",
+        "options": ["ignores the carry flag", "adds the existing carry flag value into the sum", "subtracts instead of adding", "clears the accumulator first"],
+        "answerIndex": 1,
+        "explanation": "ADC (Add with Carry) includes the current CY flag in the addition, essential for adding multi-byte numbers."
+      },
+      {
+        "id": "cs2-is-05",
+        "question": "The JMP instruction in 8085 is used to:",
+        "options": ["jump only if zero flag is set", "unconditionally transfer control to a specified address", "call a subroutine and save the return address", "halt the processor"],
+        "answerIndex": 1,
+        "explanation": "JMP loads the given 16-bit address into the Program Counter unconditionally, unlike conditional jumps (JZ, JNZ, JC, etc.)."
+      },
+      {
+        "id": "cs2-is-06",
+        "question": "The CALL instruction, unlike JMP, additionally:",
+        "options": ["clears all registers", "pushes the return address onto the stack before jumping", "requires no operand", "always halts after execution"],
+        "answerIndex": 1,
+        "explanation": "CALL saves the address of the next instruction on the stack so that a matching RET can resume execution there after the subroutine finishes."
+      },
+      {
+        "id": "cs2-is-07",
+        "question": "PUSH and POP instructions in 8085 operate on:",
+        "options": ["individual 8-bit registers only", "register pairs (16-bit), transferring data to/from the stack", "the accumulator only", "external I/O ports"],
+        "answerIndex": 1,
+        "explanation": "PUSH B, PUSH D, PUSH H, PUSH PSW transfer 16-bit register pairs to the stack; matching POP instructions retrieve them, adjusting SP by 2 each time."
+      },
+      {
+        "id": "cs2-is-08",
+        "question": "The instruction CMP B compares register B with the accumulator by:",
+        "options": ["adding A and B", "internally subtracting B from A and setting flags, without changing A", "multiplying A and B", "moving B into A"],
+        "answerIndex": 1,
+        "explanation": "CMP performs A - B internally to set the zero and carry flags for a subsequent conditional jump, but the actual value of A is left unchanged."
+      },
+      {
+        "id": "cs2-is-09",
+        "question": "The mnemonic for the instruction that increments the content of the accumulator by 1 is:",
+        "options": ["ADD A, 1", "INR A", "INC 1", "ADI 1, A"],
+        "answerIndex": 1,
+        "explanation": "INR A increases the accumulator's value by one; its counterpart DCR A decrements by one."
+      },
+      {
+        "id": "cs2-is-10",
+        "question": "STA and LDA instructions are used respectively to:",
+        "options": ["store and load the accumulator to/from a direct memory address", "start and stop the processor", "set and clear the carry flag", "shift and load registers"],
+        "answerIndex": 0,
+        "explanation": "STA addr copies the accumulator's content to the specified memory address; LDA addr loads the accumulator from that address."
+      }
+    ],
+    "intel-x86-family": [
+      {
+        "id": "cs2-x86-01",
+        "question": "The Intel 8086 microprocessor is a:",
+        "options": ["8-bit processor", "16-bit processor", "32-bit processor", "4-bit processor"],
+        "answerIndex": 1,
+        "explanation": "The 8086 has 16-bit registers and a 16-bit data bus, a major advance over the 8-bit 8085."
+      },
+      {
+        "id": "cs2-x86-02",
+        "question": "The 8086 architecture is internally divided into two functional units, namely:",
+        "options": ["ALU and CU only", "the Bus Interface Unit (BIU) and the Execution Unit (EU)", "cache and RAM", "north bridge and south bridge"],
+        "answerIndex": 1,
+        "explanation": "The BIU handles memory/IO access and instruction fetching, while the EU decodes and executes instructions — allowing overlapped, pipelined operation."
+      },
+      {
+        "id": "cs2-x86-03",
+        "question": "The 8086 has a 20-bit address bus, giving it a maximum addressable memory of:",
+        "options": ["64 KB", "1 MB", "16 MB", "4 GB"],
+        "answerIndex": 1,
+        "explanation": "2²⁰ = 1,048,576 bytes = 1 MB, computed via physical address = (segment × 16) + offset."
+      },
+      {
+        "id": "cs2-x86-04",
+        "question": "Segmentation in 8086 memory addressing is used to:",
+        "options": ["reduce the number of registers", "divide the 1 MB memory into logical segments (code, data, stack, extra)", "speed up the clock", "eliminate the need for an address bus"],
+        "answerIndex": 1,
+        "explanation": "Segment registers (CS, DS, SS, ES) combined with an offset let the 16-bit architecture address the full 1 MB space in manageable blocks."
+      },
+      {
+        "id": "cs2-x86-05",
+        "question": "Compared to the 8086, the 80386 processor introduced:",
+        "options": ["an 8-bit data bus", "true 32-bit architecture with paging and virtual memory support", "removal of the instruction pointer", "no change in addressing"],
+        "answerIndex": 1,
+        "explanation": "The 80386 was Intel's first 32-bit x86 processor, adding a 32-bit data bus, paging unit, and protected-mode virtual memory."
+      },
+      {
+        "id": "cs2-x86-06",
+        "question": "The 8086 can operate in two modes: minimum mode and maximum mode, distinguished mainly by:",
+        "options": ["clock speed", "whether the system supports a single processor (minimum) or multiprocessor configuration (maximum)", "the amount of RAM installed", "the type of monitor used"],
+        "answerIndex": 1,
+        "explanation": "Minimum mode configures the 8086 for simple, single-CPU systems; maximum mode enables coprocessor/multiprocessor support via an external bus controller."
+      },
+      {
+        "id": "cs2-x86-07",
+        "question": "Pipelining, as used from the 8086 onward, improves performance by:",
+        "options": ["executing one instruction at a time with no overlap", "overlapping the fetch and execute stages of successive instructions", "increasing the size of RAM", "removing the need for registers"],
+        "answerIndex": 1,
+        "explanation": "While the EU executes one instruction, the BIU can simultaneously fetch the next, reducing idle time and increasing overall throughput."
+      },
+      {
+        "id": "cs2-x86-08",
+        "question": "Real mode operation of x86 processors restricts addressable memory to:",
+        "options": ["1 MB, mimicking the original 8086's addressing", "4 GB", "16 MB", "unlimited"],
+        "answerIndex": 0,
+        "explanation": "Real mode is a backward-compatible mode where later x86 chips behave like the 8086, limited to the 1 MB segmented address space."
+      },
+      {
+        "id": "cs2-x86-09",
+        "question": "Protected mode, introduced with the 80286 and enhanced later, primarily provides:",
+        "options": ["faster clock speeds only", "memory protection and multitasking support between programs", "removal of the ALU", "backward compatibility with 4-bit systems"],
+        "answerIndex": 1,
+        "explanation": "Protected mode enforces memory access boundaries between processes and enables virtual memory and multitasking, essential for modern operating systems."
+      },
+      {
+        "id": "cs2-x86-10",
+        "question": "The general trend in the evolution from 8086 to modern x86 processors includes:",
+        "options": ["decreasing word size and transistor count", "increasing word size, clock speed, and the addition of cache memory and multiple cores", "removal of the instruction set entirely", "elimination of the address bus"],
+        "answerIndex": 1,
+        "explanation": "Successive x86 generations grew from 16-bit to 64-bit, gained on-chip cache, multiple cores, and vastly higher clock speeds while retaining instruction-set compatibility."
+      }
     ]
   }
 }

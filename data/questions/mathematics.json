@@ -244,6 +244,942 @@
         "answerIndex": 1,
         "explanation": "The matrix-inversion method needs A⁻¹ to exist, which requires A to be non-singular, i.e. |A| ≠ 0."
       }
+    ],
+    "trigonometric-functions": [
+      {
+        "id": "math-tf-01",
+        "question": "The general solution of sin θ = 0 is:",
+        "options": ["θ = nπ", "θ = 2nπ", "θ = (2n+1)π/2", "θ = nπ/2"],
+        "answerIndex": 0,
+        "explanation": "The sine function vanishes at every integral multiple of π, so θ = nπ, n ∈ ℤ."
+      },
+      {
+        "id": "math-tf-02",
+        "question": "The general solution of cos θ = cos α is:",
+        "options": ["θ = nπ + α", "θ = 2nπ ± α", "θ = nπ ± α", "θ = 2nπ + (-1)ⁿα"],
+        "answerIndex": 1,
+        "explanation": "Cosine is even and 2π-periodic, so all solutions are θ = 2nπ ± α. (The (-1)ⁿ form belongs to sin θ = sin α.)"
+      },
+      {
+        "id": "math-tf-03",
+        "question": "In triangle ABC with circumradius R, the sine rule states a/sin A equals:",
+        "options": ["R", "2R", "R/2", "4R"],
+        "answerIndex": 1,
+        "explanation": "The sine rule is a/sin A = b/sin B = c/sin C = 2R, where R is the circumradius."
+      },
+      {
+        "id": "math-tf-04",
+        "question": "By the cosine rule, cos A equals:",
+        "options": ["(b² + c² - a²)/2bc", "(a² + b² - c²)/2ab", "(b² + c² + a²)/2bc", "(a² - b² - c²)/2bc"],
+        "answerIndex": 0,
+        "explanation": "For angle A (opposite side a): a² = b² + c² - 2bc·cos A, which rearranges to cos A = (b² + c² - a²)/2bc."
+      },
+      {
+        "id": "math-tf-05",
+        "question": "The principal value branch (range) of sin⁻¹x is:",
+        "options": ["[0, π]", "(-π/2, π/2)", "[-π/2, π/2]", "[0, 2π]"],
+        "answerIndex": 2,
+        "explanation": "sin⁻¹ returns angles in the closed interval [-π/2, π/2]; the endpoints are included since sin(±π/2) = ±1."
+      },
+      {
+        "id": "math-tf-06",
+        "question": "For x ∈ [-1, 1], sin⁻¹x + cos⁻¹x equals:",
+        "options": ["0", "π", "π/2", "2π"],
+        "answerIndex": 2,
+        "explanation": "This is a standard identity: the two principal values are complementary, summing to π/2."
+      },
+      {
+        "id": "math-tf-07",
+        "question": "The principal value of tan⁻¹(1) is:",
+        "options": ["π/3", "π/4", "π/6", "5π/4"],
+        "answerIndex": 1,
+        "explanation": "tan(π/4) = 1 and π/4 lies in the principal branch (-π/2, π/2) of tan⁻¹."
+      },
+      {
+        "id": "math-tf-08",
+        "question": "The general solution of tan θ = tan α is:",
+        "options": ["θ = 2nπ ± α", "θ = nπ + α", "θ = 2nπ + α only", "θ = nπ - α"],
+        "answerIndex": 1,
+        "explanation": "The tangent function has period π, so every solution is obtained by adding integer multiples of π: θ = nπ + α."
+      },
+      {
+        "id": "math-tf-09",
+        "question": "The area of triangle ABC in terms of two sides and the included angle is:",
+        "options": ["(1/2)ab·sin C", "(1/2)ab·cos C", "ab·sin C", "(1/2)bc·sin B"],
+        "answerIndex": 0,
+        "explanation": "Area = (1/2) × (product of two sides) × sine of the included angle; here sides a, b include angle C."
+      },
+      {
+        "id": "math-tf-10",
+        "question": "The principal value of cos⁻¹(-1/2) is:",
+        "options": ["π/3", "-π/3", "2π/3", "5π/6"],
+        "answerIndex": 2,
+        "explanation": "cos(2π/3) = -1/2 and 2π/3 lies in the principal branch [0, π] of cos⁻¹."
+      }
+    ],
+    "pair-of-straight-lines": [
+      {
+        "id": "math-psl-01",
+        "question": "The combined equation of a pair of lines passing through the origin is always:",
+        "options": ["a linear equation", "a homogeneous equation of degree two", "a cubic equation", "an equation with a constant term"],
+        "answerIndex": 1,
+        "explanation": "Multiplying two linear equations through the origin (no constant terms) gives ax² + 2hxy + by² = 0 — homogeneous of degree two."
+      },
+      {
+        "id": "math-psl-02",
+        "question": "ax² + 2hxy + by² = 0 represents two real and distinct lines when:",
+        "options": ["h² < ab", "h² = ab", "h² > ab", "a + b = 0"],
+        "answerIndex": 2,
+        "explanation": "The slopes come from a quadratic whose discriminant is positive exactly when h² > ab, giving two distinct real lines."
+      },
+      {
+        "id": "math-psl-03",
+        "question": "The acute angle θ between the lines ax² + 2hxy + by² = 0 satisfies tan θ =",
+        "options": ["|2√(h² - ab)/(a + b)|", "|2√(h² + ab)/(a - b)|", "|(a + b)/2√(h² - ab)|", "|√(h² - ab)/(a + b)|"],
+        "answerIndex": 0,
+        "explanation": "The standard formula is tan θ = |2√(h² - ab)/(a + b)|, valid when a + b ≠ 0."
+      },
+      {
+        "id": "math-psl-04",
+        "question": "The lines given by ax² + 2hxy + by² = 0 are perpendicular to each other when:",
+        "options": ["h = 0", "a = b", "a + b = 0", "ab = 1"],
+        "answerIndex": 2,
+        "explanation": "tan θ → ∞ (θ = 90°) requires the denominator a + b to vanish, i.e. coefficient of x² + coefficient of y² = 0."
+      },
+      {
+        "id": "math-psl-05",
+        "question": "ax² + 2hxy + by² = 0 represents two coincident lines when:",
+        "options": ["h² > ab", "h² = ab", "h² < ab", "h = a + b"],
+        "answerIndex": 1,
+        "explanation": "When h² = ab the quadratic in slope has equal roots, so both lines coincide."
+      },
+      {
+        "id": "math-psl-06",
+        "question": "The combined equation of the coordinate axes is:",
+        "options": ["x + y = 0", "x² + y² = 0", "xy = 0", "x² - y² = 0"],
+        "answerIndex": 2,
+        "explanation": "The axes are x = 0 and y = 0; multiplying gives xy = 0."
+      },
+      {
+        "id": "math-psl-07",
+        "question": "If m₁ and m₂ are the slopes of the lines ax² + 2hxy + by² = 0 (b ≠ 0), then m₁ + m₂ equals:",
+        "options": ["a/b", "-2h/b", "2h/a", "-a/b"],
+        "answerIndex": 1,
+        "explanation": "Substituting y = mx gives bm² + 2hm + a = 0, so the sum of slopes is -2h/b and their product is a/b."
+      },
+      {
+        "id": "math-psl-08",
+        "question": "The equation x² - y² = 0 represents the pair of lines:",
+        "options": ["y = x and y = -x", "x = 0 and y = 0", "y = x only", "two imaginary lines"],
+        "answerIndex": 0,
+        "explanation": "x² - y² factors as (x - y)(x + y) = 0, giving the lines y = x and y = -x."
+      },
+      {
+        "id": "math-psl-09",
+        "question": "The acute angle between the lines given by x² - 4xy + y² = 0 is:",
+        "options": ["30°", "45°", "60°", "90°"],
+        "answerIndex": 2,
+        "explanation": "Here a = b = 1, h = -2, so tan θ = |2√(4 - 1)/2| = √3, giving θ = 60°."
+      },
+      {
+        "id": "math-psl-10",
+        "question": "The general second-degree equation represents a pair of straight lines only if:",
+        "options": ["abc + 2fgh - af² - bg² - ch² = 0", "h² < ab always", "the constant term c = 1", "f = g = 0 always"],
+        "answerIndex": 0,
+        "explanation": "The determinant condition abc + 2fgh - af² - bg² - ch² = 0 is necessary for ax² + 2hxy + by² + 2gx + 2fy + c = 0 to degenerate into two lines."
+      }
+    ],
+    "vectors": [
+      {
+        "id": "math-vec-01",
+        "question": "The unit vector in the direction of a non-zero vector ā is:",
+        "options": ["ā·|ā|", "ā/|ā|", "|ā|/ā", "ā + |ā|"],
+        "answerIndex": 1,
+        "explanation": "Dividing a vector by its own magnitude scales it to length 1 while keeping its direction."
+      },
+      {
+        "id": "math-vec-02",
+        "question": "If ā and b̄ are non-zero vectors with ā·b̄ = 0, then the vectors are:",
+        "options": ["parallel", "equal", "perpendicular", "opposite"],
+        "answerIndex": 2,
+        "explanation": "ā·b̄ = |ā||b̄|cos θ = 0 with non-zero magnitudes forces cos θ = 0, i.e. θ = 90°."
+      },
+      {
+        "id": "math-vec-03",
+        "question": "|ā × b̄| represents geometrically:",
+        "options": ["the area of the triangle with sides ā, b̄", "the area of the parallelogram with adjacent sides ā, b̄", "the volume of a parallelepiped", "the length of the diagonal"],
+        "answerIndex": 1,
+        "explanation": "|ā × b̄| = |ā||b̄|sin θ equals the area of the parallelogram with ā and b̄ as adjacent sides; the triangle's area is half of it."
+      },
+      {
+        "id": "math-vec-04",
+        "question": "Three vectors ā, b̄, c̄ are coplanar if and only if:",
+        "options": ["ā·(b̄ × c̄) = 0", "ā × (b̄ × c̄) = 0", "ā·b̄·c̄ = 0", "ā + b̄ + c̄ = 0"],
+        "answerIndex": 0,
+        "explanation": "The scalar triple product [ā b̄ c̄] gives the volume of the parallelepiped they form; zero volume means the vectors lie in one plane."
+      },
+      {
+        "id": "math-vec-05",
+        "question": "The position vector of the midpoint of the segment joining points with position vectors ā and b̄ is:",
+        "options": ["ā + b̄", "(ā + b̄)/2", "(ā - b̄)/2", "(b̄ - ā)/2"],
+        "answerIndex": 1,
+        "explanation": "The midpoint divides the segment in ratio 1:1, so its position vector is the average (ā + b̄)/2."
+      },
+      {
+        "id": "math-vec-06",
+        "question": "The value of (2î + 3ĵ)·(î - ĵ) is:",
+        "options": ["5", "-1", "1", "6"],
+        "answerIndex": 1,
+        "explanation": "Dot product multiplies matching components: (2)(1) + (3)(-1) = 2 - 3 = -1."
+      },
+      {
+        "id": "math-vec-07",
+        "question": "î × ĵ equals:",
+        "options": ["k̂", "-k̂", "0", "î + ĵ"],
+        "answerIndex": 0,
+        "explanation": "The standard basis is right-handed: î × ĵ = k̂, ĵ × k̂ = î, k̂ × î = ĵ."
+      },
+      {
+        "id": "math-vec-08",
+        "question": "The point dividing the segment joining ā and b̄ internally in ratio m:n has position vector:",
+        "options": ["(mā + nb̄)/(m + n)", "(mb̄ + nā)/(m + n)", "(mb̄ - nā)/(m - n)", "(nā - mb̄)/(m + n)"],
+        "answerIndex": 1,
+        "explanation": "By the section formula, the point is (mb̄ + nā)/(m + n) — the ratio m:n is measured from the point with position vector ā towards b̄."
+      },
+      {
+        "id": "math-vec-09",
+        "question": "The scalar projection of ā on b̄ is:",
+        "options": ["ā·b̄/|ā|", "ā·b̄/|b̄|", "ā × b̄/|b̄|", "|ā||b̄|"],
+        "answerIndex": 1,
+        "explanation": "Projection of ā on b̄ = |ā|cos θ = (ā·b̄)/|b̄|."
+      },
+      {
+        "id": "math-vec-10",
+        "question": "The volume of the parallelepiped with coterminous edges ā, b̄, c̄ is:",
+        "options": ["|ā·(b̄ × c̄)|", "|ā × (b̄ × c̄)|", "|ā||b̄||c̄|", "(ā·b̄)(b̄·c̄)"],
+        "answerIndex": 0,
+        "explanation": "The absolute value of the scalar triple product [ā b̄ c̄] measures the parallelepiped's volume."
+      }
+    ],
+    "line-and-plane": [
+      {
+        "id": "math-lnp-01",
+        "question": "The vector equation of the line through point A (position vector ā) parallel to vector b̄ is:",
+        "options": ["r̄ = ā + λb̄", "r̄ = b̄ + λā", "r̄ = λ(ā + b̄)", "r̄·b̄ = ā"],
+        "answerIndex": 0,
+        "explanation": "Every point on the line is reached from A by moving some multiple λ of the direction vector b̄."
+      },
+      {
+        "id": "math-lnp-02",
+        "question": "If l, m, n are the direction cosines of a line, then:",
+        "options": ["l + m + n = 1", "l² + m² + n² = 1", "l² + m² + n² = 0", "lmn = 1"],
+        "answerIndex": 1,
+        "explanation": "Direction cosines are the components of a unit vector along the line, so their squares sum to 1."
+      },
+      {
+        "id": "math-lnp-03",
+        "question": "The direction cosines of the z-axis are:",
+        "options": ["(1, 0, 0)", "(0, 1, 0)", "(0, 0, 1)", "(1, 1, 1)"],
+        "answerIndex": 2,
+        "explanation": "The z-axis makes angles 90°, 90°, 0° with the x, y, z axes, so its direction cosines are cos90°, cos90°, cos0° = (0, 0, 1)."
+      },
+      {
+        "id": "math-lnp-04",
+        "question": "The angle between two planes equals the angle between:",
+        "options": ["their lines of intersection", "their normal vectors", "any two lines, one in each plane", "their intercepts"],
+        "answerIndex": 1,
+        "explanation": "By definition, the angle between planes is measured via the angle between their normals."
+      },
+      {
+        "id": "math-lnp-05",
+        "question": "The distance of point (x₁, y₁, z₁) from the plane ax + by + cz + d = 0 is:",
+        "options": ["|ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)", "(ax₁ + by₁ + cz₁) / (a + b + c)", "|ax₁ + by₁ + cz₁ + d|", "√(x₁² + y₁² + z₁²)"],
+        "answerIndex": 0,
+        "explanation": "The perpendicular distance formula divides the absolute value of the plane expression at the point by the magnitude of the normal."
+      },
+      {
+        "id": "math-lnp-06",
+        "question": "A line is perpendicular to a plane when its direction ratios are:",
+        "options": ["perpendicular to the plane's normal", "proportional to the plane's normal", "all equal", "all zero"],
+        "answerIndex": 1,
+        "explanation": "A line perpendicular to a plane must point along the plane's normal, so their direction ratios are proportional."
+      },
+      {
+        "id": "math-lnp-07",
+        "question": "The vector equation of a plane passing through the origin with normal n̄ is:",
+        "options": ["r̄·n̄ = 1", "r̄·n̄ = 0", "r̄ × n̄ = 0", "r̄ + n̄ = 0"],
+        "answerIndex": 1,
+        "explanation": "Every position vector r̄ in the plane is perpendicular to the normal, so their dot product is zero (the constant is 0 because the origin lies in the plane)."
+      },
+      {
+        "id": "math-lnp-08",
+        "question": "Two lines in space that are neither parallel nor intersecting are called:",
+        "options": ["concurrent lines", "coplanar lines", "skew lines", "perpendicular lines"],
+        "answerIndex": 2,
+        "explanation": "Skew lines lie in different planes; they never meet yet are not parallel."
+      },
+      {
+        "id": "math-lnp-09",
+        "question": "The equation x/a + y/b + z/c = 1 represents a plane in:",
+        "options": ["normal form", "intercept form", "vector form", "parametric form"],
+        "answerIndex": 1,
+        "explanation": "This is the intercept form — the plane cuts the axes at (a,0,0), (0,b,0) and (0,0,c)."
+      },
+      {
+        "id": "math-lnp-10",
+        "question": "The angle between a line and a plane is the complement of the angle between:",
+        "options": ["the line and the plane's normal", "the line and any line in the plane", "the plane and the x-axis", "two normals"],
+        "answerIndex": 0,
+        "explanation": "If the line makes angle θ with the normal, it makes 90° - θ with the plane itself."
+      }
+    ],
+    "linear-programming": [
+      {
+        "id": "math-lpp-01",
+        "question": "The feasible region of an LPP is the set of points that satisfy:",
+        "options": ["only the objective function", "all the constraints simultaneously", "at least one constraint", "none of the constraints"],
+        "answerIndex": 1,
+        "explanation": "A feasible solution must obey every constraint, including non-negativity conditions, at the same time."
+      },
+      {
+        "id": "math-lpp-02",
+        "question": "If an optimal solution of an LPP exists, it occurs at:",
+        "options": ["the centre of the feasible region", "a corner point (vertex) of the feasible region", "any interior point", "the origin always"],
+        "answerIndex": 1,
+        "explanation": "The corner-point theorem: a linear objective over a convex polygonal region attains its extreme values at vertices."
+      },
+      {
+        "id": "math-lpp-03",
+        "question": "In an LPP, the objective function is always:",
+        "options": ["quadratic", "linear", "cubic", "exponential"],
+        "answerIndex": 1,
+        "explanation": "\"Linear programming\" means both the objective (e.g. Z = ax + by) and all constraints are linear."
+      },
+      {
+        "id": "math-lpp-04",
+        "question": "The constraints x ≥ 0, y ≥ 0 restrict the feasible region to:",
+        "options": ["the second quadrant", "the first quadrant", "the entire plane", "the x-axis only"],
+        "answerIndex": 1,
+        "explanation": "Non-negativity of both variables keeps all feasible points where x and y are both ≥ 0 — the first quadrant."
+      },
+      {
+        "id": "math-lpp-05",
+        "question": "If the corner points of a feasible region are (0,0), (4,0) and (0,5), the maximum of Z = 3x + 4y is:",
+        "options": ["12", "20", "15", "9"],
+        "answerIndex": 1,
+        "explanation": "Z values at the vertices are 0, 12 and 20; the largest, 20, occurs at (0,5)."
+      },
+      {
+        "id": "math-lpp-06",
+        "question": "A region is convex if:",
+        "options": ["it contains the origin", "the segment joining any two of its points lies entirely within it", "it is bounded", "its boundary is a circle"],
+        "answerIndex": 1,
+        "explanation": "Convexity means no segment between two interior points ever leaves the region — feasible regions of LPPs are always convex."
+      },
+      {
+        "id": "math-lpp-07",
+        "question": "If the feasible region of a maximisation LPP is unbounded, then:",
+        "options": ["the maximum always exists", "the maximum may not exist", "the region is empty", "every point is optimal"],
+        "answerIndex": 1,
+        "explanation": "With an unbounded region the objective may increase without limit, so a finite maximum need not exist."
+      },
+      {
+        "id": "math-lpp-08",
+        "question": "The graph of the inequality x + y ≤ 4 is the half-plane:",
+        "options": ["containing the origin, bounded by the line x + y = 4", "not containing the origin", "above the line only", "the line itself only"],
+        "answerIndex": 0,
+        "explanation": "Testing (0,0): 0 ≤ 4 is true, so the solution half-plane is the side of the line containing the origin (including the line)."
+      },
+      {
+        "id": "math-lpp-09",
+        "question": "In an LPP, the variables whose values we must determine (e.g. x and y) are called:",
+        "options": ["slack variables", "decision variables", "dual variables", "random variables"],
+        "answerIndex": 1,
+        "explanation": "Decision variables represent the quantities to be decided (units produced, items purchased, etc.)."
+      },
+      {
+        "id": "math-lpp-10",
+        "question": "If Z attains its maximum at two adjacent vertices of the feasible region, then:",
+        "options": ["there is an error in the problem", "the maximum occurs at every point of the segment joining them", "the region is unbounded", "Z has no maximum"],
+        "answerIndex": 1,
+        "explanation": "A linear function constant at two adjacent vertices is constant along the whole edge, giving infinitely many optimal solutions."
+      }
+    ],
+    "differentiation": [
+      {
+        "id": "math-dif-01",
+        "question": "The derivative of e^(3x) with respect to x is:",
+        "options": ["e^(3x)", "3e^(3x)", "e^(3x)/3", "3e^x"],
+        "answerIndex": 1,
+        "explanation": "By the chain rule, d/dx e^(3x) = e^(3x) × d/dx(3x) = 3e^(3x)."
+      },
+      {
+        "id": "math-dif-02",
+        "question": "d/dx (log x), x > 0, equals:",
+        "options": ["log x", "1/x", "x", "e^x"],
+        "answerIndex": 1,
+        "explanation": "The natural logarithm differentiates to the reciprocal function: d/dx (log x) = 1/x."
+      },
+      {
+        "id": "math-dif-03",
+        "question": "If y = xˣ, then dy/dx equals:",
+        "options": ["x·x^(x-1)", "xˣ log x", "xˣ(1 + log x)", "xˣ/(1 + log x)"],
+        "answerIndex": 2,
+        "explanation": "Taking logs: log y = x log x, differentiating gives (1/y)dy/dx = 1 + log x, so dy/dx = xˣ(1 + log x)."
+      },
+      {
+        "id": "math-dif-04",
+        "question": "The derivative of sin⁻¹x for |x| < 1 is:",
+        "options": ["1/√(1 - x²)", "-1/√(1 - x²)", "1/(1 + x²)", "√(1 - x²)"],
+        "answerIndex": 0,
+        "explanation": "d/dx sin⁻¹x = 1/√(1 - x²); its companion cos⁻¹x has the negative of this derivative."
+      },
+      {
+        "id": "math-dif-05",
+        "question": "If x = f(t) and y = g(t), then dy/dx equals:",
+        "options": ["(dy/dt) × (dx/dt)", "(dy/dt) / (dx/dt)", "(dx/dt) / (dy/dt)", "dy/dt + dx/dt"],
+        "answerIndex": 1,
+        "explanation": "For parametric functions, dy/dx = (dy/dt)/(dx/dt), provided dx/dt ≠ 0."
+      },
+      {
+        "id": "math-dif-06",
+        "question": "If x² + y² = 25, then dy/dx equals:",
+        "options": ["x/y", "-x/y", "y/x", "-y/x"],
+        "answerIndex": 1,
+        "explanation": "Differentiating implicitly: 2x + 2y(dy/dx) = 0, so dy/dx = -x/y."
+      },
+      {
+        "id": "math-dif-07",
+        "question": "The second derivative of x³ with respect to x is:",
+        "options": ["3x²", "6x", "6", "x²"],
+        "answerIndex": 1,
+        "explanation": "First derivative is 3x²; differentiating again gives 6x."
+      },
+      {
+        "id": "math-dif-08",
+        "question": "d/dx (tan⁻¹x) equals:",
+        "options": ["1/(1 - x²)", "1/(1 + x²)", "-1/(1 + x²)", "sec²x"],
+        "answerIndex": 1,
+        "explanation": "The inverse tangent differentiates to 1/(1 + x²) for all real x."
+      },
+      {
+        "id": "math-dif-09",
+        "question": "If y = f(u) and u = g(x), the chain rule states dy/dx =",
+        "options": ["dy/du + du/dx", "(dy/du) × (du/dx)", "dy/du - du/dx", "(du/dx)/(dy/du)"],
+        "answerIndex": 1,
+        "explanation": "Derivatives of composite functions multiply along the chain: dy/dx = (dy/du)(du/dx)."
+      },
+      {
+        "id": "math-dif-10",
+        "question": "The derivative of aˣ (a > 0, a ≠ 1) is:",
+        "options": ["aˣ", "x·a^(x-1)", "aˣ log a", "aˣ / log a"],
+        "answerIndex": 2,
+        "explanation": "Writing aˣ = e^(x log a) and using the chain rule gives d/dx aˣ = aˣ log a."
+      }
+    ],
+    "applications-of-derivatives": [
+      {
+        "id": "math-aod-01",
+        "question": "The slope of the tangent to the curve y = f(x) at x = x₀ is:",
+        "options": ["f(x₀)", "f'(x₀)", "-1/f'(x₀)", "f''(x₀)"],
+        "answerIndex": 1,
+        "explanation": "The derivative at a point gives the slope of the tangent line there; -1/f'(x₀) is the slope of the normal."
+      },
+      {
+        "id": "math-aod-02",
+        "question": "A function f is increasing on an interval when, throughout that interval:",
+        "options": ["f'(x) > 0", "f'(x) < 0", "f'(x) = 0", "f(x) > 0"],
+        "answerIndex": 0,
+        "explanation": "A positive derivative means the function's values rise as x increases."
+      },
+      {
+        "id": "math-aod-03",
+        "question": "By the second derivative test, f has a local maximum at x = c when:",
+        "options": ["f'(c) = 0 and f''(c) > 0", "f'(c) = 0 and f''(c) < 0", "f'(c) > 0 and f''(c) = 0", "f'(c) < 0"],
+        "answerIndex": 1,
+        "explanation": "A stationary point (f' = 0) with the curve concave down (f'' < 0) is a local maximum."
+      },
+      {
+        "id": "math-aod-04",
+        "question": "The radius of a circle increases at dr/dt. The rate of change of its area A = πr² is:",
+        "options": ["πr·dr/dt", "2πr·dr/dt", "πr²·dr/dt", "2π·dr/dt"],
+        "answerIndex": 1,
+        "explanation": "Differentiating A = πr² with respect to time: dA/dt = 2πr(dr/dt)."
+      },
+      {
+        "id": "math-aod-05",
+        "question": "Using differentials, f(x + δx) is approximately:",
+        "options": ["f(x) + f'(x)·δx", "f(x)·δx", "f'(x) + f(x)·δx", "f(x) - f'(x)·δx"],
+        "answerIndex": 0,
+        "explanation": "The linear approximation replaces the curve near x by its tangent: f(x + δx) ≈ f(x) + f'(x)δx."
+      },
+      {
+        "id": "math-aod-06",
+        "question": "Rolle's theorem concludes that there exists c ∈ (a, b) such that f'(c) = 0, provided f is continuous on [a,b], differentiable on (a,b), and:",
+        "options": ["f(a) > f(b)", "f(a) = f(b)", "f(a) < f(b)", "f(a) = 0 only"],
+        "answerIndex": 1,
+        "explanation": "Equal endpoint values are the extra hypothesis of Rolle's theorem — somewhere in between the tangent must be horizontal."
+      },
+      {
+        "id": "math-aod-07",
+        "question": "Lagrange's mean value theorem guarantees a point c ∈ (a, b) where f'(c) equals:",
+        "options": ["0", "(f(b) - f(a))/(b - a)", "f(b) - f(a)", "(b - a)/(f(b) - f(a))"],
+        "answerIndex": 1,
+        "explanation": "LMVT: some tangent is parallel to the chord, so f'(c) equals the average rate of change over [a, b]."
+      },
+      {
+        "id": "math-aod-08",
+        "question": "The minimum value of f(x) = x² - 4x + 5 is:",
+        "options": ["5", "2", "1", "0"],
+        "answerIndex": 2,
+        "explanation": "f'(x) = 2x - 4 = 0 gives x = 2; f''(2) = 2 > 0, and f(2) = 4 - 8 + 5 = 1."
+      },
+      {
+        "id": "math-aod-09",
+        "question": "The slope of the normal to y = f(x) at a point where f'(x) = 2 is:",
+        "options": ["2", "-2", "1/2", "-1/2"],
+        "answerIndex": 3,
+        "explanation": "The normal is perpendicular to the tangent, so its slope is -1/f'(x) = -1/2."
+      },
+      {
+        "id": "math-aod-10",
+        "question": "If s(t) is the displacement of a particle, its acceleration is:",
+        "options": ["ds/dt", "d²s/dt²", "∫s dt", "s·t"],
+        "answerIndex": 1,
+        "explanation": "Velocity is the first derivative of displacement; acceleration is the derivative of velocity, i.e. the second derivative of s."
+      }
+    ],
+    "indefinite-integration": [
+      {
+        "id": "math-ii-01",
+        "question": "∫xⁿ dx (n ≠ -1) equals:",
+        "options": ["xⁿ⁺¹/(n+1) + c", "n·xⁿ⁻¹ + c", "xⁿ/n + c", "xⁿ⁺¹ + c"],
+        "answerIndex": 0,
+        "explanation": "The power rule of integration raises the exponent by one and divides by the new exponent."
+      },
+      {
+        "id": "math-ii-02",
+        "question": "∫(1/x) dx equals:",
+        "options": ["-1/x² + c", "log|x| + c", "x log x + c", "eˣ + c"],
+        "answerIndex": 1,
+        "explanation": "The power rule fails for n = -1; the antiderivative of 1/x is log|x| + c."
+      },
+      {
+        "id": "math-ii-03",
+        "question": "∫sec²x dx equals:",
+        "options": ["sec x + c", "tan x + c", "cot x + c", "sec x tan x + c"],
+        "answerIndex": 1,
+        "explanation": "Since d/dx (tan x) = sec²x, the integral of sec²x is tan x + c."
+      },
+      {
+        "id": "math-ii-04",
+        "question": "∫1/(1 + x²) dx equals:",
+        "options": ["sin⁻¹x + c", "tan⁻¹x + c", "log(1 + x²) + c", "sec⁻¹x + c"],
+        "answerIndex": 1,
+        "explanation": "This is the standard integral matching the derivative of tan⁻¹x."
+      },
+      {
+        "id": "math-ii-05",
+        "question": "∫2x·cos(x²) dx equals:",
+        "options": ["sin(x²) + c", "cos(x²) + c", "-sin(x²) + c", "2 sin(x²) + c"],
+        "answerIndex": 0,
+        "explanation": "Substituting u = x² (du = 2x dx) reduces the integral to ∫cos u du = sin u + c = sin(x²) + c."
+      },
+      {
+        "id": "math-ii-06",
+        "question": "The integration by parts formula for ∫u·v dx takes the form:",
+        "options": ["u∫v dx - ∫[u'·∫v dx] dx", "u'v - ∫uv' dx", "∫u dx × ∫v dx", "uv + ∫u'v dx"],
+        "answerIndex": 0,
+        "explanation": "∫u·v dx = u∫v dx - ∫[du/dx · ∫v dx] dx, with the first function u chosen by the LIATE priority."
+      },
+      {
+        "id": "math-ii-07",
+        "question": "∫1/√(1 - x²) dx equals:",
+        "options": ["cos⁻¹x + c", "sin⁻¹x + c", "tan⁻¹x + c", "log|1 - x²| + c"],
+        "answerIndex": 1,
+        "explanation": "This matches the derivative of sin⁻¹x, so the integral is sin⁻¹x + c."
+      },
+      {
+        "id": "math-ii-08",
+        "question": "∫cos 3x dx equals:",
+        "options": ["sin 3x + c", "(sin 3x)/3 + c", "3 sin 3x + c", "-(sin 3x)/3 + c"],
+        "answerIndex": 1,
+        "explanation": "Integrating cos(ax) gives sin(ax)/a, so here the answer is (sin 3x)/3 + c."
+      },
+      {
+        "id": "math-ii-09",
+        "question": "∫1/(x² - a²) dx equals:",
+        "options": ["(1/2a)·log|(x - a)/(x + a)| + c", "(1/2a)·log|(x + a)/(x - a)| + c", "tan⁻¹(x/a) + c", "(1/a)·log|x² - a²| + c"],
+        "answerIndex": 0,
+        "explanation": "Splitting into partial fractions 1/(x-a) - 1/(x+a) (each over 2a) and integrating gives (1/2a)log|(x-a)/(x+a)| + c."
+      },
+      {
+        "id": "math-ii-10",
+        "question": "∫eˣ dx equals:",
+        "options": ["eˣ + c", "eˣ/x + c", "x·eˣ + c", "e^(x+1)/(x+1) + c"],
+        "answerIndex": 0,
+        "explanation": "The exponential function is its own derivative, hence its own antiderivative (plus a constant)."
+      }
+    ],
+    "definite-integration": [
+      {
+        "id": "math-di-01",
+        "question": "By the fundamental theorem of calculus, ∫ₐᵇ f(x) dx equals (F' = f):",
+        "options": ["F(a) - F(b)", "F(b) - F(a)", "F(b) + F(a)", "F(b)·F(a)"],
+        "answerIndex": 1,
+        "explanation": "Evaluate any antiderivative at the upper limit and subtract its value at the lower limit."
+      },
+      {
+        "id": "math-di-02",
+        "question": "∫₀¹ x dx equals:",
+        "options": ["1", "1/2", "1/3", "2"],
+        "answerIndex": 1,
+        "explanation": "The antiderivative is x²/2, so the value is 1/2 - 0 = 1/2."
+      },
+      {
+        "id": "math-di-03",
+        "question": "Interchanging the limits of a definite integral:",
+        "options": ["leaves its value unchanged", "changes its sign", "doubles its value", "makes it zero"],
+        "answerIndex": 1,
+        "explanation": "∫ₐᵇ f(x) dx = -∫ᵇₐ f(x) dx — reversing limits reverses the sign."
+      },
+      {
+        "id": "math-di-04",
+        "question": "A useful property of definite integrals states ∫₀ᵃ f(x) dx equals:",
+        "options": ["∫₀ᵃ f(a - x) dx", "∫₀ᵃ f(a + x) dx", "∫₀ᵃ f(-x) dx", "a·f(a)"],
+        "answerIndex": 0,
+        "explanation": "The \"king property\": substituting x → a - x maps the interval [0, a] onto itself, leaving the integral unchanged."
+      },
+      {
+        "id": "math-di-05",
+        "question": "If f is an odd function, then ∫₋ₐᵃ f(x) dx equals:",
+        "options": ["2∫₀ᵃ f(x) dx", "0", "a·f(a)", "∫₀ᵃ f(x) dx"],
+        "answerIndex": 1,
+        "explanation": "The areas on either side of the origin cancel exactly for odd functions (f(-x) = -f(x))."
+      },
+      {
+        "id": "math-di-06",
+        "question": "If f is an even function, then ∫₋ₐᵃ f(x) dx equals:",
+        "options": ["0", "∫₀ᵃ f(x) dx", "2∫₀ᵃ f(x) dx", "-2∫₀ᵃ f(x) dx"],
+        "answerIndex": 2,
+        "explanation": "For even functions the two halves contribute equally, so the integral is twice that over [0, a]."
+      },
+      {
+        "id": "math-di-07",
+        "question": "∫₀^(π/2) sin x dx equals:",
+        "options": ["0", "1", "2", "π/2"],
+        "answerIndex": 1,
+        "explanation": "The antiderivative -cos x gives -cos(π/2) + cos 0 = 0 + 1 = 1."
+      },
+      {
+        "id": "math-di-08",
+        "question": "∫₁ᵉ (1/x) dx equals:",
+        "options": ["e", "1", "e - 1", "0"],
+        "answerIndex": 1,
+        "explanation": "log x evaluated from 1 to e gives log e - log 1 = 1 - 0 = 1."
+      },
+      {
+        "id": "math-di-09",
+        "question": "∫₀² x² dx equals:",
+        "options": ["4", "8/3", "2", "8"],
+        "answerIndex": 1,
+        "explanation": "x³/3 evaluated from 0 to 2 gives 8/3."
+      },
+      {
+        "id": "math-di-10",
+        "question": "Using the property ∫₀ᵃ f(x)dx = ∫₀ᵃ f(a-x)dx, the value of ∫₀^(π/2) sinⁿx/(sinⁿx + cosⁿx) dx is:",
+        "options": ["π/2", "π/4", "0", "1"],
+        "answerIndex": 1,
+        "explanation": "Adding the integral to its transformed copy (which swaps sin and cos) gives ∫₀^(π/2) 1 dx = π/2, so each equals π/4."
+      }
+    ],
+    "application-of-definite-integration": [
+      {
+        "id": "math-adi-01",
+        "question": "If f(x) ≥ 0 on [a, b], the area between the curve y = f(x), the x-axis and the lines x = a, x = b is:",
+        "options": ["∫ₐᵇ f(x) dx", "f(b) - f(a)", "∫ₐᵇ f'(x) dx", "(b - a)·f(a)"],
+        "answerIndex": 0,
+        "explanation": "The definite integral of a non-negative function measures exactly the area under its graph."
+      },
+      {
+        "id": "math-adi-02",
+        "question": "The area enclosed by the circle x² + y² = a², found by integration, is:",
+        "options": ["2πa", "πa²", "4πa²", "πa²/2"],
+        "answerIndex": 1,
+        "explanation": "Computing 4∫₀ᵃ √(a² - x²) dx (four times the first-quadrant area) gives πa²."
+      },
+      {
+        "id": "math-adi-03",
+        "question": "The area of the region bounded by a curve and the y-axis between y = c and y = d is:",
+        "options": ["∫꜀ᵈ y dx", "∫꜀ᵈ x dy", "∫꜀ᵈ (x + y) dy", "∫꜀ᵈ f'(y) dy"],
+        "answerIndex": 1,
+        "explanation": "When integrating along the y-axis, horizontal strips of length x = g(y) are summed: A = ∫x dy."
+      },
+      {
+        "id": "math-adi-04",
+        "question": "The area bounded by y = x², the x-axis and the lines x = 0, x = 3 is:",
+        "options": ["27", "9", "3", "18"],
+        "answerIndex": 1,
+        "explanation": "∫₀³ x² dx = x³/3 evaluated from 0 to 3 = 27/3 = 9 square units."
+      },
+      {
+        "id": "math-adi-05",
+        "question": "The area enclosed by the ellipse x²/a² + y²/b² = 1 is:",
+        "options": ["πab", "π(a² + b²)", "2πab", "πa²b²"],
+        "answerIndex": 0,
+        "explanation": "Integration (or scaling the unit circle by a and b) gives area πab."
+      },
+      {
+        "id": "math-adi-06",
+        "question": "When a portion of the curve lies below the x-axis, the definite integral over that part is:",
+        "options": ["positive, so it is added directly", "negative, so its absolute value must be taken for area", "always zero", "undefined"],
+        "answerIndex": 1,
+        "explanation": "The integral counts signed area; for geometric area the modulus of the below-axis part is taken."
+      },
+      {
+        "id": "math-adi-07",
+        "question": "The area between two curves y = f(x) and y = g(x) with f(x) ≥ g(x) on [a, b] is:",
+        "options": ["∫ₐᵇ [f(x) + g(x)] dx", "∫ₐᵇ [f(x) - g(x)] dx", "∫ₐᵇ f(x)·g(x) dx", "∫ₐᵇ [g(x) - f(x)] dx"],
+        "answerIndex": 1,
+        "explanation": "Vertical strips run from the lower curve up to the upper one, so their lengths are f(x) - g(x)."
+      },
+      {
+        "id": "math-adi-08",
+        "question": "The area bounded by y = sin x and the x-axis from x = 0 to x = π is:",
+        "options": ["1", "2", "π", "0"],
+        "answerIndex": 1,
+        "explanation": "∫₀^π sin x dx = [-cos x]₀^π = 1 + 1 = 2 square units."
+      },
+      {
+        "id": "math-adi-09",
+        "question": "The area of the triangle formed by y = 2x, the x-axis and x = 2, by integration, is:",
+        "options": ["8", "4", "2", "6"],
+        "answerIndex": 1,
+        "explanation": "∫₀² 2x dx = x² from 0 to 2 = 4, matching the triangle formula (1/2 × 2 × 4)."
+      },
+      {
+        "id": "math-adi-10",
+        "question": "To find the area of a region symmetric about both axes (like a circle centred at the origin), a common technique is:",
+        "options": ["computing 4 times the area in one quadrant", "ignoring the symmetry", "integrating from -∞ to ∞", "doubling the perimeter"],
+        "answerIndex": 0,
+        "explanation": "Symmetry lets us integrate over one quadrant only and multiply by 4, simplifying limits and signs."
+      }
+    ],
+    "differential-equations": [
+      {
+        "id": "math-de-01",
+        "question": "The order of the differential equation d²y/dx² + (dy/dx)³ + y = 0 is:",
+        "options": ["1", "2", "3", "not defined"],
+        "answerIndex": 1,
+        "explanation": "Order is the highest derivative present — here the second derivative — regardless of the powers involved."
+      },
+      {
+        "id": "math-de-02",
+        "question": "The degree of the differential equation (dy/dx)² + y = x is:",
+        "options": ["1", "2", "0", "not defined"],
+        "answerIndex": 1,
+        "explanation": "Degree is the power of the highest-order derivative after clearing radicals/fractions; (dy/dx) appears squared."
+      },
+      {
+        "id": "math-de-03",
+        "question": "The general solution of dy/dx = ky (k constant) is:",
+        "options": ["y = kx + c", "y = c·e^(kx)", "y = c·x^k", "y = k·log x + c"],
+        "answerIndex": 1,
+        "explanation": "Separating variables: dy/y = k dx gives log y = kx + c₁, i.e. y = c·e^(kx) — exponential growth/decay."
+      },
+      {
+        "id": "math-de-04",
+        "question": "The equation dy/dx = x/y is solved by:",
+        "options": ["the integrating factor method", "separating variables: y dy = x dx", "substituting y = vx only", "no method exists"],
+        "answerIndex": 1,
+        "explanation": "Variables separate directly, giving y²/2 = x²/2 + c on integration."
+      },
+      {
+        "id": "math-de-05",
+        "question": "For the linear differential equation dy/dx + Py = Q (P, Q functions of x), the integrating factor is:",
+        "options": ["e^(∫P dx)", "e^(∫Q dx)", "∫P dx", "P·Q"],
+        "answerIndex": 0,
+        "explanation": "Multiplying through by e^(∫P dx) makes the left side the exact derivative of y·e^(∫P dx)."
+      },
+      {
+        "id": "math-de-06",
+        "question": "The number of arbitrary constants in the general solution of a differential equation equals:",
+        "options": ["its degree", "its order", "always one", "always two"],
+        "answerIndex": 1,
+        "explanation": "Each integration introduces one constant, and solving an nth-order equation requires n integrations."
+      },
+      {
+        "id": "math-de-07",
+        "question": "The general solution of dy/dx + y/x = 0 is:",
+        "options": ["xy = c", "y = cx", "x + y = c", "y = c/x²"],
+        "answerIndex": 0,
+        "explanation": "Separating: dy/y = -dx/x gives log y + log x = constant, i.e. xy = c."
+      },
+      {
+        "id": "math-de-08",
+        "question": "If a population N grows at a rate proportional to N itself, N(t) follows:",
+        "options": ["linear growth", "exponential growth", "quadratic growth", "no growth"],
+        "answerIndex": 1,
+        "explanation": "dN/dt = kN integrates to N = N₀e^(kt) — the standard exponential growth law."
+      },
+      {
+        "id": "math-de-09",
+        "question": "A particular solution of a differential equation is obtained from the general solution by:",
+        "options": ["differentiating once more", "assigning specific values to the arbitrary constants using given conditions", "setting y = 0", "removing all constants"],
+        "answerIndex": 1,
+        "explanation": "Initial/boundary conditions fix the arbitrary constants, selecting one member of the family of solutions."
+      },
+      {
+        "id": "math-de-10",
+        "question": "The order and degree of [1 + (dy/dx)²]^(3/2) = k·d²y/dx² are respectively:",
+        "options": ["1 and 2", "2 and 2", "2 and 3", "2 and 1"],
+        "answerIndex": 1,
+        "explanation": "Squaring both sides to remove the fractional power leaves (d²y/dx²)² as the highest-order term: order 2, degree 2."
+      }
+    ],
+    "probability-distributions": [
+      {
+        "id": "math-pd-01",
+        "question": "For a discrete random variable X with probability mass function p(x), Σp(xᵢ) must equal:",
+        "options": ["0", "1", "the mean of X", "any positive number"],
+        "answerIndex": 1,
+        "explanation": "Probabilities over all possible values must account for every outcome, so they sum to 1."
+      },
+      {
+        "id": "math-pd-02",
+        "question": "The expected value E(X) of a discrete random variable is:",
+        "options": ["Σxᵢ", "Σp(xᵢ)", "Σxᵢ·p(xᵢ)", "Σxᵢ²·p(xᵢ)"],
+        "answerIndex": 2,
+        "explanation": "The mean weights each value by its probability: E(X) = Σxᵢp(xᵢ)."
+      },
+      {
+        "id": "math-pd-03",
+        "question": "The variance of X can be computed as:",
+        "options": ["E(X²) - [E(X)]²", "[E(X)]² - E(X²)", "E(X²) + [E(X)]²", "E(X) - E(X²)"],
+        "answerIndex": 0,
+        "explanation": "Var(X) = E(X²) - [E(X)]², the mean of squares minus the square of the mean."
+      },
+      {
+        "id": "math-pd-04",
+        "question": "A continuous random variable is described by a:",
+        "options": ["probability mass function", "probability density function", "frequency table with finite rows", "single probability value"],
+        "answerIndex": 1,
+        "explanation": "Continuous variables take uncountably many values; probabilities come from integrating a density function."
+      },
+      {
+        "id": "math-pd-05",
+        "question": "For a continuous random variable X, P(X = a) for any single point a is:",
+        "options": ["f(a)", "0", "1", "F(a)"],
+        "answerIndex": 1,
+        "explanation": "A single point has zero width, so the integral of the density over it is zero — only intervals carry probability."
+      },
+      {
+        "id": "math-pd-06",
+        "question": "The cumulative distribution function F(x) = P(X ≤ x) is always:",
+        "options": ["decreasing", "non-decreasing", "constant", "negative for small x"],
+        "answerIndex": 1,
+        "explanation": "As x grows, more outcomes are included, so F can only stay the same or increase, from 0 up to 1."
+      },
+      {
+        "id": "math-pd-07",
+        "question": "X takes values 0, 1, 2 with probabilities 0.3, 0.5, 0.2. Then E(X) equals:",
+        "options": ["1.0", "0.9", "0.7", "1.2"],
+        "answerIndex": 1,
+        "explanation": "E(X) = 0(0.3) + 1(0.5) + 2(0.2) = 0.5 + 0.4 = 0.9."
+      },
+      {
+        "id": "math-pd-08",
+        "question": "For f(x) to be a valid probability density function, apart from f(x) ≥ 0, we need:",
+        "options": ["∫f(x) dx over its domain = 1", "f(x) ≤ 1 everywhere", "f to be increasing", "f(0) = 0"],
+        "answerIndex": 0,
+        "explanation": "Total probability must be 1, so the density must integrate to 1 over its entire range. (A density itself may exceed 1 on short intervals.)"
+      },
+      {
+        "id": "math-pd-09",
+        "question": "If E(X) = 2, then E(3X + 1) equals:",
+        "options": ["6", "7", "9", "3"],
+        "answerIndex": 1,
+        "explanation": "Expectation is linear: E(aX + b) = aE(X) + b = 3(2) + 1 = 7."
+      },
+      {
+        "id": "math-pd-10",
+        "question": "The variance of a constant c is:",
+        "options": ["c", "c²", "0", "1"],
+        "answerIndex": 2,
+        "explanation": "A constant never deviates from its mean, so its variance is zero."
+      }
+    ],
+    "binomial-distribution": [
+      {
+        "id": "math-bd-01",
+        "question": "Which of the following is NOT required for a binomial distribution?",
+        "options": ["a fixed number of trials", "independent trials", "exactly two outcomes per trial", "the probability of success changing every trial"],
+        "answerIndex": 3,
+        "explanation": "Binomial trials need a constant success probability p; if p changes between trials, the distribution is not binomial."
+      },
+      {
+        "id": "math-bd-02",
+        "question": "The mean of a binomial distribution B(n, p) is:",
+        "options": ["np", "npq", "√(npq)", "n + p"],
+        "answerIndex": 0,
+        "explanation": "The expected number of successes in n trials, each with success probability p, is np."
+      },
+      {
+        "id": "math-bd-03",
+        "question": "The variance of B(n, p) with q = 1 - p is:",
+        "options": ["np", "npq", "n²pq", "√(np)"],
+        "answerIndex": 1,
+        "explanation": "Var(X) = npq for the binomial distribution; its standard deviation is √(npq)."
+      },
+      {
+        "id": "math-bd-04",
+        "question": "For X ~ B(n, p), P(X = x) equals:",
+        "options": ["ⁿCₓ pˣ qⁿ⁻ˣ", "pˣ qⁿ⁻ˣ", "ⁿCₓ pⁿ qˣ", "ⁿPₓ pˣ qⁿ⁻ˣ"],
+        "answerIndex": 0,
+        "explanation": "Choose which x of the n trials succeed (ⁿCₓ ways), each pattern having probability pˣqⁿ⁻ˣ."
+      },
+      {
+        "id": "math-bd-05",
+        "question": "A fair coin is tossed 6 times. The probability of getting all 6 heads is:",
+        "options": ["1/6", "1/32", "1/64", "6/64"],
+        "answerIndex": 2,
+        "explanation": "P(X = 6) = (1/2)⁶ = 1/64, since every toss must come up heads."
+      },
+      {
+        "id": "math-bd-06",
+        "question": "A binomial distribution has mean 4 and variance 2. Then p equals:",
+        "options": ["1/4", "1/2", "3/4", "2"],
+        "answerIndex": 1,
+        "explanation": "variance/mean = q = 2/4 = 1/2, so p = 1 - q = 1/2 (and n = 8)."
+      },
+      {
+        "id": "math-bd-07",
+        "question": "A single trial with exactly two possible outcomes (success/failure) is called a:",
+        "options": ["Poisson trial", "Bernoulli trial", "normal trial", "uniform trial"],
+        "answerIndex": 1,
+        "explanation": "A Bernoulli trial is one experiment with two outcomes; a binomial variable counts successes over n such independent trials."
+      },
+      {
+        "id": "math-bd-08",
+        "question": "For X ~ B(n, p), the probability of at least one success is:",
+        "options": ["1 - pⁿ", "1 - qⁿ", "qⁿ", "np"],
+        "answerIndex": 1,
+        "explanation": "P(X ≥ 1) = 1 - P(X = 0) = 1 - qⁿ, since X = 0 means every trial fails."
+      },
+      {
+        "id": "math-bd-09",
+        "question": "For any binomial distribution with 0 < p < 1, the mean is always:",
+        "options": ["less than the variance", "greater than the variance", "equal to the variance", "unrelated to the variance"],
+        "answerIndex": 1,
+        "explanation": "Variance npq = mean × q, and q < 1, so the variance is always smaller than the mean np."
+      },
+      {
+        "id": "math-bd-10",
+        "question": "If X ~ B(4, 1/3), then P(X = 0) equals:",
+        "options": ["16/81", "1/81", "8/81", "1/3"],
+        "answerIndex": 0,
+        "explanation": "P(X = 0) = q⁴ = (2/3)⁴ = 16/81."
+      }
     ]
   }
 }

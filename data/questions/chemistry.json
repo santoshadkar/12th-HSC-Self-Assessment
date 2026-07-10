@@ -244,6 +244,1014 @@
         "answerIndex": 1,
         "explanation": "Hydrogen bonding between acetone and chloroform holds molecules in solution more tightly, lowering the vapour pressure below the ideal value."
       }
+    ],
+    "ionic-equilibria": [
+      {
+        "id": "chem-ie-01",
+        "question": "The pH of a 0.001 M HCl solution (complete dissociation) is:",
+        "options": ["1", "2", "3", "11"],
+        "answerIndex": 2,
+        "explanation": "[H₃O⁺] = 10⁻³ M, so pH = -log(10⁻³) = 3."
+      },
+      {
+        "id": "chem-ie-02",
+        "question": "A weak electrolyte is one that:",
+        "options": ["dissolves slowly", "ionises only partially in solution", "ionises completely", "does not dissolve in water"],
+        "answerIndex": 1,
+        "explanation": "Weak electrolytes like acetic acid or NH₄OH exist in equilibrium between molecules and ions, ionising only to a small extent."
+      },
+      {
+        "id": "chem-ie-03",
+        "question": "According to Ostwald's dilution law, the degree of dissociation of a weak electrolyte:",
+        "options": ["decreases on dilution", "increases on dilution", "is independent of dilution", "is always 100%"],
+        "answerIndex": 1,
+        "explanation": "α ≈ √(Ka/c): lowering concentration c increases the fraction dissociated."
+      },
+      {
+        "id": "chem-ie-04",
+        "question": "An acidic buffer solution is prepared by mixing:",
+        "options": ["a strong acid and its salt", "a weak acid and its salt with a strong base", "a strong base and a weak acid", "two strong acids"],
+        "answerIndex": 1,
+        "explanation": "A weak acid plus its conjugate-base salt (e.g. CH₃COOH + CH₃COONa) resists pH change on adding small amounts of acid or base."
+      },
+      {
+        "id": "chem-ie-05",
+        "question": "Adding sodium acetate to an acetic acid solution suppresses the acid's ionisation. This is an example of:",
+        "options": ["the common ion effect", "hydrolysis", "buffer breakdown", "salting out"],
+        "answerIndex": 0,
+        "explanation": "Extra acetate ions (the common ion) push the ionisation equilibrium of CH₃COOH backwards, per Le Chatelier's principle."
+      },
+      {
+        "id": "chem-ie-06",
+        "question": "A precipitate forms when the ionic product of a sparingly soluble salt:",
+        "options": ["is less than its Ksp", "equals zero", "exceeds its Ksp", "equals 1"],
+        "answerIndex": 2,
+        "explanation": "When the ionic product exceeds the solubility product, the solution is supersaturated and the excess ions precipitate."
+      },
+      {
+        "id": "chem-ie-07",
+        "question": "The conjugate base of NH₄⁺ is:",
+        "options": ["NH₃", "NH₂⁻", "NH₄OH", "N₂"],
+        "answerIndex": 0,
+        "explanation": "Removing one proton from NH₄⁺ gives NH₃; conjugate acid-base pairs differ by exactly one H⁺."
+      },
+      {
+        "id": "chem-ie-08",
+        "question": "At 25°C, for any aqueous solution, pH + pOH equals:",
+        "options": ["7", "14", "1", "10⁻¹⁴"],
+        "answerIndex": 1,
+        "explanation": "Since Kw = [H₃O⁺][OH⁻] = 10⁻¹⁴ at 25°C, taking negative logs gives pH + pOH = 14."
+      },
+      {
+        "id": "chem-ie-09",
+        "question": "The Henderson–Hasselbalch equation for an acidic buffer is pH =",
+        "options": ["pKa - log([salt]/[acid])", "pKa + log([salt]/[acid])", "pKa × [salt]/[acid]", "log([acid]/[salt])"],
+        "answerIndex": 1,
+        "explanation": "pH = pKa + log([salt]/[acid]); when salt and acid concentrations are equal, pH = pKa."
+      },
+      {
+        "id": "chem-ie-10",
+        "question": "An aqueous solution of sodium acetate (salt of weak acid + strong base) is:",
+        "options": ["acidic", "basic", "neutral", "amphoteric"],
+        "answerIndex": 1,
+        "explanation": "The acetate ion hydrolyses to give OH⁻ ions (CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻), making the solution mildly basic."
+      }
+    ],
+    "chemical-thermodynamics": [
+      {
+        "id": "chem-ct-01",
+        "question": "Which of the following is NOT a state function?",
+        "options": ["enthalpy", "entropy", "internal energy", "work"],
+        "answerIndex": 3,
+        "explanation": "Work (and heat) depend on the path taken between states; H, S and U depend only on the state itself."
+      },
+      {
+        "id": "chem-ct-02",
+        "question": "The relation between ΔH and ΔU for a reaction involving gases is:",
+        "options": ["ΔH = ΔU - ΔnRT", "ΔH = ΔU + ΔnRT", "ΔH = ΔU × ΔnRT", "ΔH = ΔU always"],
+        "answerIndex": 1,
+        "explanation": "ΔH = ΔU + ΔnRT, where Δn is the change in moles of gaseous species; they are equal only when Δn = 0."
+      },
+      {
+        "id": "chem-ct-03",
+        "question": "For an exothermic reaction:",
+        "options": ["ΔH > 0", "ΔH < 0", "ΔH = 0", "ΔS must be negative"],
+        "answerIndex": 1,
+        "explanation": "Heat is released to the surroundings, so the enthalpy of the system decreases: ΔH is negative."
+      },
+      {
+        "id": "chem-ct-04",
+        "question": "Hess's law states that the total enthalpy change of a reaction:",
+        "options": ["depends on the path followed", "is independent of the path, depending only on initial and final states", "is always zero", "equals the activation energy"],
+        "answerIndex": 1,
+        "explanation": "Because enthalpy is a state function, ΔH is the same whether the reaction occurs in one step or several."
+      },
+      {
+        "id": "chem-ct-05",
+        "question": "The entropy of a substance increases in the order:",
+        "options": ["gas < liquid < solid", "solid < liquid < gas", "liquid < solid < gas", "solid = liquid = gas"],
+        "answerIndex": 1,
+        "explanation": "Molecular disorder grows from the ordered solid, through the liquid, to the highly random gas phase."
+      },
+      {
+        "id": "chem-ct-06",
+        "question": "A process is spontaneous at constant temperature and pressure when:",
+        "options": ["ΔG > 0", "ΔG < 0", "ΔG = 0", "ΔH > 0 always"],
+        "answerIndex": 1,
+        "explanation": "Negative Gibbs energy change is the criterion of spontaneity; ΔG = 0 corresponds to equilibrium."
+      },
+      {
+        "id": "chem-ct-07",
+        "question": "The Gibbs energy change is related to enthalpy and entropy changes by:",
+        "options": ["ΔG = ΔH + TΔS", "ΔG = ΔH - TΔS", "ΔG = TΔS - ΔH", "ΔG = ΔH × TΔS"],
+        "answerIndex": 1,
+        "explanation": "ΔG = ΔH - TΔS balances the energy released against the disorder created, weighted by temperature."
+      },
+      {
+        "id": "chem-ct-08",
+        "question": "The standard enthalpy of formation of an element in its most stable form is:",
+        "options": ["always positive", "always negative", "zero by convention", "equal to its bond energy"],
+        "answerIndex": 2,
+        "explanation": "Elements in their reference states (e.g. O₂ gas, C graphite) are assigned ΔfH° = 0 as the baseline."
+      },
+      {
+        "id": "chem-ct-09",
+        "question": "The work done by a gas expanding against a constant external pressure P_ext is:",
+        "options": ["W = -P_ext·ΔV", "W = +P_ext·ΔV (on the system)", "W = ΔV/P_ext", "zero always"],
+        "answerIndex": 0,
+        "explanation": "In the convention where work done on the system is positive, expansion (ΔV > 0) gives W = -P_extΔV — the system loses energy as work."
+      },
+      {
+        "id": "chem-ct-10",
+        "question": "For the freezing of water at -5°C (a spontaneous process), the entropy of the system:",
+        "options": ["increases", "decreases, but the total entropy of universe increases", "remains constant", "decreases along with total entropy"],
+        "answerIndex": 1,
+        "explanation": "Ice is more ordered (ΔS_system < 0), but heat released to the cold surroundings raises their entropy more, so ΔS_total > 0."
+      }
+    ],
+    "electrochemistry": [
+      {
+        "id": "chem-ec-01",
+        "question": "Faraday's first law of electrolysis states that the mass deposited at an electrode is proportional to:",
+        "options": ["the voltage applied", "the quantity of electricity passed", "the temperature", "the electrode area"],
+        "answerIndex": 1,
+        "explanation": "m = ZQ = ZIt: mass liberated depends on charge passed, with Z the electrochemical equivalent."
+      },
+      {
+        "id": "chem-ec-02",
+        "question": "One faraday (96,500 C) is the charge carried by:",
+        "options": ["one electron", "one mole of electrons", "one coulomb of ions", "one gram of hydrogen"],
+        "answerIndex": 1,
+        "explanation": "F = N_A × e ≈ 96,500 C/mol — the charge of Avogadro's number of electrons."
+      },
+      {
+        "id": "chem-ec-03",
+        "question": "In a galvanic (voltaic) cell, oxidation occurs at:",
+        "options": ["the cathode, which is positive", "the anode, which is negative", "the anode, which is positive", "both electrodes"],
+        "answerIndex": 1,
+        "explanation": "Oxidation always occurs at the anode; in a galvanic cell the anode is the negative terminal (in electrolysis it is positive)."
+      },
+      {
+        "id": "chem-ec-04",
+        "question": "The standard electrode potential of the standard hydrogen electrode (SHE) is:",
+        "options": ["+1.00 V", "0.00 V by convention", "-0.76 V", "+0.34 V"],
+        "answerIndex": 1,
+        "explanation": "SHE is the universal reference, arbitrarily assigned exactly zero volts at all temperatures."
+      },
+      {
+        "id": "chem-ec-05",
+        "question": "The standard cell potential is calculated as:",
+        "options": ["E°(cathode) - E°(anode)", "E°(anode) - E°(cathode)", "E°(cathode) + E°(anode)", "E°(anode) × E°(cathode)"],
+        "answerIndex": 0,
+        "explanation": "E°cell = E°reduction(cathode) - E°reduction(anode); a positive value indicates a spontaneous cell reaction."
+      },
+      {
+        "id": "chem-ec-06",
+        "question": "The Nernst equation describes how the electrode potential varies with:",
+        "options": ["electrode size", "ion concentration (and temperature)", "the colour of solution", "stirring speed"],
+        "answerIndex": 1,
+        "explanation": "E = E° - (0.0592/n)log Q at 25°C — potentials shift as the concentrations of participating ions change."
+      },
+      {
+        "id": "chem-ec-07",
+        "question": "On dilution, the molar conductivity of an electrolyte solution:",
+        "options": ["decreases", "increases", "stays constant", "becomes zero"],
+        "answerIndex": 1,
+        "explanation": "Dilution reduces inter-ionic attraction (strong electrolytes) and increases dissociation (weak ones), so Λ rises toward its limiting value Λ₀."
+      },
+      {
+        "id": "chem-ec-08",
+        "question": "Kohlrausch's law is particularly useful for determining:",
+        "options": ["the limiting molar conductivity of weak electrolytes", "the density of solutions", "the pH of buffers", "electrode mass changes"],
+        "answerIndex": 0,
+        "explanation": "Λ₀ of a weak electrolyte (unreachable by extrapolation) is computed from the independent ionic conductivities of strong electrolytes."
+      },
+      {
+        "id": "chem-ec-09",
+        "question": "In the dry cell (Leclanché cell), the anode is made of:",
+        "options": ["carbon", "zinc", "copper", "manganese dioxide"],
+        "answerIndex": 1,
+        "explanation": "The zinc container is oxidised (anode); the central carbon rod surrounded by MnO₂ serves as the cathode."
+      },
+      {
+        "id": "chem-ec-10",
+        "question": "The main product formed at the cell reaction of a hydrogen–oxygen fuel cell is:",
+        "options": ["hydrogen peroxide", "water", "ozone", "methane"],
+        "answerIndex": 1,
+        "explanation": "H₂ and O₂ combine electrochemically to give water — a clean reaction used in spacecraft power systems."
+      }
+    ],
+    "chemical-kinetics": [
+      {
+        "id": "chem-ck-01",
+        "question": "The rate of a chemical reaction is usually expressed in units of:",
+        "options": ["mol dm⁻³", "mol dm⁻³ s⁻¹", "s⁻¹ only", "dm³ mol⁻¹"],
+        "answerIndex": 1,
+        "explanation": "Rate is the change in concentration per unit time, hence mol dm⁻³ s⁻¹ (or M/s)."
+      },
+      {
+        "id": "chem-ck-02",
+        "question": "The half-life of a first-order reaction:",
+        "options": ["depends on the initial concentration", "is 0.693/k, independent of initial concentration", "doubles when concentration doubles", "is always 1 second"],
+        "answerIndex": 1,
+        "explanation": "t½ = 0.693/k for first order — a constant, which is why radioactive decay has a fixed half-life."
+      },
+      {
+        "id": "chem-ck-03",
+        "question": "In a zero-order reaction, the rate:",
+        "options": ["doubles when concentration doubles", "is independent of reactant concentration", "is proportional to concentration squared", "is always zero"],
+        "answerIndex": 1,
+        "explanation": "Rate = k for zero order; the concentration falls linearly with time until the reactant is exhausted."
+      },
+      {
+        "id": "chem-ck-04",
+        "question": "Which statement about order and molecularity is correct?",
+        "options": ["Both are always equal", "Order is experimental and can be fractional; molecularity is theoretical and a whole number", "Molecularity can be zero", "Order is always a whole number"],
+        "answerIndex": 1,
+        "explanation": "Order comes from the measured rate law (can be 0, fractional…); molecularity counts molecules in an elementary step and is a positive integer."
+      },
+      {
+        "id": "chem-ck-05",
+        "question": "The Arrhenius equation relating rate constant and temperature is:",
+        "options": ["k = A·e^(Ea/RT)", "k = A·e^(-Ea/RT)", "k = Ea·e^(-A/RT)", "k = A/T"],
+        "answerIndex": 1,
+        "explanation": "k = Ae^(-Ea/RT): higher temperature or lower activation energy exponentially increases the rate constant."
+      },
+      {
+        "id": "chem-ck-06",
+        "question": "A catalyst increases the reaction rate by:",
+        "options": ["raising the activation energy", "providing an alternative path of lower activation energy", "increasing the temperature", "shifting the equilibrium position"],
+        "answerIndex": 1,
+        "explanation": "A catalyst offers a lower-energy pathway so more collisions succeed; it does not change ΔH or the equilibrium constant."
+      },
+      {
+        "id": "chem-ck-07",
+        "question": "The unit of the rate constant for a first-order reaction is:",
+        "options": ["mol dm⁻³ s⁻¹", "s⁻¹", "dm³ mol⁻¹ s⁻¹", "mol² dm⁻⁶ s⁻¹"],
+        "answerIndex": 1,
+        "explanation": "For rate = k[A], k has units of (rate)/(concentration) = s⁻¹."
+      },
+      {
+        "id": "chem-ck-08",
+        "question": "The rate law of a reaction is determined:",
+        "options": ["from the balanced equation's coefficients", "only by experiment", "from the equilibrium constant", "from ΔG"],
+        "answerIndex": 1,
+        "explanation": "Stoichiometric coefficients need not match reaction orders; the rate law must be established experimentally."
+      },
+      {
+        "id": "chem-ck-09",
+        "question": "For a first-order reaction, a plot of ln[A] against time is:",
+        "options": ["a curve rising exponentially", "a straight line with slope -k", "a parabola", "a horizontal line"],
+        "answerIndex": 1,
+        "explanation": "Integrating the first-order rate law gives ln[A]t = ln[A]₀ - kt — linear in t with slope -k."
+      },
+      {
+        "id": "chem-ck-10",
+        "question": "As a rough rule, the rate of many reactions approximately doubles for every:",
+        "options": ["1°C rise", "10°C rise in temperature", "100°C rise", "halving of pressure"],
+        "answerIndex": 1,
+        "explanation": "A 10° rise significantly increases the fraction of molecules exceeding the activation energy, roughly doubling the rate."
+      }
+    ],
+    "elements-of-groups-16-17-18": [
+      {
+        "id": "chem-g16-01",
+        "question": "Ozone (O₃) is:",
+        "options": ["a compound of oxygen and nitrogen", "an allotrope of oxygen", "an isotope of oxygen", "an oxide of hydrogen"],
+        "answerIndex": 1,
+        "explanation": "Ozone and dioxygen are allotropes — different molecular forms of the same element."
+      },
+      {
+        "id": "chem-g16-02",
+        "question": "In the contact process for manufacturing sulphuric acid, the catalyst used is:",
+        "options": ["platinum only, always", "V₂O₅ (vanadium pentoxide)", "iron oxide", "nickel"],
+        "answerIndex": 1,
+        "explanation": "V₂O₅ catalyses the oxidation of SO₂ to SO₃, the key step of the contact process."
+      },
+      {
+        "id": "chem-g16-03",
+        "question": "The most electronegative element in the periodic table is:",
+        "options": ["oxygen", "chlorine", "fluorine", "nitrogen"],
+        "answerIndex": 2,
+        "explanation": "Fluorine tops the electronegativity scale (3.98 on the Pauling scale), just above oxygen."
+      },
+      {
+        "id": "chem-g16-04",
+        "question": "The strongest oxidising agent among the halogens is:",
+        "options": ["Cl₂", "Br₂", "I₂", "F₂"],
+        "answerIndex": 3,
+        "explanation": "Fluorine has the highest reduction potential of the halogens and oxidises all the others from their salts."
+      },
+      {
+        "id": "chem-g16-05",
+        "question": "Noble gases are chemically inert mainly because they have:",
+        "options": ["large atomic size", "completely filled valence shells", "high density", "low boiling points"],
+        "answerIndex": 1,
+        "explanation": "Their stable ns²np⁶ configurations give very high ionisation energies and virtually no electron affinity."
+      },
+      {
+        "id": "chem-g16-06",
+        "question": "The shape of the XeF₂ molecule is:",
+        "options": ["bent", "linear", "trigonal planar", "tetrahedral"],
+        "answerIndex": 1,
+        "explanation": "Xe in XeF₂ has 3 lone pairs and 2 bond pairs (trigonal bipyramidal electron geometry); the lone pairs occupy equatorial positions, leaving F–Xe–F linear."
+      },
+      {
+        "id": "chem-g16-07",
+        "question": "When a glass rod dipped in ammonia is brought near hydrogen chloride gas, dense white fumes form. These are:",
+        "options": ["NH₄Cl", "NCl₃", "HOCl", "N₂O"],
+        "answerIndex": 0,
+        "explanation": "HCl and NH₃ combine directly to form fine particles of ammonium chloride — a classic test for either gas."
+      },
+      {
+        "id": "chem-g16-08",
+        "question": "ClF₃ is an example of:",
+        "options": ["a noble gas compound", "an interhalogen compound", "a halide ore", "a polyhalide ion"],
+        "answerIndex": 1,
+        "explanation": "Interhalogen compounds form between two different halogens, e.g. ClF, ClF₃, BrF₅, IF₇."
+      },
+      {
+        "id": "chem-g16-09",
+        "question": "The two common crystalline allotropes of sulphur are:",
+        "options": ["rhombic and monoclinic", "graphite and diamond", "white and red", "alpha and gamma iron"],
+        "answerIndex": 0,
+        "explanation": "Rhombic (α) sulphur is stable at room temperature; monoclinic (β) sulphur is stable above 96°C."
+      },
+      {
+        "id": "chem-g16-10",
+        "question": "Helium mixed with oxygen is used by deep-sea divers because helium:",
+        "options": ["is flammable", "is much less soluble in blood than nitrogen", "smells pleasant", "is heavier than air"],
+        "answerIndex": 1,
+        "explanation": "Low blood solubility prevents the dangerous bubble formation ('bends') that dissolved nitrogen causes during ascent."
+      }
+    ],
+    "transition-and-inner-transition-elements": [
+      {
+        "id": "chem-tr-01",
+        "question": "The general outer electronic configuration of d-block (transition) elements is:",
+        "options": ["ns² np⁶", "(n-1)d¹⁻¹⁰ ns¹⁻²", "(n-2)f¹⁻¹⁴", "ns² np³"],
+        "answerIndex": 1,
+        "explanation": "Transition elements progressively fill the (n-1)d subshell while keeping one or two ns electrons."
+      },
+      {
+        "id": "chem-tr-02",
+        "question": "Transition metals show variable oxidation states because:",
+        "options": ["they are soft metals", "their ns and (n-1)d electrons have comparable energies and both can be lost", "they have large atomic radii", "they form only ionic bonds"],
+        "answerIndex": 1,
+        "explanation": "The small energy gap between the outer s and penultimate d electrons allows different numbers of electrons to participate in bonding."
+      },
+      {
+        "id": "chem-tr-03",
+        "question": "Most transition metal ions are coloured because of:",
+        "options": ["s-s transitions", "d-d electronic transitions absorbing visible light", "their high density", "nuclear reactions"],
+        "answerIndex": 1,
+        "explanation": "Partially filled d orbitals split in a ligand field; electrons jumping between the sets absorb specific visible wavelengths."
+      },
+      {
+        "id": "chem-tr-04",
+        "question": "Zn²⁺ salts are white/colourless because Zn²⁺ has:",
+        "options": ["a half-filled d subshell", "a completely filled d¹⁰ configuration, so no d-d transition is possible", "no d electrons at all", "too many unpaired electrons"],
+        "answerIndex": 1,
+        "explanation": "With d¹⁰ there is no vacancy for d-d transitions, so no visible light is absorbed — one reason zinc is often not regarded as a typical transition element."
+      },
+      {
+        "id": "chem-tr-05",
+        "question": "The steady decrease in atomic/ionic radii across the lanthanoid series is called:",
+        "options": ["lanthanoid expansion", "lanthanoid contraction", "actinoid collapse", "shielding effect"],
+        "answerIndex": 1,
+        "explanation": "Poor shielding by 4f electrons lets the growing nuclear charge pull the electron cloud inward across the series."
+      },
+      {
+        "id": "chem-tr-06",
+        "question": "The oxidation state of manganese in KMnO₄ is:",
+        "options": ["+2", "+4", "+7", "+6"],
+        "answerIndex": 2,
+        "explanation": "K(+1) + Mn + 4O(-2) = 0 gives Mn = +7 — its highest oxidation state, making permanganate a strong oxidiser."
+      },
+      {
+        "id": "chem-tr-07",
+        "question": "Transition metals such as Fe, Ni and Pt are widely used as:",
+        "options": ["insulators", "catalysts", "fuels", "refrigerants"],
+        "answerIndex": 1,
+        "explanation": "Variable oxidation states and surface adsorption sites let them speed reactions — e.g. Fe in Haber's process, Ni in hydrogenation."
+      },
+      {
+        "id": "chem-tr-08",
+        "question": "The paramagnetism of a transition metal ion increases with:",
+        "options": ["the number of paired electrons", "the number of unpaired d electrons", "atomic mass", "ionic radius"],
+        "answerIndex": 1,
+        "explanation": "Magnetic moment μ ≈ √(n(n+2)) BM, where n is the count of unpaired electrons."
+      },
+      {
+        "id": "chem-tr-09",
+        "question": "The actinoids are the elements filling the:",
+        "options": ["3d subshell", "4f subshell", "5f subshell", "6d subshell only"],
+        "answerIndex": 2,
+        "explanation": "The actinoid (5f) series runs from thorium to lawrencium; the lanthanoids fill 4f."
+      },
+      {
+        "id": "chem-tr-10",
+        "question": "Transition metals form interstitial compounds when small atoms like H, C or N:",
+        "options": ["replace metal atoms in the lattice", "occupy the voids (interstices) of the metal lattice", "form ionic bonds with the metal", "escape from the lattice"],
+        "answerIndex": 1,
+        "explanation": "Small non-metal atoms fit into lattice holes, giving hard, high-melting materials such as steel (C in Fe)."
+      }
+    ],
+    "coordination-compounds": [
+      {
+        "id": "chem-cc-01",
+        "question": "The coordination number of cobalt in [Co(NH₃)₆]³⁺ is:",
+        "options": ["3", "4", "6", "8"],
+        "answerIndex": 2,
+        "explanation": "Six ammonia ligands are directly bonded to the central Co³⁺ ion, so its coordination number is 6."
+      },
+      {
+        "id": "chem-cc-02",
+        "question": "A ligand is a species that:",
+        "options": ["accepts an electron pair from the metal", "donates an electron pair to the central metal atom/ion", "always carries a positive charge", "only forms ionic bonds"],
+        "answerIndex": 1,
+        "explanation": "Ligands act as Lewis bases, donating lone pairs into empty orbitals of the metal (a Lewis acid)."
+      },
+      {
+        "id": "chem-cc-03",
+        "question": "EDTA is an example of a:",
+        "options": ["monodentate ligand", "bidentate ligand", "hexadentate ligand", "bridging ligand only"],
+        "answerIndex": 2,
+        "explanation": "EDTA binds through two N and four O donor atoms — six donor sites wrapping around one metal ion."
+      },
+      {
+        "id": "chem-cc-04",
+        "question": "The oxidation state of iron in [Fe(CN)₆]⁴⁻ is:",
+        "options": ["+2", "+3", "+4", "-4"],
+        "answerIndex": 0,
+        "explanation": "Six CN⁻ contribute -6; for an overall charge of -4 the iron must be +2."
+      },
+      {
+        "id": "chem-cc-05",
+        "question": "According to Werner's theory, the secondary valence of a metal corresponds to its:",
+        "options": ["oxidation state", "coordination number", "atomic number", "number of unpaired electrons"],
+        "answerIndex": 1,
+        "explanation": "Primary valence = ionisable charge (oxidation state); secondary valence = the fixed number of directly attached ligands."
+      },
+      {
+        "id": "chem-cc-06",
+        "question": "Cis–trans (geometrical) isomerism is shown by square planar complexes of the type:",
+        "options": ["MA₄", "MA₂B₂", "MA (linear)", "MAB only"],
+        "answerIndex": 1,
+        "explanation": "In MA₂B₂ square planar complexes, identical ligands can sit adjacent (cis) or opposite (trans) to each other."
+      },
+      {
+        "id": "chem-cc-07",
+        "question": "The IUPAC name of K₄[Fe(CN)₆] is:",
+        "options": ["potassium ferricyanide", "potassium hexacyanoferrate(II)", "potassium hexacyanoiron(III)", "tetrapotassium iron cyanide"],
+        "answerIndex": 1,
+        "explanation": "Four K⁺ balance [Fe(CN)₆]⁴⁻, in which iron is +2 — hence hexacyanoferrate(II)."
+      },
+      {
+        "id": "chem-cc-08",
+        "question": "Complexes containing polydentate ligands that form rings with the metal are unusually stable. This is called the:",
+        "options": ["trans effect", "chelate effect", "common ion effect", "crystal field effect"],
+        "answerIndex": 1,
+        "explanation": "Ring formation (chelation) makes complexes like [Ca-EDTA]²⁻ far more stable than comparable monodentate complexes."
+      },
+      {
+        "id": "chem-cc-09",
+        "question": "The geometry of [Ni(CO)₄] is:",
+        "options": ["square planar", "tetrahedral", "octahedral", "linear"],
+        "answerIndex": 1,
+        "explanation": "Nickel tetracarbonyl involves sp³ hybridisation of Ni(0), giving a tetrahedral arrangement of the four CO ligands."
+      },
+      {
+        "id": "chem-cc-10",
+        "question": "[Co(NH₃)₅Br]SO₄ and [Co(NH₃)₅SO₄]Br illustrate:",
+        "options": ["linkage isomerism", "ionisation isomerism", "geometrical isomerism", "optical isomerism"],
+        "answerIndex": 1,
+        "explanation": "The counter-ion and a ligand are interchanged, so the two compounds release different ions (SO₄²⁻ vs Br⁻) in solution."
+      }
+    ],
+    "halogen-derivatives": [
+      {
+        "id": "chem-hd-01",
+        "question": "The general formula of monohaloalkanes is:",
+        "options": ["CnH2n+1X", "CnH2nX2", "CnH2n-1X", "CnH2n+2X"],
+        "answerIndex": 0,
+        "explanation": "One halogen atom replaces one hydrogen of an alkane, giving CnH2n+1X."
+      },
+      {
+        "id": "chem-hd-02",
+        "question": "In the SN2 mechanism, the reaction occurs:",
+        "options": ["in two steps via a carbocation", "in a single step with backside attack, causing inversion of configuration", "without breaking any bond", "only in tertiary halides"],
+        "answerIndex": 1,
+        "explanation": "SN2 is a concerted one-step process where the nucleophile attacks opposite to the leaving group, inverting the stereochemistry (Walden inversion)."
+      },
+      {
+        "id": "chem-hd-03",
+        "question": "Tertiary alkyl halides react mainly by the:",
+        "options": ["SN1 mechanism", "SN2 mechanism", "neither mechanism", "addition mechanism"],
+        "answerIndex": 0,
+        "explanation": "Steric hindrance blocks SN2 backside attack, while the stable tertiary carbocation favours the two-step SN1 pathway."
+      },
+      {
+        "id": "chem-hd-04",
+        "question": "Reaction of an alkyl halide with alcoholic KOH gives mainly:",
+        "options": ["an alcohol by substitution", "an alkene by elimination", "an alkane", "a carboxylic acid"],
+        "answerIndex": 1,
+        "explanation": "Alcoholic KOH favours dehydrohalogenation (E2), removing HX to form an alkene, per Saytzeff's rule for the major product."
+      },
+      {
+        "id": "chem-hd-05",
+        "question": "Aqueous KOH with an alkyl halide mainly gives:",
+        "options": ["an alkene", "an alcohol by nucleophilic substitution", "an alkyne", "a haloform"],
+        "answerIndex": 1,
+        "explanation": "Aqueous KOH favours substitution (OH⁻ as nucleophile displaces the halide), producing an alcohol."
+      },
+      {
+        "id": "chem-hd-06",
+        "question": "The Wurtz reaction converts alkyl halides into:",
+        "options": ["alkenes", "alkanes with double the carbon chain, using sodium metal", "alcohols", "aldehydes"],
+        "answerIndex": 1,
+        "explanation": "2 R-X + 2Na → R-R + 2NaX; two alkyl halide molecules couple via sodium to form a longer-chain alkane."
+      },
+      {
+        "id": "chem-hd-07",
+        "question": "Chloroform (CHCl₃) is stored in dark-coloured bottles because it:",
+        "options": ["is radioactive", "slowly oxidises in light and air to poisonous phosgene (COCl₂)", "evaporates faster in light", "reacts with glass"],
+        "answerIndex": 1,
+        "explanation": "Light-catalysed aerial oxidation of chloroform produces the toxic gas phosgene, so amber bottles and a small amount of ethanol are used to prevent this."
+      },
+      {
+        "id": "chem-hd-08",
+        "question": "DDT and freons are examples of:",
+        "options": ["biodegradable halogen compounds", "environmentally persistent halogenated compounds", "natural products", "carboxylic acids"],
+        "answerIndex": 1,
+        "explanation": "Both resist natural degradation — DDT accumulates in food chains, and freons (CFCs) deplete the stratospheric ozone layer."
+      },
+      {
+        "id": "chem-hd-09",
+        "question": "Grignard reagents (RMgX) are prepared by reacting alkyl halides with:",
+        "options": ["magnesium metal in dry ether", "sodium metal", "aqueous NaOH", "concentrated H₂SO₄"],
+        "answerIndex": 0,
+        "explanation": "R-X + Mg in anhydrous ether gives RMgX; the reaction requires strictly moisture-free conditions since Grignard reagents react violently with water."
+      },
+      {
+        "id": "chem-hd-10",
+        "question": "Vinyl halides (halogen directly on a double-bonded carbon) are relatively unreactive to nucleophilic substitution mainly because:",
+        "options": ["the halogen is too electronegative", "the C–X bond has partial double-bond character due to resonance with the pi system", "vinyl halides are unstable", "there is no leaving group"],
+        "answerIndex": 1,
+        "explanation": "Conjugation between the halogen's lone pair and the adjacent pi bond strengthens and shortens the C–X bond, hindering substitution."
+      }
+    ],
+    "alcohols-phenols-ethers": [
+      {
+        "id": "chem-ape-01",
+        "question": "Phenol is more acidic than ethanol mainly because:",
+        "options": ["phenol has a benzene ring", "the phenoxide ion is stabilised by resonance delocalisation into the ring", "phenol is a liquid", "ethanol has fewer carbon atoms"],
+        "answerIndex": 1,
+        "explanation": "Negative charge on the phenoxide oxygen spreads into the aromatic ring by resonance, stabilising the ion and favouring ionisation."
+      },
+      {
+        "id": "chem-ape-02",
+        "question": "Lucas' test (conc. HCl + ZnCl₂) distinguishes alcohols by the rate of turbidity; tertiary alcohols react:",
+        "options": ["not at all", "immediately, forming a cloudy layer", "only on heating for hours", "by forming a precipitate of a different colour"],
+        "answerIndex": 1,
+        "explanation": "Tertiary carbocations form fastest (most stable), so tertiary alcohols turn turbid immediately; primary alcohols barely react at room temperature."
+      },
+      {
+        "id": "chem-ape-03",
+        "question": "Williamson's synthesis is used to prepare:",
+        "options": ["alcohols from alkenes", "ethers by reacting an alkoxide with an alkyl halide", "phenols from benzene", "esters from acids"],
+        "answerIndex": 1,
+        "explanation": "RO⁻Na⁺ + R'-X → R-O-R' + NaX, an SN2 reaction giving a symmetrical or unsymmetrical ether."
+      },
+      {
+        "id": "chem-ape-04",
+        "question": "Oxidation of a primary alcohol with acidified K₂Cr₂O₇ gives, on further oxidation:",
+        "options": ["a ketone then an alcohol", "an aldehyde and then a carboxylic acid", "directly a carboxylic acid with no intermediate", "no reaction"],
+        "answerIndex": 1,
+        "explanation": "Primary alcohols oxidise stepwise: R-CH₂OH → R-CHO → R-COOH under strong oxidising conditions."
+      },
+      {
+        "id": "chem-ape-05",
+        "question": "Secondary alcohols on oxidation with acidified K₂Cr₂O₇ give:",
+        "options": ["aldehydes", "ketones", "carboxylic acids", "ethers"],
+        "answerIndex": 1,
+        "explanation": "A secondary alcohol has only one H on the carbinol carbon, so oxidation stops at the ketone stage — ketones resist further oxidation under these conditions."
+      },
+      {
+        "id": "chem-ape-06",
+        "question": "Tertiary alcohols do not undergo oxidation with K₂Cr₂O₇ under normal conditions because:",
+        "options": ["they have no hydrogen on the carbinol carbon", "they are insoluble in water", "they are too volatile", "they lack an OH group"],
+        "answerIndex": 0,
+        "explanation": "Oxidation of alcohols requires removing an H from the carbon bearing OH; tertiary alcohols have no such hydrogen, so mild oxidation fails."
+      },
+      {
+        "id": "chem-ape-07",
+        "question": "The ferric chloride test (violet/blue colouration) is a characteristic test for:",
+        "options": ["alcohols", "phenols", "ethers", "alkyl halides"],
+        "answerIndex": 1,
+        "explanation": "Phenols form coloured complexes with FeCl₃ due to their enolic/aromatic -OH group, distinguishing them from simple alcohols."
+      },
+      {
+        "id": "chem-ape-08",
+        "question": "Ethers are chemically less reactive than alcohols mainly because they:",
+        "options": ["lack a polar C-O bond", "have no O-H bond and hence cannot hydrogen bond or ionise easily", "are always gases", "contain a double bond"],
+        "answerIndex": 1,
+        "explanation": "Without an O-H bond, ethers cannot act as acids or easily undergo the reactions alcohols do, making them fairly inert (useful as solvents)."
+      },
+      {
+        "id": "chem-ape-09",
+        "question": "Anisole (methoxybenzene) reacts with HI to give:",
+        "options": ["phenol and methanol", "phenol and methyl iodide", "iodobenzene only", "no reaction occurs"],
+        "answerIndex": 1,
+        "explanation": "HI cleaves the ether linkage; the smaller alkyl group leaves as the iodide (CH₃I) while the aryl-oxygen bond stays intact, giving phenol."
+      },
+      {
+        "id": "chem-ape-10",
+        "question": "Alcohols show higher boiling points than alkanes of similar molar mass because of:",
+        "options": ["their larger molecular size", "intermolecular hydrogen bonding via the O-H group", "their higher density", "the presence of carbon only"],
+        "answerIndex": 1,
+        "explanation": "O-H groups hydrogen-bond between molecules, requiring extra energy to separate them and raising the boiling point substantially."
+      }
+    ],
+    "aldehydes-ketones-carboxylic-acids": [
+      {
+        "id": "chem-akc-01",
+        "question": "The functional group common to both aldehydes and ketones is:",
+        "options": ["-OH", "-COOH", ">C=O (carbonyl)", "-CHO only"],
+        "answerIndex": 2,
+        "explanation": "Both are carbonyl compounds; aldehydes have -CHO (carbonyl at the chain end) and ketones have >C=O between two carbons."
+      },
+      {
+        "id": "chem-akc-02",
+        "question": "Tollens' reagent (ammoniacal AgNO₃) gives a silver mirror with:",
+        "options": ["ketones", "aldehydes", "alcohols", "ethers"],
+        "answerIndex": 1,
+        "explanation": "Aldehydes are easily oxidised (reducing Ag⁺ to metallic Ag, forming a mirror); ketones lack the required H and do not respond to this test."
+      },
+      {
+        "id": "chem-akc-03",
+        "question": "Fehling's solution is used to distinguish:",
+        "options": ["aromatic from aliphatic aldehydes", "aliphatic aldehydes (positive) from aromatic aldehydes and ketones (negative)", "alcohols from acids", "esters from ethers"],
+        "answerIndex": 1,
+        "explanation": "Aliphatic aldehydes reduce Cu²⁺ to a brick-red Cu₂O precipitate; aromatic aldehydes and all ketones give a negative test."
+      },
+      {
+        "id": "chem-akc-04",
+        "question": "The iodoform test (yellow precipitate with I₂/NaOH) is given by compounds containing:",
+        "options": ["a -COOH group", "a CH₃CO- group or CH₃CH(OH)- group", "any aldehyde", "a benzene ring only"],
+        "answerIndex": 1,
+        "explanation": "Methyl ketones (and ethanol/acetaldehyde-type structures) form the pale yellow crystalline precipitate of iodoform (CHI₃)."
+      },
+      {
+        "id": "chem-akc-05",
+        "question": "Carboxylic acids are generally stronger acids than phenols because:",
+        "options": ["the carboxylate ion is stabilised by resonance over two equivalent oxygens", "carboxylic acids are liquids", "phenols have no oxygen", "acids have more carbon atoms"],
+        "answerIndex": 0,
+        "explanation": "In RCOO⁻ the negative charge is delocalised equally over two oxygens, giving greater stabilisation than the phenoxide ion's ring delocalisation."
+      },
+      {
+        "id": "chem-akc-06",
+        "question": "The reaction of an aldehyde/ketone with an alcohol under acid catalysis first gives:",
+        "options": ["an acetal directly", "a hemiacetal", "a carboxylic acid", "an amine"],
+        "answerIndex": 1,
+        "explanation": "One equivalent of alcohol adds to the carbonyl to give a hemiacetal; a second equivalent (losing water) converts it to the full acetal."
+      },
+      {
+        "id": "chem-akc-07",
+        "question": "Aldol condensation occurs between:",
+        "options": ["two molecules of a carbonyl compound having alpha-hydrogens, under base or acid catalysis", "an acid and a base only", "an alkene and a carbonyl", "two alcohols"],
+        "answerIndex": 0,
+        "explanation": "The enolate of one carbonyl attacks the carbonyl carbon of another, giving a beta-hydroxy carbonyl (aldol), which may dehydrate further."
+      },
+      {
+        "id": "chem-akc-08",
+        "question": "Formic acid (HCOOH) reduces Tollens' reagent because it contains:",
+        "options": ["an -OH group", "an aldehydic -CHO-like group within its structure", "two carboxyl groups", "no hydrogen at all"],
+        "answerIndex": 1,
+        "explanation": "Formic acid is unusual among carboxylic acids as it also has an aldehyde-type H-C=O linkage, giving it reducing properties."
+      },
+      {
+        "id": "chem-akc-09",
+        "question": "Acetic acid reacts with PCl₅ to give mainly:",
+        "options": ["acetamide", "acetyl chloride", "ethanol", "acetic anhydride"],
+        "answerIndex": 1,
+        "explanation": "PCl₅ replaces the -OH of the carboxylic acid with -Cl, converting CH₃COOH into CH₃COCl (acetyl chloride)."
+      },
+      {
+        "id": "chem-akc-10",
+        "question": "The order of reactivity toward nucleophilic addition is generally:",
+        "options": ["ketones > aldehydes", "aldehydes > ketones", "both equal always", "neither undergoes nucleophilic addition"],
+        "answerIndex": 1,
+        "explanation": "Aldehydes are less sterically hindered and their carbonyl carbon is more electrophilic (one alkyl group vs two), making them more reactive."
+      }
+    ],
+    "amines": [
+      {
+        "id": "chem-am-01",
+        "question": "Amines are classified as primary, secondary or tertiary based on:",
+        "options": ["the number of carbon atoms in the molecule", "the number of hydrogen atoms on nitrogen replaced by alkyl/aryl groups", "their boiling point", "their solubility in water"],
+        "answerIndex": 1,
+        "explanation": "One, two or three H atoms of NH₃ replaced by carbon groups give 1°, 2° or 3° amines respectively — unlike alcohols, this is based on N substitution, not the attached carbon."
+      },
+      {
+        "id": "chem-am-02",
+        "question": "Aniline is a weaker base than methylamine mainly because:",
+        "options": ["aniline has a higher molecular mass", "the lone pair on nitrogen in aniline delocalises into the benzene ring, making it less available", "aniline is insoluble in water", "aniline has fewer hydrogen atoms"],
+        "answerIndex": 1,
+        "explanation": "Resonance donation of the N lone pair into the aromatic ring reduces its availability to accept a proton, weakening aniline's basicity."
+      },
+      {
+        "id": "chem-am-03",
+        "question": "The carbylamine test (offensive smell with CHCl₃/alcoholic KOH) is given specifically by:",
+        "options": ["primary amines", "secondary amines", "tertiary amines", "all amines equally"],
+        "answerIndex": 0,
+        "explanation": "Only primary amines (aliphatic or aromatic) form isocyanides with this foul-smelling reaction; secondary and tertiary amines do not respond."
+      },
+      {
+        "id": "chem-am-04",
+        "question": "Aliphatic amines are generally stronger bases than ammonia because:",
+        "options": ["alkyl groups withdraw electron density from nitrogen", "alkyl groups are electron-releasing (+I effect), increasing electron density on nitrogen", "amines have a lower molecular mass", "nitrogen becomes sp hybridised"],
+        "answerIndex": 1,
+        "explanation": "The +I effect of alkyl groups pushes electron density onto nitrogen, making its lone pair more available to bind a proton."
+      },
+      {
+        "id": "chem-am-05",
+        "question": "Reduction of nitrobenzene with Sn/HCl gives:",
+        "options": ["nitrosobenzene", "aniline", "benzoic acid", "azobenzene"],
+        "answerIndex": 1,
+        "explanation": "Sn/HCl (or Fe/HCl) is a classic reagent for reducing the nitro group fully down to a primary amine, aniline."
+      },
+      {
+        "id": "chem-am-06",
+        "question": "The diazonium salt of aniline (C₆H₅N₂⁺Cl⁻) is prepared by treating aniline with:",
+        "options": ["NaOH at room temperature", "NaNO₂ and dilute HCl at 0-5°C", "concentrated H₂SO₄ alone", "acetic anhydride"],
+        "answerIndex": 1,
+        "explanation": "Diazotisation requires cold conditions (0-5°C) with nitrous acid generated in situ; the diazonium salt decomposes readily if warmed."
+      },
+      {
+        "id": "chem-am-07",
+        "question": "Coupling of benzene diazonium chloride with phenol gives a product used as:",
+        "options": ["an explosive", "an azo dye", "a fuel", "a refrigerant"],
+        "answerIndex": 1,
+        "explanation": "Electrophilic coupling at the para position of phenol produces a brightly coloured azo compound, the basis of many synthetic dyes."
+      },
+      {
+        "id": "chem-am-08",
+        "question": "Hofmann bromamide degradation converts an amide into:",
+        "options": ["an amine with one fewer carbon atom", "a nitrile", "a carboxylic acid", "an ester"],
+        "answerIndex": 0,
+        "explanation": "RCONH₂ with Br₂/NaOH loses CO₂, giving a primary amine RNH₂ — useful for stepping down the carbon chain by one."
+      },
+      {
+        "id": "chem-am-09",
+        "question": "Amines are more basic than amides mainly because in amides:",
+        "options": ["nitrogen carries a positive charge", "the nitrogen lone pair is delocalised into the adjacent carbonyl group, reducing basicity", "amides have more hydrogen atoms", "amides are insoluble in water"],
+        "answerIndex": 1,
+        "explanation": "Resonance with the C=O group pulls electron density away from the amide nitrogen, making its lone pair far less available than in a simple amine."
+      },
+      {
+        "id": "chem-am-10",
+        "question": "Aromatic amines undergo electrophilic substitution mainly at the:",
+        "options": ["meta position", "ortho and para positions", "only the para position, never ortho", "ipso position exclusively"],
+        "answerIndex": 1,
+        "explanation": "The -NH₂ group is a strong activator and ortho/para director due to resonance donation into the ring."
+      }
+    ],
+    "biomolecules": [
+      {
+        "id": "chem-bio-01",
+        "question": "Glucose and fructose are examples of:",
+        "options": ["disaccharides", "monosaccharides", "polysaccharides", "amino acids"],
+        "answerIndex": 1,
+        "explanation": "Both are simple sugars that cannot be hydrolysed into smaller carbohydrate units, making them monosaccharides."
+      },
+      {
+        "id": "chem-bio-02",
+        "question": "Sucrose on hydrolysis gives:",
+        "options": ["only glucose", "only fructose", "glucose and fructose", "glucose and galactose"],
+        "answerIndex": 2,
+        "explanation": "Sucrose is a disaccharide of alpha-glucose and beta-fructose joined by a glycosidic bond; hydrolysis releases both monosaccharides."
+      },
+      {
+        "id": "chem-bio-03",
+        "question": "Amino acids are called amphoteric because they:",
+        "options": ["react with metals only", "contain both acidic (-COOH) and basic (-NH₂) groups", "are optically inactive", "dissolve only in acids"],
+        "answerIndex": 1,
+        "explanation": "The carboxyl group can donate a proton and the amino group can accept one, so amino acids react with both acids and bases."
+      },
+      {
+        "id": "chem-bio-04",
+        "question": "The pH at which an amino acid exists predominantly as a zwitterion with zero net charge is called its:",
+        "options": ["neutral point", "isoelectric point", "boiling point", "equivalence point"],
+        "answerIndex": 1,
+        "explanation": "At the isoelectric point, the -NH₃⁺ and -COO⁻ charges balance exactly, and the molecule does not migrate in an electric field."
+      },
+      {
+        "id": "chem-bio-05",
+        "question": "The secondary structure of a protein refers to:",
+        "options": ["its amino acid sequence", "the regular folding pattern such as alpha-helix or beta-pleated sheet, stabilised by hydrogen bonds", "the overall 3D shape", "the assembly of multiple protein subunits"],
+        "answerIndex": 1,
+        "explanation": "Secondary structure describes local hydrogen-bonded arrangements of the polypeptide backbone; primary structure is the sequence, tertiary the overall fold."
+      },
+      {
+        "id": "chem-bio-06",
+        "question": "Denaturation of a protein primarily affects its:",
+        "options": ["primary structure (amino acid sequence)", "secondary and tertiary structure, while the primary sequence stays intact", "elemental composition", "molecular formula only"],
+        "answerIndex": 1,
+        "explanation": "Heat, pH change or agents disrupt hydrogen bonds and folding (higher-order structure) without breaking the peptide bonds of the sequence itself."
+      },
+      {
+        "id": "chem-bio-07",
+        "question": "DNA differs from RNA in that DNA contains:",
+        "options": ["ribose sugar and uracil", "deoxyribose sugar and thymine (instead of uracil)", "no nitrogenous bases", "only purine bases"],
+        "answerIndex": 1,
+        "explanation": "DNA's sugar lacks one oxygen (deoxyribose) compared to RNA's ribose, and DNA uses thymine where RNA uses uracil."
+      },
+      {
+        "id": "chem-bio-08",
+        "question": "The two strands of the DNA double helix are held together mainly by:",
+        "options": ["covalent bonds between bases", "hydrogen bonds between complementary base pairs", "ionic bonds", "van der Waals forces only"],
+        "answerIndex": 1,
+        "explanation": "Adenine pairs with thymine (2 H-bonds) and guanine with cytosine (3 H-bonds), zipping the two strands together specifically."
+      },
+      {
+        "id": "chem-bio-09",
+        "question": "Vitamin C (ascorbic acid) is an example of a:",
+        "options": ["fat-soluble vitamin", "water-soluble vitamin", "mineral", "carbohydrate polymer"],
+        "answerIndex": 1,
+        "explanation": "Vitamins B and C are water-soluble and must be replenished regularly since the body stores them poorly, unlike fat-soluble A, D, E, K."
+      },
+      {
+        "id": "chem-bio-10",
+        "question": "Enzymes act as biological catalysts by:",
+        "options": ["being consumed in the reaction", "lowering the activation energy of a specific reaction through their active site", "raising the temperature of the reaction", "reacting stoichiometrically with the product"],
+        "answerIndex": 1,
+        "explanation": "Highly specific active sites bind substrates and stabilise the transition state, speeding reactions enormously without being consumed."
+      }
+    ],
+    "introduction-to-polymer-chemistry": [
+      {
+        "id": "chem-poly-01",
+        "question": "A polymer is a large molecule built from repeating structural units called:",
+        "options": ["isomers", "monomers", "isotopes", "catalysts"],
+        "answerIndex": 1,
+        "explanation": "Monomers are the small repeating molecules that link together (polymerise) to form the long-chain macromolecule."
+      },
+      {
+        "id": "chem-poly-02",
+        "question": "Addition polymerisation typically involves monomers containing:",
+        "options": ["a carbon-carbon double bond", "two different functional groups that condense", "only single bonds", "aromatic rings exclusively"],
+        "answerIndex": 0,
+        "explanation": "Unsaturated monomers like ethylene add to each other directly (often via free radicals) without losing any small molecule."
+      },
+      {
+        "id": "chem-poly-03",
+        "question": "Condensation polymerisation, unlike addition polymerisation, involves:",
+        "options": ["no by-product", "the repeated loss of a small molecule such as water or HCl during linking", "only one type of monomer always", "gaseous monomers only"],
+        "answerIndex": 1,
+        "explanation": "Bifunctional monomers react step-wise, each linkage typically releasing a small molecule (e.g. water in nylon or polyester formation)."
+      },
+      {
+        "id": "chem-poly-04",
+        "question": "Polythene (polyethylene) is manufactured by the polymerisation of:",
+        "options": ["propene", "ethene (ethylene)", "styrene", "vinyl chloride"],
+        "answerIndex": 1,
+        "explanation": "Repeated addition of CH₂=CH₂ units under catalysis or high pressure gives long -CH₂-CH₂- chains."
+      },
+      {
+        "id": "chem-poly-05",
+        "question": "Nylon-6,6 is formed by condensation of:",
+        "options": ["ethylene glycol and terephthalic acid", "hexamethylenediamine and adipic acid", "phenol and formaldehyde", "styrene and butadiene"],
+        "answerIndex": 1,
+        "explanation": "The '6,6' names the six-carbon diamine and six-carbon diacid that condense, losing water, to form the polyamide."
+      },
+      {
+        "id": "chem-poly-06",
+        "question": "Elastomers are polymers characterised by:",
+        "options": ["high crystallinity and rigidity", "the ability to stretch and return to their original shape", "brittleness at room temperature", "being completely linear with strong hydrogen bonding"],
+        "answerIndex": 1,
+        "explanation": "Weak intermolecular forces and coiled chains (often lightly cross-linked, as in vulcanised rubber) let elastomers stretch and recoil elastically."
+      },
+      {
+        "id": "chem-poly-07",
+        "question": "Natural rubber is a polymer of:",
+        "options": ["ethylene", "isoprene (2-methylbuta-1,3-diene)", "styrene", "vinyl acetate"],
+        "answerIndex": 1,
+        "explanation": "Natural rubber is essentially cis-polyisoprene, obtained from the latex of the rubber tree."
+      },
+      {
+        "id": "chem-poly-08",
+        "question": "Vulcanisation of rubber involves heating it with:",
+        "options": ["sulphur, to introduce cross-links between polymer chains", "oxygen only", "chlorine gas", "sodium metal"],
+        "answerIndex": 0,
+        "explanation": "Sulphur bridges form between rubber chains, improving strength, elasticity and resistance to temperature changes."
+      },
+      {
+        "id": "chem-poly-09",
+        "question": "PVC (polyvinyl chloride) is an addition polymer of:",
+        "options": ["vinyl chloride (chloroethene)", "vinyl acetate", "acrylonitrile", "propylene"],
+        "answerIndex": 0,
+        "explanation": "Repeated addition of CH₂=CHCl units gives the -CH₂-CHCl- repeating chain of PVC."
+      },
+      {
+        "id": "chem-poly-10",
+        "question": "Biodegradable polymers are important because they:",
+        "options": ["never decompose, ensuring durability", "can be broken down by microorganisms, reducing long-term plastic waste accumulation", "are more expensive to produce always", "cannot be moulded"],
+        "answerIndex": 1,
+        "explanation": "Unlike conventional plastics that persist for centuries, biodegradable polymers (e.g. PHBV) are metabolised by microbes, lessening environmental impact."
+      }
+    ],
+    "green-chemistry-and-nanochemistry": [
+      {
+        "id": "chem-gcn-01",
+        "question": "Green chemistry primarily aims to:",
+        "options": ["increase the cost of chemical processes", "design chemical products and processes that reduce or eliminate hazardous substances", "replace all chemistry with biology", "avoid using catalysts"],
+        "answerIndex": 1,
+        "explanation": "Green chemistry seeks safer, more efficient reactions and products that minimise environmental and health harm from the ground up."
+      },
+      {
+        "id": "chem-gcn-02",
+        "question": "One of the twelve principles of green chemistry emphasises maximising:",
+        "options": ["the amount of waste generated", "atom economy, so more reactant atoms end up in the useful product", "the number of purification steps", "the use of toxic solvents"],
+        "answerIndex": 1,
+        "explanation": "High atom economy means most of the mass of the reactants is incorporated into the desired product rather than wasted as by-products."
+      },
+      {
+        "id": "chem-gcn-03",
+        "question": "Using supercritical CO₂ instead of chlorinated organic solvents in dry cleaning is an example of green chemistry because it:",
+        "options": ["is more expensive", "avoids toxic, ozone-depleting or carcinogenic solvents", "increases waste production", "requires more energy"],
+        "answerIndex": 1,
+        "explanation": "Supercritical CO₂ is non-toxic and non-flammable and can be recycled, replacing solvents like perchloroethylene that pose health and environmental risks."
+      },
+      {
+        "id": "chem-gcn-04",
+        "question": "Nanomaterials are generally defined as having at least one dimension in the range of:",
+        "options": ["1 to 100 nanometres", "1 to 100 millimetres", "1 to 100 micrometres", "1 to 100 metres"],
+        "answerIndex": 0,
+        "explanation": "The nanoscale (1-100 nm) is where materials often show distinct physical, chemical and electronic properties compared to their bulk form."
+      },
+      {
+        "id": "chem-gcn-05",
+        "question": "Nanomaterials often show different properties from the bulk material mainly due to:",
+        "options": ["their higher price", "the very large surface-area-to-volume ratio at the nanoscale", "having a different chemical formula", "being radioactive"],
+        "answerIndex": 1,
+        "explanation": "A much greater fraction of atoms sit at the surface, altering reactivity, melting point, optical and electronic behaviour dramatically."
+      },
+      {
+        "id": "chem-gcn-06",
+        "question": "Carbon nanotubes are structurally related to:",
+        "options": ["diamond", "graphite (rolled sheets of graphene)", "amorphous carbon only", "coal"],
+        "answerIndex": 1,
+        "explanation": "A carbon nanotube can be thought of as a single graphene sheet rolled into a seamless cylinder of hexagonally bonded carbon."
+      },
+      {
+        "id": "chem-gcn-07",
+        "question": "Using a catalyst to increase reaction rate and reduce energy consumption reflects which green chemistry principle?",
+        "options": ["use of hazardous solvents", "catalysis over stoichiometric reagents", "maximising waste", "avoiding all chemical reactions"],
+        "answerIndex": 1,
+        "explanation": "Catalysts are reused many times and often allow milder conditions, cutting down both waste and energy demand compared to stoichiometric reagents."
+      },
+      {
+        "id": "chem-gcn-08",
+        "question": "The E-factor in green chemistry measures:",
+        "options": ["the energy released in a reaction", "the ratio of the mass of waste to the mass of desired product", "electron count of a molecule", "the efficiency of an engine"],
+        "answerIndex": 1,
+        "explanation": "A lower E-factor (less waste per unit of product) indicates a greener, more resource-efficient process."
+      },
+      {
+        "id": "chem-gcn-09",
+        "question": "Silver nanoparticles are used in some medical dressings mainly for their:",
+        "options": ["magnetic properties", "antimicrobial activity", "high electrical resistance", "radioactivity"],
+        "answerIndex": 1,
+        "explanation": "At the nanoscale, silver has enhanced surface reactivity that damages microbial cell walls, giving it strong antibacterial action."
+      },
+      {
+        "id": "chem-gcn-10",
+        "question": "Replacing a batch process with a continuous flow process to reduce solvent use and improve safety is an application of:",
+        "options": ["classical stoichiometry", "green chemistry engineering principles", "nuclear chemistry", "qualitative analysis"],
+        "answerIndex": 1,
+        "explanation": "Process redesign for efficiency, reduced waste, and safer handling of reagents is a core green chemistry strategy in industrial chemistry."
+      }
     ]
   }
 }

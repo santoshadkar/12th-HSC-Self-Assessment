@@ -244,6 +244,150 @@
         "answerIndex": 1,
         "explanation": "Operators and operands are pushed and popped according to precedence rules, which maps naturally onto stack operations."
       }
+    ],
+    "cpp-programming": [
+      {
+        "id": "cs1-cpp-01",
+        "question": "Which symbol is used to insert data into cout in C++?",
+        "options": [">>", "<<", "::", "->"],
+        "answerIndex": 1,
+        "explanation": "The insertion operator << sends data to the output stream, e.g. cout << \"Hello\"; extraction >> is used with cin."
+      },
+      {
+        "id": "cs1-cpp-02",
+        "question": "A function that has the same name as its class and no return type is called a:",
+        "options": ["destructor", "constructor", "friend function", "static function"],
+        "answerIndex": 1,
+        "explanation": "A constructor automatically initialises objects of the class when they are created; it shares the class name and specifies no return type."
+      },
+      {
+        "id": "cs1-cpp-03",
+        "question": "Which OOP feature allows a derived class to acquire properties of its base class?",
+        "options": ["polymorphism", "encapsulation", "inheritance", "abstraction"],
+        "answerIndex": 2,
+        "explanation": "Inheritance lets a new class reuse and extend the data members and functions of an existing class."
+      },
+      {
+        "id": "cs1-cpp-04",
+        "question": "Having multiple functions with the same name but different parameter lists is called:",
+        "options": ["function overriding", "function overloading", "recursion", "operator overloading"],
+        "answerIndex": 1,
+        "explanation": "Overloading lets several functions share a name as long as their parameter types/counts differ, resolved at compile time."
+      },
+      {
+        "id": "cs1-cpp-05",
+        "question": "A destructor in C++ is called:",
+        "options": ["explicitly by the programmer only", "automatically when an object goes out of scope or is deleted", "only for static objects", "never automatically"],
+        "answerIndex": 1,
+        "explanation": "The destructor (~ClassName) runs automatically to release resources when an object's lifetime ends."
+      },
+      {
+        "id": "cs1-cpp-06",
+        "question": "In C++, data members and member functions of a class are, by default, in scope:",
+        "options": ["public", "private", "protected", "global"],
+        "answerIndex": 1,
+        "explanation": "Unless explicitly declared otherwise, class members default to private access, hidden from outside the class."
+      },
+      {
+        "id": "cs1-cpp-07",
+        "question": "A pure virtual function is declared by:",
+        "options": ["initialising it with = 0", "marking it static", "marking it const", "giving it no name"],
+        "answerIndex": 0,
+        "explanation": "virtual void f() = 0; makes f pure virtual, forcing derived classes to provide their own implementation and making the class abstract."
+      },
+      {
+        "id": "cs1-cpp-08",
+        "question": "The keyword used to define a user-controlled access specifier that allows a non-member function to access private data is:",
+        "options": ["public", "friend", "private", "virtual"],
+        "answerIndex": 1,
+        "explanation": "Declaring a function as friend grants it access to the private and protected members of the class, despite not being a member itself."
+      },
+      {
+        "id": "cs1-cpp-09",
+        "question": "Which of the following best describes function recursion?",
+        "options": ["a function calling another unrelated function", "a function calling itself, directly or indirectly", "two functions with the same name", "a function with no return statement"],
+        "answerIndex": 1,
+        "explanation": "Recursive functions call themselves to solve smaller instances of a problem, terminating via a base case."
+      },
+      {
+        "id": "cs1-cpp-10",
+        "question": "In C++, the scope resolution operator :: is used to:",
+        "options": ["separate array indices", "define a function outside its class or access a global variable", "denote comments", "declare pointers"],
+        "answerIndex": 1,
+        "explanation": "ClassName::function() defines a member function outside the class body; ::variable accesses a global variable hidden by a local one."
+      }
+    ],
+    "html-web-technology": [
+      {
+        "id": "cs1-html-01",
+        "question": "HTML stands for:",
+        "options": ["HighText Machine Language", "HyperText Markup Language", "Hyperlink and Text Markup Language", "Home Tool Markup Language"],
+        "answerIndex": 1,
+        "explanation": "HTML (HyperText Markup Language) is the standard markup language for creating web pages."
+      },
+      {
+        "id": "cs1-html-02",
+        "question": "Which tag is used to create a hyperlink in HTML?",
+        "options": ["<link>", "<a>", "<href>", "<hlink>"],
+        "answerIndex": 1,
+        "explanation": "The anchor tag <a href=\"url\">text</a> creates a clickable hyperlink to another page or resource."
+      },
+      {
+        "id": "cs1-html-03",
+        "question": "Which HTML tag is used to define an unordered (bulleted) list?",
+        "options": ["<ol>", "<ul>", "<li>", "<dl>"],
+        "answerIndex": 1,
+        "explanation": "<ul> creates an unordered list; each item within it is marked with <li>. <ol> creates a numbered (ordered) list instead."
+      },
+      {
+        "id": "cs1-html-04",
+        "question": "Which attribute of the <img> tag specifies the image source file?",
+        "options": ["href", "src", "link", "alt"],
+        "answerIndex": 1,
+        "explanation": "<img src=\"file.jpg\" alt=\"description\"> — src points to the image file location; alt provides fallback text."
+      },
+      {
+        "id": "cs1-html-05",
+        "question": "CSS is primarily used to:",
+        "options": ["control the structure of web content", "control the presentation and styling of web content", "run server-side logic", "store data in a database"],
+        "answerIndex": 1,
+        "explanation": "Cascading Style Sheets separate visual styling (colours, layout, fonts) from HTML's structural markup."
+      },
+      {
+        "id": "cs1-html-06",
+        "question": "Which HTML tag is used to create a table row?",
+        "options": ["<td>", "<tr>", "<th>", "<table>"],
+        "answerIndex": 1,
+        "explanation": "<tr> defines a table row; <td> defines a data cell within it, and <th> a header cell."
+      },
+      {
+        "id": "cs1-html-07",
+        "question": "Which HTML element is used to embed JavaScript code within a web page?",
+        "options": ["<css>", "<script>", "<js>", "<style>"],
+        "answerIndex": 1,
+        "explanation": "<script> tags embed or link JavaScript, which adds interactivity and dynamic behaviour to otherwise static HTML."
+      },
+      {
+        "id": "cs1-html-08",
+        "question": "Which HTML tag creates a form for user input?",
+        "options": ["<input>", "<form>", "<field>", "<data>"],
+        "answerIndex": 1,
+        "explanation": "<form> is the container for interactive input controls like <input>, <select> and <textarea>, and defines how data is submitted."
+      },
+      {
+        "id": "cs1-html-09",
+        "question": "The correct HTML element for the largest heading is:",
+        "options": ["<heading>", "<h1>", "<h6>", "<head>"],
+        "answerIndex": 1,
+        "explanation": "Headings run from <h1> (largest/most important) down to <h6> (smallest); <head> is unrelated, holding document metadata."
+      },
+      {
+        "id": "cs1-html-10",
+        "question": "The World Wide Web operates mainly using the protocol:",
+        "options": ["FTP", "HTTP/HTTPS", "SMTP", "POP3"],
+        "answerIndex": 1,
+        "explanation": "HTTP (and its secure form HTTPS) governs how web browsers and servers exchange requests and responses for web pages."
+      }
     ]
   }
 }
